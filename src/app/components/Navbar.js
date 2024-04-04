@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-16 top-0 fixed z-10">
-      <div className="flex justify-between items-center md:mx-40 mx-10 mt-3">
+      <div className="flex justify-between items-center md:mx-32 mx-10 mt-3">
         <div>
           <Link href="/">
             <Image
@@ -24,13 +24,13 @@ const Navbar = () => {
               width={500}
               height={200}
               alt="Logo"
-              className="w-[150px] md:w-[200px] pl-4 md:pl-0 pt-2 md:pt-0"
+              className="w-[150px] md:w-[180px] pl-4 md:pl-0 pt-2 md:pt-0"
             />
           </Link>
         </div>
         <div className="hidden md:flex">
           <nav>
-            <ul className="justify-center hidden md:flex gap-16 items-center">
+            <ul className="justify-center hidden md:flex gap-12 items-center">
               <Link href="/">
                 <li
                   className={classNames(
