@@ -24,7 +24,7 @@ const Navbar = () => {
               width={500}
               height={200}
               alt="Logo"
-              className="w-[150px] md:w-[202px] pl-4 md:pl-0 pt-2 md:pt-0"
+              className="w-[150px] md:w-[202px] pl-2 md:pl-0 pt-2 md:pt-0"
             />
           </Link>
         </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden">
           <span onClick={handleToggleMenu}>
-            <LucideMenu className="w-8 h-8" />
+            <LucideMenu className="w-9 h-9" />
 
             {showMenu && (
               <div className="w-[70%] h-screen absolute top-0 left-0 bg-fiery_black p-4 scroll-hide flex flex-col gap-8">
@@ -124,10 +124,8 @@ const Navbar = () => {
                       <Link href="/">
                         <li
                           className={classNames(
-                            "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                            pathname === "/"
-                              ? "border !border-studio_blue bg-studio_blue/20"
-                              : ""
+                            "hover:font-bold transition-all",
+                            pathname === "/" ? "font-bold" : ""
                           )}
                         >
                           Home
@@ -137,10 +135,8 @@ const Navbar = () => {
                       <Link href="/our-titles">
                         <li
                           className={classNames(
-                            "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                            pathname === "/our-titles"
-                              ? "border !border-studio_blue bg-studio_blue/20"
-                              : ""
+                            "hover:font-bold transition-all",
+                            pathname === "/our-titles" ? "font-bold" : ""
                           )}
                         >
                           Our Titles
@@ -150,9 +146,9 @@ const Navbar = () => {
                       <Link href="/publishing-with-us">
                         <li
                           className={classNames(
-                            "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
+                            "hover:font-bold transition-all",
                             pathname === "/publishing-with-us"
-                              ? "border !border-studio_blue bg-studio_blue/20"
+                              ? "font-bold"
                               : ""
                           )}
                         >
@@ -163,10 +159,8 @@ const Navbar = () => {
                       <Link href="/about-us">
                         <li
                           className={classNames(
-                            "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all flex",
-                            pathname === "/about-us"
-                              ? "border !border-studio_blue bg-studio_blue/20"
-                              : ""
+                            "hover:font-bold flex gap-2 transition-all",
+                            pathname === "/about-us" ? "font-bold" : ""
                           )}
                         >
                           About Us <ChevronDown />
@@ -176,10 +170,8 @@ const Navbar = () => {
                       <Link href="/community">
                         <li
                           className={classNames(
-                            "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                            pathname === "/community"
-                              ? "border !border-studio_blue bg-studio_blue/20"
-                              : ""
+                            "hover:font-bold transition-all",
+                            pathname === "/community" ? "font-bold" : ""
                           )}
                         >
                           Community
@@ -189,9 +181,9 @@ const Navbar = () => {
                       <Link href="/contact-us">
                         <div
                           className={classNames(
-                            "bg-studio_blue px-4 py-2 rounded-md hover:bg-black hover:text-white",
+                            "w-[55%] bg-studio_blue px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold",
                             pathname === "/contact-us"
-                              ? "bg-black text-white"
+                              ? "font-bold bg-white text-black"
                               : ""
                           )}
                         >
