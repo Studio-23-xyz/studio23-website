@@ -15,8 +15,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-16 top-0 fixed z-10">
-      <div className="flex justify-between items-center md:mx-32 mx-10 mt-3">
+    <div className="w-full h-20 top-0 fixed z-10">
+      <div className="flex justify-between items-center md:mx-32 mx-10 mt-5">
         <div>
           <Link href="/">
             <Image
@@ -24,7 +24,7 @@ const Navbar = () => {
               width={500}
               height={200}
               alt="Logo"
-              className="w-[150px] md:w-[180px] pl-4 md:pl-0 pt-2 md:pt-0"
+              className="w-[150px] md:w-[202px] pl-4 md:pl-0 pt-2 md:pt-0"
             />
           </Link>
         </div>
@@ -34,10 +34,8 @@ const Navbar = () => {
               <Link href="/">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/" ? "font-bold" : ""
                   )}
                 >
                   Home
@@ -47,10 +45,8 @@ const Navbar = () => {
               <Link href="/our-titles">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/our-titles"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/our-titles" ? "font-bold" : ""
                   )}
                 >
                   Our Titles
@@ -60,10 +56,8 @@ const Navbar = () => {
               <Link href="/publishing-with-us">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/publishing-with-us"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/publishing-with-us" ? "font-bold" : ""
                   )}
                 >
                   Publish with Us
@@ -73,10 +67,8 @@ const Navbar = () => {
               <Link href="/about-us">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all flex",
-                    pathname === "/about-us"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all flex gap-2",
+                    pathname === "/about-us" ? "font-bold" : ""
                   )}
                 >
                   About Us <ChevronDown />
@@ -86,10 +78,8 @@ const Navbar = () => {
               <Link href="/community">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/community"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/community" ? "font-bold" : ""
                   )}
                 >
                   Community
@@ -99,8 +89,10 @@ const Navbar = () => {
               <Link href="/contact-us">
                 <div
                   className={classNames(
-                    "bg-studio_blue px-4 py-2 rounded-md hover:bg-black hover:text-white",
-                    pathname === "/contact-us" ? "bg-black text-white" : ""
+                    "bg-studio_blue px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold",
+                    pathname === "/contact-us"
+                      ? "font-bold bg-white text-black"
+                      : ""
                   )}
                 >
                   Contact Us
