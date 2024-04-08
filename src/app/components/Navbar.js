@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -9,14 +9,23 @@ import { ChevronDown, LucideMenu } from "lucide-react";
 const Navbar = () => {
   const pathname = usePathname();
   const [showMenu, setShowmenu] = useState(false);
+  const [navbar, setNavbar] = useState(false);
 
   const handleToggleMenu = () => {
     setShowmenu(!showMenu);
   };
 
+  useEffect(() => {
+    const scrollYpos = window.addEventListener("scroll", () => {
+      window.scrollY > 50 ? setNavbar(true) : setNavbar(false);
+    });
+
+    return () => window.removeEventListener("scroll", scrollYpos);
+  });
+
   return (
-    <div className="w-full h-16 top-0 fixed z-10">
-      <div className="flex justify-between items-center md:mx-32 mx-10 mt-3">
+    <div className="w-full h-20 top-0 fixed z-10">
+      <div className="flex justify-between items-center md:mx-32 mx-10 mt-5">
         <div>
           <Link href="/">
             <Image
@@ -24,20 +33,18 @@ const Navbar = () => {
               width={500}
               height={200}
               alt="Logo"
-              className="w-[150px] md:w-[180px] pl-4 md:pl-0 pt-2 md:pt-0"
+              className="w-[150px] md:w-[202px] pl-4 md:pl-0 pt-2 md:pt-0"
             />
           </Link>
         </div>
         <div className="hidden md:flex">
           <nav>
-            <ul className="justify-center hidden md:flex gap-12 items-center">
+            <ul className="justify-center hidden md:flex gap-16 items-center">
               <Link href="/">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/" ? "font-bold" : ""
                   )}
                 >
                   Home
@@ -47,10 +54,8 @@ const Navbar = () => {
               <Link href="/our-titles">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/our-titles"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/our-titles" ? "font-bold" : ""
                   )}
                 >
                   Our Titles
@@ -60,10 +65,8 @@ const Navbar = () => {
               <Link href="/publishing-with-us">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/publishing-with-us"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/publishing-with-us" ? "font-bold" : ""
                   )}
                 >
                   Publish with Us
@@ -73,10 +76,8 @@ const Navbar = () => {
               <Link href="/about-us">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all flex",
-                    pathname === "/about-us"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all flex",
+                    pathname === "/about-us" ? "font-bold" : ""
                   )}
                 >
                   About Us <ChevronDown />
@@ -86,10 +87,8 @@ const Navbar = () => {
               <Link href="/community">
                 <li
                   className={classNames(
-                    "hover:bg-studio_blue/20 hover:border hover:border-studio_blue transition-all",
-                    pathname === "/community"
-                      ? "border !border-studio_blue bg-studio_blue/20"
-                      : ""
+                    "hover:font-bold transition-all",
+                    pathname === "/community" ? "font-bold" : ""
                   )}
                 >
                   Community
