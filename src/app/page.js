@@ -6,10 +6,10 @@ export default function Home() {
       <div className="absulate -z-10 w-full">
         <Image
           src="/assets/hero-homepage.jpg"
-          width={1409}
-          height={842}
+          width={1000}
+          height={1000}
           alt="hero"
-          className="w-full h-screen"
+          className="w-full"
         />
       </div>
       <div className="">Home page</div>
