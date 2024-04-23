@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -9,15 +9,38 @@ import { ChevronDown, LucideMenu } from "lucide-react";
 const Navbar = () => {
   const pathname = usePathname();
   const [showMenu, setShowmenu] = useState(false);
+  const [header, setHader] = useState(false);
 
   const handleToggleMenu = () => {
     setShowmenu(!showMenu);
   };
 
+  const scrollHeader = () => {
+    if (window.scrollY >= 20) {
+      setHader(true);
+    } else {
+      setHader(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHeader);
+
+    return () => {
+      window.addEventListener("scroll", scrollHeader);
+    };
+  }, []);
+
   return (
-    <div className="w-full h-20 top-0 fixed z-10">
-      <div className="flex justify-between items-center md:mx-32 mx-10 mt-5">
-        <div>
+    <div
+      className={
+        header
+          ? "w-full h-20 top-0 fixed z-10 bg-black"
+          : "w-full h-20 top-0 fixed z-10 justify-between"
+      }
+    >
+      <div className="flex justify-between items-center md:mx-32 mt-5">
+        <div className=" hidden md:flex">
           <Link href="/">
             <Image
               src="/assets/studio23_logo_white.png"
@@ -101,9 +124,12 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
-        <div className="md:hidden">
+
+        <div className="md:hidden w-full mx-5 flex items-center justify-between">
           <span onClick={handleToggleMenu}>
-            <LucideMenu className="w-9 h-9" />
+            <div className="flex justify-between items-center">
+              <LucideMenu className="w-[25px] h-[25px] stroke-studio_blue hover:stroke-white" />
+            </div>
 
             {showMenu && (
               <div className="w-[70%] h-screen absolute top-0 left-0 bg-fiery_black p-4 scroll-hide flex flex-col gap-8">
@@ -196,6 +222,18 @@ const Navbar = () => {
               </div>
             )}
           </span>
+
+          <div>
+            <Link href="/">
+              <Image
+                src="/assets/studio23_logo_white.png"
+                width={150}
+                height={200}
+                alt="Logo"
+                className="w-[100px] h-[20px]"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
