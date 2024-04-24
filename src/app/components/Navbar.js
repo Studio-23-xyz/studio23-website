@@ -40,6 +40,8 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center md:mx-32 mt-5">
+        {/* Laptop View */}
+
         <div className=" hidden md:flex">
           <Link href="/">
             <Image
@@ -51,6 +53,7 @@ const Navbar = () => {
             />
           </Link>
         </div>
+
         <div className="hidden md:flex">
           <nav>
             <ul className="justify-center hidden md:flex gap-12 items-center">
@@ -124,6 +127,8 @@ const Navbar = () => {
             </ul>
           </nav>
         </div>
+
+        {/* Mobile View */}
 
         <div className="md:hidden w-full mx-5 flex items-center justify-between">
           <span onClick={handleToggleMenu}>
