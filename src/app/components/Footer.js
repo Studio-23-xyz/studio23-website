@@ -31,29 +31,55 @@ const Footer = () => {
             <p>@Lorem</p>
           </div>
         </div>
-        <div className="flex flex-col w-1/4 gap-4">
-          <div>
-            <Link href="/about-us">
-              <span className="font-semibold">About Us</span>
-            </Link>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Link href="/our-team">
-              <span className="">Our Team</span>
-            </Link>
-            <Link href="/our-titles">
-              <span className="">Titles</span>
-            </Link>
-            <Link href="/careers">
-              <span className="">Careers</span>
-            </Link>
-            <Link href="/contact-us">
-              <span className="">Contact Us</span>
-            </Link>
+        <div className="w-1/4 flex flex-col items-center justify-center">
+          <div className="flex flex-col gap-4">
+            <div>
+              <Link href="/about-us">
+                <span className="font-semibold">About Us</span>
+              </Link>
+            </div>
+            <div className="flex flex-col gap-2">
+              <Link href="/our-team">
+                <span className="">Our Team</span>
+              </Link>
+              <Link href="/our-titles">
+                <span className="">Titles</span>
+              </Link>
+              <Link href="/careers">
+                <span className="">Careers</span>
+              </Link>
+              <Link href="/contact-us">
+                <span className="">Contact Us</span>
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="w-1/4">contact us</div>
-        <div className="w-1/4">Social Links</div>
+        <div className="w-1/4 flex flex-col items-center justify-center">
+          <div className="flex flex-col gap-5">
+            <div>
+              <p className="font-semibold text-[17px]">Contact Us</p>
+            </div>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+            <h3>+88 01200000000</h3>
+          </div>
+        </div>
+        <div className="w-1/4 flex flex-row gap-4 justify-end items-end pb-12">
+          <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+            <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+          </div>
+          <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+            <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+          </div>
+          <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+            <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+          </div>
+          <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+            <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+          </div>
+        </div>
       </div>
 
       {/* Mobile View */}
