@@ -175,7 +175,7 @@ const Footer = () => {
 
         <div className="border-t-2">
           <div className="mt-4 flex justify-center">
-            <p className=" text-[14px]">
+            <p className=" text-[13px]">
               Copyright ® Studio23 2024 All rights Rcerved
             </p>
           </div>

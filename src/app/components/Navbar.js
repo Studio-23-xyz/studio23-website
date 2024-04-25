@@ -35,8 +35,8 @@ const Navbar = () => {
     <div
       className={
         header
-          ? "w-full h-20 top-0 fixed z-10 bg-black"
-          : "w-full h-20 top-0 fixed z-10 justify-between"
+          ? "w-full md:h-20 h-16 top-0 fixed z-10 bg-black"
+          : "w-full md:h-20 h-16 top-0 fixed z-10 justify-between"
       }
     >
       <div className="flex justify-between items-center md:mx-32 mt-5">
