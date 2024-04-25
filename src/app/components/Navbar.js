@@ -137,7 +137,7 @@ const Navbar = () => {
             </div>
 
             {showMenu && (
-              <div className="w-[70%] h-screen absolute top-0 left-0 bg-fiery_black p-4 scroll-hide flex flex-col gap-8">
+              <div className="w-[70%] h-screen absolute top-0 left-0 bg-fiery_black pt-6 pl-4 scroll-hide flex flex-col gap-8">
                 <div>
                   <Link href="/">
                     <Image
@@ -212,7 +212,7 @@ const Navbar = () => {
                       <Link href="/contact-us">
                         <div
                           className={classNames(
-                            "w-[55%] bg-studio_blue px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold",
+                            "w-[60%] flex justify-center bg-studio_blue px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold",
                             pathname === "/contact-us"
                               ? "font-bold bg-white text-black"
                               : ""

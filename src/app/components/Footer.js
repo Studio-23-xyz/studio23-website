@@ -68,16 +68,31 @@ const Footer = () => {
         </div>
         <div className="w-1/4 flex flex-row gap-4 justify-end items-end pb-12">
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://www.facebook.com/Studio23.BS23">
+              <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://www.instagram.com/studio23xyz/?hl=en">
+              <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://twitter.com/Studio23xyz">
+              <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://www.linkedin.com/company/studio-23-bs/">
+              <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
+          </div>
+        </div>
+        <div className="border-t-2">
+          <div className="mt-4 flex justify-center">
+            <p className=" text-[14px]">
+              Copyright ® Studio23 2024 All rights Rcerved
+            </p>
           </div>
         </div>
       </div>
@@ -137,16 +152,24 @@ const Footer = () => {
         </div>
         <div className="flex gap-5 mb-3">
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://www.facebook.com/Studio23.BS23">
+              <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://www.instagram.com/studio23xyz/?hl=en">
+              <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://twitter.com/Studio23xyz">
+              <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            <a href="https://www.linkedin.com/company/studio-23-bs/">
+              <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+            </a>
           </div>
         </div>
 
