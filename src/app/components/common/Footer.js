@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <div className="w-full md:h-[376px] bg-footer_black flex md:pt-10">
       {/* Laptop View */}
-
       <div className="hidden md:flex flex-col">
         <div className="flex md:px-32">
           <div className="w-1/4 flex flex-col gap-10">
