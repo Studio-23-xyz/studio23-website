@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="w-full md:h-[376px] bg-footer_black flex md:pt-10">
+    <div className="w-full md:h-[376px] bg-footer_black flex md:flex-col md:pt-10">
       {/* Laptop View */}
       <div className="hidden md:flex flex-col">
         <div className="flex md:px-32">
@@ -89,15 +89,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t-2 mt-8 flex justify-center">
-          <p className="text-[14px] mt-8">
-            Copyright ® Studio23 2024 All rights Rcerved
-          </p>
-        </div>
+      </div>
+      <div className="hidden md:flex border-t-2 mt-8  justify-center">
+        <p className="text-[14px] mt-8">
+          Copyright ® Studio23 2024 All rights Rcerved
+        </p>
       </div>
 
       {/* Mobile View */}
-
       <div className="md:hidden flex flex-col gap-5 mx-4 my-4">
         <div>
           <Link href="/">

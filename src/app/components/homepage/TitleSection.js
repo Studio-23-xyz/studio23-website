@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const TitleSection = () => {
   return (
-    <div>
-      <div className="flex justify-between items-center pb-4 md:pb-12">
+    <div className="pb-4 md:pb-4">
+      <div className="flex justify-between items-center pb-4 md:pb-14">
         <div>
           <h1 className="text-[14px] md:text-[32px] font-bold">
             Some of our other titles
@@ -30,7 +30,7 @@ const TitleSection = () => {
             width={1712}
             height={760}
             alt="silent-scream-logo"
-            className="w-[289px] md:w-full h-[139px] md:h-[277px] rounded-2xl"
+            className="w-[289px] md:w-full h-[139px] md:h-[277px] rounded-2xl object-cover"
           />
           <h3 className="text-[12px] md:text-[24px] font-bold">High Noon</h3>
           <button
@@ -61,7 +61,7 @@ const TitleSection = () => {
               width={1712}
               height={760}
               alt="silent-scream-logo"
-              className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl"
+              className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl object-cover"
             />
             <h3 className="text-[12px] md:text-[24px] font-bold">
               Westwood Manor
@@ -74,15 +74,8 @@ const TitleSection = () => {
               }}
             >
               <p className="text-[8px] md:text-[16px] font-medium text-black">
-                itch.io
+                Coming Soon
               </p>
-              <Image
-                src="/assets/itch-icon.png"
-                width={500}
-                height={500}
-                alt="itch-io Icon"
-                className="w-[15px] md:w-[30px] h-[15px] md:h-[30px]"
-              />
             </button>
           </div>
           {/* Control Override*/}
@@ -92,7 +85,7 @@ const TitleSection = () => {
               width={1712}
               height={760}
               alt="silent-scream-logo"
-              className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl"
+              className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl object-cover"
             />
             <h3 className="text-[12px] md:text-[24px] font-bold">
               Control Override

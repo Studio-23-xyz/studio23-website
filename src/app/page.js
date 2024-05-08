@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import TitleSection from "./components/homepage/TitleSection";
+import PublishSection from "./components/homepage/PublishSection";
+import RecentEventsSection from "./components/homepage/RecentEventsSection";
 
 export default function Home() {
   return (
@@ -69,13 +71,10 @@ export default function Home() {
         <TitleSection />
 
         {/* Publish Section*/}
-        <div>
-          <div>Image</div>
-          <h1>Want to</h1>
-          <p>Lorem</p>
-          <p>Lorem</p>
-          <button>Submit</button>
-        </div>
+        <PublishSection />
+
+        {/* Recent Event Section*/}
+        <RecentEventsSection />
       </div>
     </div>
   );
