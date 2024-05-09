@@ -23,28 +23,33 @@ const TitleSection = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row gap-4 pb-4 md:pb-12">
-        {/* High Noon*/}
+        {/* Control Override*/}
         <div className="flex flex-col w-full md:w-1/2 relative gap-4">
           <Image
-            src="/assets/highnoon-home.png"
+            src="/assets/control_override.png"
             width={1712}
             height={760}
-            alt="silent-scream-logo"
+            alt="Control Override Cover"
             className="w-[289px] md:w-full h-[139px] md:h-[277px] rounded-2xl object-cover"
           />
-          <h3 className="text-[12px] md:text-[24px] font-bold">High Noon</h3>
+          <h3 className="text-[12px] md:text-[24px] font-bold">
+            Control Override
+          </h3>
           <button
             className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
               gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
             onClick={() => {
-              window.open("", "_blank");
+              window.open(
+                "https://store.steampowered.com/app/1406090/ControlOverride/",
+                "_blank"
+              );
             }}
           >
             <p className="text-[8px] md:text-[16px] font-medium text-black">
-              itch.io
+              Steam
             </p>
             <Image
-              src="/assets/itch-icon.png"
+              src="/assets/steam-icon.png"
               width={500}
               height={500}
               alt="itch-io Icon"
@@ -70,41 +75,49 @@ const TitleSection = () => {
               className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
               gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
               onClick={() => {
-                window.open("", "_blank");
-              }}
-            >
-              <p className="text-[8px] md:text-[16px] font-medium text-black">
-                Coming Soon
-              </p>
-            </button>
-          </div>
-          {/* Control Override*/}
-          <div className="w-1/2 relative flex flex-col gap-4">
-            <Image
-              src="/assets/controloverride-home.png"
-              width={1712}
-              height={760}
-              alt="silent-scream-logo"
-              className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl object-cover"
-            />
-            <h3 className="text-[12px] md:text-[24px] font-bold">
-              Control Override
-            </h3>
-            <button
-              className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
-              gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
-              onClick={() => {
                 window.open(
-                  "https://store.steampowered.com/app/1406090/ControlOverride/",
+                  "https://brainstation23.itch.io/westwood-manor",
                   "_blank"
                 );
               }}
             >
               <p className="text-[8px] md:text-[16px] font-medium text-black">
-                Steam
+                itch.io
               </p>
               <Image
-                src="/assets/steam-icon.png"
+                src="/assets/itch-icon.png"
+                width={500}
+                height={500}
+                alt="itch-io Icon"
+                className="w-[15px] md:w-[30px] h-[15px] md:h-[30px]"
+              />
+            </button>
+          </div>
+          {/* High Noon */}
+          <div className="w-1/2 relative flex flex-col gap-4">
+            <Image
+              src="/assets/highnoon-home.png"
+              width={1712}
+              height={760}
+              alt="silent-scream-logo"
+              className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl object-cover"
+            />
+            <h3 className="text-[12px] md:text-[24px] font-bold">High Noon</h3>
+            <button
+              className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
+              gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
+              onClick={() => {
+                window.open(
+                  "https://brainstation23.itch.io/high-noon",
+                  "_blank"
+                );
+              }}
+            >
+              <p className="text-[8px] md:text-[16px] font-medium text-black">
+                itch.io
+              </p>
+              <Image
+                src="/assets/itch-icon.png"
                 width={500}
                 height={500}
                 alt="itch-io Icon"

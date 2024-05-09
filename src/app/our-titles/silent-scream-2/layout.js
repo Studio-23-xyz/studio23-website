@@ -15,7 +15,11 @@ export default function TestLayout({ children }) {
       <head>
         <link rel="icon" href="/assets/studio_23_logo.svg" sizes="any" />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <NavbarSS2 />
+        {children}
+        <FooterSS2 />
+      </body>
     </html>
   );
 }

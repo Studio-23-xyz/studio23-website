@@ -3,7 +3,9 @@ import React from "react";
 const NavbarSS2 = () => {
   return (
     <div>
-      <h1>djfodsjfldsjfljdslfjs;dljfl;dsjflj</h1>
+      <div>Home Screenhots</div>
+      <div>Logo</div>
+      <div>Download Contact us</div>
     </div>
   );
 };
