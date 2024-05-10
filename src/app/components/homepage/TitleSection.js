@@ -36,7 +36,7 @@ const TitleSection = () => {
             Control Override
           </h3>
           <button
-            className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
+            className="w-[80px] md:w-[140px] h-[25px] md:h-[50px] bg-white hover:bg-studio_blue flex justify-center items-center 
               gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
             onClick={() => {
               window.open(
@@ -56,6 +56,48 @@ const TitleSection = () => {
               className="w-[15px] md:w-[30px] h-[15px] md:h-[30px]"
             />
           </button>
+          <button
+            className="w-[80px] md:w-[140px] h-[25px] md:h-[50px] bg-white hover:bg-studio_blue flex justify-center items-center 
+              gap-2 rounded-3xl absolute right-[95px] md:right-[160px] bottom-10 md:bottom-16"
+            onClick={() => {
+              window.open(
+                "ms-windows-store://pdp/?productid=9N73W1728BG8",
+                "_blank"
+              );
+            }}
+          >
+            <p className="text-[8px] md:text-[16px] font-medium text-black">
+              Windows
+            </p>
+            <Image
+              src="/assets/windows-icon.png"
+              width={512}
+              height={512}
+              alt="Windows Icon"
+              className="w-[15px] md:w-[25px] h-[15px] md:h-[25px]"
+            />
+          </button>
+          <button
+            className="w-[80px] md:w-[140px] h-[25px] md:h-[50px] bg-white hover:bg-studio_blue flex justify-center items-center 
+              gap-2 rounded-3xl absolute right-[181px] md:right-[310px] bottom-10 md:bottom-16"
+            onClick={() => {
+              window.open(
+                "https://www.xbox.com/en-US/games/store/control-override/9n73w1728bg8",
+                "_blank"
+              );
+            }}
+          >
+            <p className="text-[8px] md:text-[16px] font-medium text-black">
+              XBOX
+            </p>
+            <Image
+              src="/assets/xbox-icon.png"
+              width={500}
+              height={500}
+              alt="Xbox Icon"
+              className="w-[15px] md:w-[30px] h-[15px] md:h-[30px]"
+            />
+          </button>
         </div>
 
         <div className="flex flex-row w-full md:w-1/2 gap-3 md:gap-4">
@@ -72,7 +114,7 @@ const TitleSection = () => {
               Westwood Manor
             </h3>
             <button
-              className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
+              className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white hover:bg-studio_blue flex justify-center items-center 
               gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
               onClick={() => {
                 window.open(
@@ -104,7 +146,7 @@ const TitleSection = () => {
             />
             <h3 className="text-[12px] md:text-[24px] font-bold">High Noon</h3>
             <button
-              className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white flex justify-center items-center 
+              className="w-[71px] md:w-[143px] h-[25px] md:h-[50px] bg-white hover:bg-studio_blue flex justify-center items-center 
               gap-2 rounded-3xl absolute right-2 md:right-3 bottom-10 md:bottom-16"
               onClick={() => {
                 window.open(

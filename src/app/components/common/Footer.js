@@ -68,22 +68,38 @@ const Footer = () => {
           </div>
           <div className="w-1/4 flex flex-row gap-4 justify-end items-end pb-12">
             <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-              <a href="https://www.facebook.com/Studio23.BS23">
+              <a
+                href="https://www.facebook.com/Studio23.BS23"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
             </div>
             <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-              <a href="https://www.instagram.com/studio23xyz/?hl=en">
+              <a
+                href="https://www.instagram.com/studio23xyz/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
             </div>
             <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-              <a href="https://twitter.com/Studio23xyz">
+              <a
+                href="https://twitter.com/Studio23xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
             </div>
             <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-              <a href="https://www.linkedin.com/company/studio-23-bs/">
+              <a
+                href="https://www.linkedin.com/company/studio-23-bs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
             </div>
@@ -150,22 +166,38 @@ const Footer = () => {
         </div>
         <div className="flex gap-5 mb-3">
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <a href="https://www.facebook.com/Studio23.BS23">
+            <a
+              href="https://www.facebook.com/Studio23.BS23"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
             </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <a href="https://www.instagram.com/studio23xyz/?hl=en">
+            <a
+              href="https://www.instagram.com/studio23xyz/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
             </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <a href="https://twitter.com/Studio23xyz">
+            <a
+              href="https://twitter.com/Studio23xyz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
             </a>
           </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-            <a href="https://www.linkedin.com/company/studio-23-bs/">
+            <a
+              href="https://www.linkedin.com/company/studio-23-bs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
             </a>
           </div>
