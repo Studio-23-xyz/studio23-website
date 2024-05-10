@@ -12,7 +12,7 @@ export default function Home() {
       <div className="-z-10 w-full">
         {/* Background Image */}
         <Image
-          src="/nextjs-github-pages/assets/SilentScreamBGLarge.png"
+          src="/assets/SilentScreamBGLarge.png"
           width={1439}
           height={837}
           alt="Hero BG"
@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="absolute top-[100px] md:top-0 right-0">
           <Image
-            src="/nextjs-github-pages/assets/silentScreamSkull.png"
+            src="/assets/silentScreamSkull.png"
             width={765}
             height={871}
             alt="Silent Scream Skull"
@@ -33,7 +33,7 @@ export default function Home() {
         {/* Logo & others */}
         <div className="flex flex-col justify-start w-[200px] md:w-[750px] absolute gap-2 md:gap-5 top-14 md:top-48 pl-6 md:pl-32">
           <Image
-            src="/nextjs-github-pages/assets/silentscream_logo.png"
+            src="/assets/silentscream_logo.png"
             width={574}
             height={276}
             alt="silent-scream-logo"
@@ -55,7 +55,7 @@ export default function Home() {
           >
             Check out on Steam
             <Image
-              src="/nextjs-github-pages/assets/steam-icon.png"
+              src="/assets/steam-icon.png"
               width={30}
               height={30}
               alt="silent-scream-logo"

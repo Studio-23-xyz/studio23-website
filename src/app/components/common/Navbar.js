@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className=" hidden md:flex">
           <Link href="/">
             <Image
-              src="/nextjs-github-pages/assets/studio23_logo_white.png"
+              src="/assets/studio23_logo_white.png"
               width={500}
               height={200}
               alt="Logo"
@@ -141,7 +141,7 @@ const Navbar = () => {
                 <div>
                   <Link href="/">
                     <Image
-                      src="/nextjs-github-pages/assets/studio23_logo_white.png"
+                      src="/assets/studio23_logo_white.png"
                       width={150}
                       height={200}
                       alt="Logo"
