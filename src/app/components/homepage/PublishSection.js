@@ -6,7 +6,7 @@ const PublishSection = () => {
     <div className="flex flex-col md:flex-row gap-5 md:gap-10 lg:gap-10 pb-6 md:pb-20">
       <div className="md:w-5/12">
         <Image
-          src="/assets/wanttopublish.png"
+          src="/nextjs-github-pages/assets/wanttopublish.png"
           width={620}
           height={348}
           alt="silent-scream-logo"

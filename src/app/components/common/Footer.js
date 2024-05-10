@@ -13,7 +13,7 @@ const Footer = () => {
             <div>
               <Link href="/">
                 <Image
-                  src="/assets/studio23_logo_white.png"
+                  src="/nextjs-github-pages/assets/studio23_logo_white.png"
                   width={500}
                   height={200}
                   alt="Logo"

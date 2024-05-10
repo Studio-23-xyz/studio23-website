@@ -19,7 +19,7 @@ const RecentEventsSection = () => {
           <div className="flex gap-4">
             <div className="w-1/2 md:w-3/5">
               <Image
-                src="/assets/dev-meetup-24.png"
+                src="/nextjs-github-pages/assets/dev-meetup-24.png"
                 width={1395}
                 height={1286}
                 alt="Dev Meetup"
@@ -28,7 +28,7 @@ const RecentEventsSection = () => {
             </div>
             <div className="w-1/2 md:w-2/5">
               <Image
-                src="/assets/game-jam-home.png"
+                src="/nextjs-github-pages/assets/game-jam-home.png"
                 width={1342}
                 height={399}
                 alt="Game Jam Cover"
@@ -39,7 +39,7 @@ const RecentEventsSection = () => {
           <div className="flex gap-4">
             <div className="w-1/2 md:w-2/5">
               <Image
-                src="/assets/calculate.png"
+                src="/nextjs-github-pages/assets/calculate.png"
                 width={720}
                 height={960}
                 alt="Calculate Theme"
@@ -48,7 +48,7 @@ const RecentEventsSection = () => {
             </div>
             <div className="w-1/2 md:w-3/5">
               <Image
-                src="/assets/hack-jam.jpg"
+                src="/nextjs-github-pages/assets/hack-jam.jpg"
                 width={1920}
                 height={1005}
                 alt="Hack A Jam"
@@ -59,7 +59,7 @@ const RecentEventsSection = () => {
         </div>
         <div className="md:w-1/3">
           <Image
-            src="/assets/good-bad.jpg"
+            src="/nextjs-github-pages/assets/good-bad.jpg"
             width={1000}
             height={1000}
             alt="Bad is Good"

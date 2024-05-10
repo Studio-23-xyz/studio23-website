@@ -26,7 +26,7 @@ const TitleSection = () => {
         {/* Control Override*/}
         <div className="flex flex-col w-full md:w-1/2 relative gap-4">
           <Image
-            src="/assets/control_override.png"
+            src="/nextjs-github-pages/assets/control_override.png"
             width={1712}
             height={760}
             alt="Control Override Cover"
@@ -49,7 +49,7 @@ const TitleSection = () => {
               Steam
             </p>
             <Image
-              src="/assets/steam-icon.png"
+              src="/nextjs-github-pages/assets/steam-icon.png"
               width={500}
               height={500}
               alt="Steam Icon"
@@ -62,7 +62,7 @@ const TitleSection = () => {
           {/* Westwood Manor */}
           <div className="w-1/2 relative flex flex-col gap-4">
             <Image
-              src="/assets/westwood-home.png"
+              src="/nextjs-github-pages/assets/westwood-home.png"
               width={1712}
               height={760}
               alt="Westwood Manor Cover"
@@ -85,7 +85,7 @@ const TitleSection = () => {
                 itch.io
               </p>
               <Image
-                src="/assets/itch-icon.png"
+                src="/nextjs-github-pages/assets/itch-icon.png"
                 width={500}
                 height={500}
                 alt="itch-io Icon"
@@ -96,7 +96,7 @@ const TitleSection = () => {
           {/* High Noon */}
           <div className="w-1/2 relative flex flex-col gap-4">
             <Image
-              src="/assets/highnoon-home.png"
+              src="/nextjs-github-pages/assets/highnoon-home.png"
               width={1712}
               height={760}
               alt="High Noon Cover"
@@ -117,7 +117,7 @@ const TitleSection = () => {
                 itch.io
               </p>
               <Image
-                src="/assets/itch-icon.png"
+                src="/nextjs-github-pages/assets/itch-icon.png"
                 width={500}
                 height={500}
                 alt="itch-io Icon"
