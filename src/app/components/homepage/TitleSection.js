@@ -52,7 +52,7 @@ const TitleSection = () => {
               src="/assets/steam-icon.png"
               width={500}
               height={500}
-              alt="itch-io Icon"
+              alt="Steam Icon"
               className="w-[15px] md:w-[30px] h-[15px] md:h-[30px]"
             />
           </button>
@@ -65,7 +65,7 @@ const TitleSection = () => {
               src="/assets/westwood-home.png"
               width={1712}
               height={760}
-              alt="silent-scream-logo"
+              alt="Westwood Manor Cover"
               className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl object-cover"
             />
             <h3 className="text-[12px] md:text-[24px] font-bold">
@@ -99,7 +99,7 @@ const TitleSection = () => {
               src="/assets/highnoon-home.png"
               width={1712}
               height={760}
-              alt="silent-scream-logo"
+              alt="High Noon Cover"
               className="w-[289px] md:w-[650px] h-[139px] md:h-[277px] rounded-2xl object-cover"
             />
             <h3 className="text-[12px] md:text-[24px] font-bold">High Noon</h3>
