@@ -30,7 +30,7 @@ const PublishSection = () => {
         </p>
         <button
           className="w-[115px] md:w-[231px] h-[25px] md:h-[50px] text-[8px] md:text-[16px] 
-        font-bold md:font-black bg-studio_blue text-black rounded-lg md:rounded-xl"
+        font-bold md:font-black bg-studio_blue text-black rounded-lg md:rounded-xl hover:bg-white hover:cursor-pointer"
           onClick={() => {
             window.open("", "_blank");
           }}

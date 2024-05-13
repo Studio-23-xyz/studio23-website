@@ -43,25 +43,47 @@ export default function Home() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard.
           </p>
-          <button
-            className="text-start w-[132px] md:w-[264px] h-[25px] md:h-[50px] bg-studio_blue font-bold text-[8px] md:text-[16px] text-black 
-          flex justify-center items-center gap-2 rounded-3xl hover:bg-white hover:cursor-pointer"
-            onClick={() => {
-              window.open(
-                "https://store.steampowered.com/app/1955750/SILENT_SCREAM/",
-                "_blank"
-              );
-            }}
-          >
-            Check out on Steam
-            <Image
-              src="/assets/steam-icon.png"
-              width={30}
-              height={30}
-              alt="silent-scream-logo"
-              className="w-[15px] md:w-[25px] h-[15px] md:h-[25px]"
-            />
-          </button>
+          {/* Store Button */}
+          <div className="flex gap-3 md:gap-5">
+            <button
+              className="text-start w-[70px] md:w-[120px] h-[25px] md:h-[50px] bg-studio_blue font-bold text-[8px] md:text-[16px] text-black 
+                       flex items-center gap-2 rounded-3xl hover:bg-white hover:cursor-pointer justify-center"
+              onClick={() => {
+                window.open(
+                  "https://store.steampowered.com/app/1955750/SILENT_SCREAM/",
+                  "_blank"
+                );
+              }}
+            >
+              Steam
+              <Image
+                src="/assets/steam-icon.png"
+                width={30}
+                height={30}
+                alt="silent-scream-logo"
+                className="w-[15px] md:w-[25px] h-[15px] md:h-[25px]"
+              />
+            </button>
+            <button
+              className="text-start w-[80px] md:w-[140px] h-[25px] md:h-[50px] bg-studio_blue font-bold text-[8px] md:text-[16px] text-black 
+              flex justify-center items-center gap-2 rounded-3xl hover:bg-white hover:cursor-pointer"
+              onClick={() => {
+                window.open(
+                  "ms-windows-store://pdp/?productid=9PDJZK7HLHSD",
+                  "_blank"
+                );
+              }}
+            >
+              Windows
+              <Image
+                src="/assets/windows-icon.png"
+                width={30}
+                height={30}
+                alt="silent-scream-logo"
+                className="w-[15px] md:w-[25px] h-[15px] md:h-[25px]"
+              />
+            </button>
+          </div>
         </div>
       </div>
 
