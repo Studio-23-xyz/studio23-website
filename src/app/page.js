@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import TitleSection from "./components/homepage/TitleSection";
 import PublishSection from "./components/homepage/PublishSection";
 import RecentEventsSection from "./components/homepage/RecentEventsSection";
