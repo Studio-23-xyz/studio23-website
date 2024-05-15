@@ -15,6 +15,7 @@ module.exports = {
         studio_blue: "#0097CB",
         footer_black: "#070707",
         silent2_red: "#FF1F00",
+        silent2_button_text: "#260202",
       },
     },
   },
