@@ -22,10 +22,24 @@ const Test = () => {
         />
       </div>
       <div className="w-full h-[50px] md:h-[100px] flex gap-6 md:gap-12 justify-center items-center">
-        <button className="bg-red-600 text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
+        <button className="text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
+          <Image
+            src="/assets/ss2-button1.png"
+            width={1015}
+            height={344}
+            alt="Silent Scream 2 Hero"
+            className="w-[133px] md:w-[277px] md:h-[94px] h-[46px] bg-cover"
+          />
           BUY NOW
         </button>
-        <button className="bg-red-600 text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
+        <button className="text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
+          <Image
+            src="/assets/ss2-button1.png"
+            width={1015}
+            height={344}
+            alt="Silent Scream 2 Hero"
+            className="w-[133px] md:w-[277px] md:h-[94px] h-[46px] bg-cover"
+          />
           TRAILER
         </button>
       </div>
