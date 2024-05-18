@@ -1,5 +1,6 @@
 "use client";
 import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSection";
+import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
 import SS2DirectorSection from "@/app/components/silentscream2page/SS2DirectorSection";
 import SS2PitchSection from "@/app/components/silentscream2page/SS2PitchSection";
 import Image from "next/image";
@@ -38,7 +39,7 @@ const Test = () => {
       <SS2DirectorSection />
 
        {/* Cast Section */}
-
+      <SS2CastSection />
        
     </div>
     </div>
