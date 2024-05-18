@@ -1,5 +1,6 @@
-import React from "react";
+"use client";
 import Image from "next/image";
+
 
 const Test = () => {
   return (
@@ -21,28 +22,31 @@ const Test = () => {
           className="md:hidden w-full bg-cover"
         />
       </div>
+       {/* Button Section */}
       <div className="w-full h-[50px] md:h-[100px] flex gap-6 md:gap-12 justify-center items-center">
-        <button className="text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
-          <Image
-            src="/assets/ss2-button1.png"
-            width={1015}
-            height={344}
-            alt="Silent Scream 2 Hero"
-            className="w-[133px] md:w-[277px] md:h-[94px] h-[46px] bg-cover"
-          />
+        <button className="bg-button-bg w-[133px] md:w-[277px] md:h-[94px] h-[46px] bg-cover
+                text-[17px] md:text-[35px] text-silent2_button_text font-bold pb-1 md:pb-2"
+                onClick={() => {
+                  window.open(
+                    "",
+                    "_blank"
+                  );
+                }}>
           BUY NOW
         </button>
-        <button className="text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
-          <Image
-            src="/assets/ss2-button1.png"
-            width={1015}
-            height={344}
-            alt="Silent Scream 2 Hero"
-            className="w-[133px] md:w-[277px] md:h-[94px] h-[46px] bg-cover"
-          />
+        <button className="bg-button-bg w-[133px] md:w-[277px] md:h-[94px] h-[46px] bg-cover
+                text-[17px] md:text-[35px] text-silent2_button_text font-bold pb-1 md:pb-2"
+                onClick={() => {
+                  window.open(
+                    "",
+                    "_blank"
+                  );
+                }}>
           TRAILER
         </button>
+
       </div>
+      
     </div>
   );
 };

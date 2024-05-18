@@ -17,6 +17,9 @@ module.exports = {
         silent2_red: "#FF1F00",
         silent2_button_text: "#260202",
       },
+      backgroundImage: {
+        'button-bg': "url('/assets/ss2-button1.png')",
+      },
     },
   },
   plugins: [],
