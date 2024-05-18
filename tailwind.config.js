@@ -18,9 +18,9 @@ module.exports = {
         silent2_button_text: "#260202",
       },
       backgroundImage: {
-        'button-bg': "url('/assets/ss2-button1.png')",
-        'banner-bg-lg': "url('/assets/ss2-back-banner-lg.png')",
-        'banner-bg-mg': "url('/assets/ss2-back-banner-mg.png')",
+        'ss2-button-bg': "url('/assets/ss2-button1.png')",
+        'ss2-banner-ls': "url('/assets/ss2-back-banner-lg.png')",
+        'ss2-banner-ms': "url('/assets/ss2-back-banner-mg.png')",
       },
     },
   },
