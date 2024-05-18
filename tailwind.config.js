@@ -19,6 +19,8 @@ module.exports = {
       },
       backgroundImage: {
         'button-bg': "url('/assets/ss2-button1.png')",
+        'banner-bg-lg': "url('/assets/ss2-back-banner-lg.png')",
+        'banner-bg-mg': "url('/assets/ss2-back-banner-mg.png')",
       },
     },
   },

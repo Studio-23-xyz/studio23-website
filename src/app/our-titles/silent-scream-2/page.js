@@ -5,8 +5,8 @@ import Image from "next/image";
 const Test = () => {
   return (
     <div className="min-h-screen">
+      {/* Hero Banner Scetion */}
       <div className="-z-10 w-full">
-        {/* Background Image */}
         <Image
           src="/assets/silent-scream-2-hero.png"
           width={1440}
@@ -46,7 +46,25 @@ const Test = () => {
         </button>
 
       </div>
-      
+       {/* Pitch Section */}
+       <div className="w-full flex justify-center items-center">
+       <div className="md:flex hidden w-[290px] md:w-[1320px] md:h-[288px] bg-banner-bg-lg
+        bg-full bg-no-repeat bg-center">
+          <p className="flex justify-center items-center text-[20px] font-bold text-silent2_button_text
+           text-center mx-14 leading-10">
+          Silent Scream 2, a spine-chilling third-person adventure puzzle horror game developed by Studio 23, plunges players into the depths of terror within an abandoned asylum, where they must navigate through intricate puzzles, uncover dark mysteries, and confront malevolent entities to survive.
+          </p>
+       </div>
+       <div className="flex md:hidden w-[290px] md:w-[1320px] h-[300px] md:h-[288px] bg-banner-bg-mg
+         bg-cover bg-center bg-no-repeat">
+          <p className="flex justify-start items-center text-[14px] font-bold text-silent2_button_text
+           text-center mx-4 leading-5">
+          Silent Scream 2, a spine-chilling third-person adventure puzzle horror game developed by Studio 23, plunges players into the depths of terror within an abandoned asylum, where they must navigate through intricate puzzles, uncover dark mysteries, and confront malevolent entities to survive.
+          </p>
+       </div>
+
+       </div>
+       
     </div>
   );
 };
