@@ -19,8 +19,10 @@ module.exports = {
       },
       backgroundImage: {
         'ss2-button-bg': "url('/assets/ss2-button1.png')",
-        'ss2-banner-ls': "url('/assets/ss2-back-banner-lg.png')",
-        'ss2-banner-ms': "url('/assets/ss2-back-banner-mg.png')",
+        'ss2-banner-ls': "url('/assets/ss2-back-banner-ls.png')",
+        'ss2-banner-ms': "url('/assets/ss2-back-banner-ms.png')",
+        'ss2-banner-lm': "url('/assets/ss2-back-banner-lm.png')",
+        'ss2-banner-mm': "url('/assets/ss2-back-banner-mm.png')",
       },
     },
   },
