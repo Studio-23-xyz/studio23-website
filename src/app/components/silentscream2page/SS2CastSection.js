@@ -29,19 +29,36 @@ export default SS2CastSection;
 
 const items = [
   {
-    title: "JOHN",
+    title: (
+      <div className="flex justify-center items-start">
+         <Image
+            src="/assets/ss2-characters/John.png"
+            width={433}
+            height={577}
+            alt="Alan"
+            className="w-[120px] md:w-[150px] h-[120px] md:h-[150px]"
+          />
+      </div>
+    ),
     content: (
-      <div className="bg-red-200 flex md:flex-row">
-        <div>
-          <Image />
+      <div className="flex flex-col md:flex-row gap-4 mb-5">
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+        <Image
+            src="/assets/ss2-characters/John.png"
+            width={433}
+            height={577}
+            alt="Alan"
+            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px]"
+          />
         </div>
-        <div>
-          <h1>John, The Writer</h1>
-          <p>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+         gap-3">
+          <h1 className="text-[18px] md:text-[32px] font-bold text-center">John, The Writer</h1>
+          <p className="text-[14px] md:text-[16px] font-bold text-center">
             John, once a literary sensation, soared to fame with his debut novel
             but crumbled under the pressure of expectations. Struggling with
             writer's block, he turned to alcohol, which led to missed deadlines,
-            breached contracts, and a shattered marriage.<br></br> Now, he's
+            breached contracts, and a shattered marriage.<br></br> <br></br>Now, he's
             determined to regain custody of his son and revive his career. A
             retreat at a mansion is his final attempt to find inspiration and
             rebuild his life.
