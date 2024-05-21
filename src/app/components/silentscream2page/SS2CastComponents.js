@@ -2,20 +2,20 @@ import { useEffect, useRef, useState } from "react";
 
 const SS2CastComponents = ({ items }) => {
   const firstBtnRef = useRef();
-  const [selectedTab, setSelectedTab] = useState(0); // Initialize to the first tab
+  const [selectedTab, setSelectedTab] = useState(0);
 
   useEffect(() => {
     firstBtnRef.current.focus();
   }, []);
 
   return (
-    <div className="bg-slate-200 flex justify-center items-center py-12">
+    <div className="flex justify-center items-center py-12">
       <div className="flex flex-col w-[90%] md:w-[80%]">
         {/* Content Section */}
         <div>
           {items.map((item, index) => (
             <div
-              key={index} // Add key prop to avoid warning
+              key={index} 
               className={`${selectedTab === index ? "" : "hidden"}`}
             >
               {item.content}
@@ -31,7 +31,7 @@ const SS2CastComponents = ({ items }) => {
               key={index}
               onClick={() => setSelectedTab(index)}
               className="outline-none w-full p-2 hover:bg-slate-500 rounded-xl
-                         focus:ring-2 focus:bg-white"
+                         focus:ring-2 focus:bg-slate-900"
             >
               {item.title}
             </button>
