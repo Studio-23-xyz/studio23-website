@@ -11,7 +11,20 @@ const SS2CastComponents = ({ items }) => {
   return (
     <div className=" bg-slate-200 flex justify-center items-center py-12">
       <div className="max-w-md flex flex-col gap-y-2 w-full">
-        <div className=" bg-blue-300 p-1 rounded-xl flex justify-between items-center gap-x-2">
+        {/* Content Section */}
+        <div>
+          {items.map((item, index) => (
+            <div
+              key={index} // Add key prop to avoid warning
+              className={`${selectedTab === index ? "" : "hidden"}`}
+            >
+              {item.content}
+            </div>
+          ))}
+        </div>
+
+        {/* Tab Section */}
+        <div className=" bg-blue-300 p-1 rounded-xl flex flex-col md:flex-row justify-between items-center gap-x-2">
           {items.map((item, index) => (
             <button
               ref={index === 0 ? firstBtnRef : null}
@@ -22,17 +35,6 @@ const SS2CastComponents = ({ items }) => {
             >
               {item.title}
             </button>
-          ))}
-        </div>
-
-        <div>
-          {items.map((item, index) => (
-            <div
-              key={index} // Add key prop to avoid warning
-              className={`${selectedTab === index ? "" : "hidden"}`}
-            >
-              {item.content}
-            </div>
           ))}
         </div>
       </div>
