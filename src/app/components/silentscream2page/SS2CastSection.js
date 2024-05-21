@@ -28,18 +28,51 @@ const SS2CastSection = () => {
 export default SS2CastSection;
 
 const items = [
-  { title: "Tab 1", content: <div className=" bg-red-200">Tab 1 Content</div> },
+  {
+    title: "JOHN",
+    content: (
+      <div className="bg-red-200 flex md:flex-row">
+        <div>
+          <Image />
+        </div>
+        <div>
+          <h1>John, The Writer</h1>
+          <p>
+            John, once a literary sensation, soared to fame with his debut novel
+            but crumbled under the pressure of expectations. Struggling with
+            writer's block, he turned to alcohol, which led to missed deadlines,
+            breached contracts, and a shattered marriage.<br></br> Now, he's
+            determined to regain custody of his son and revive his career. A
+            retreat at a mansion is his final attempt to find inspiration and
+            rebuild his life.
+          </p>
+        </div>
+      </div>
+    ),
+  },
   {
     title: "Tab 2",
-    content: <div className=" bg-slate-400">Tab 2 Content</div>,
+    content: <div className="bg-slate-400">Tab 2 Content</div>,
   },
   {
     title: "Tab 3",
-    content: <div className=" bg-yellow-400">Tab 3 Content</div>,
+    content: <div className="bg-yellow-400">Tab 3 Content</div>,
   },
-  { title: "Tab 4", content: <div>Tab 4 Content</div> },
-  { title: "Tab 5", content: <div>Tab 5 Content</div> },
-  { title: "Tab 6", content: <div>Tab 6 Content</div> },
-  { title: "Tab 7", content: <div>Tab 7 Content</div> },
-  { title: "Tab 8", content: <div>Tab 8 Content</div> },
+  { title: "Tab 4", content: <div className="bg-red-400">Tab 4 Content</div> },
+  {
+    title: "Tab 5",
+    content: <div className="bg-green-300">Tab 5 Content</div>,
+  },
+  {
+    title: "Tab 6",
+    content: <div className="bg-yellow-600">Tab 6 Content</div>,
+  },
+  {
+    title: "Tab 7",
+    content: <div className=" bg-pink-400">Tab 7 Content</div>,
+  },
+  {
+    title: "Tab 8",
+    content: <div className=" bg-green-500">Tab 8 Content</div>,
+  },
 ];
