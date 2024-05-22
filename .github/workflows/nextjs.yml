@@ -32,10 +32,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update next.config.mjs
-        run: |
-          echo "${{ secrets.MJSCONFIGDATA }}" > next.config.mjs
-      
+      # - name: Update next.config.mjs
+      #   run: |
+      #     echo "${{ secrets.MJSCONFIGDATA }}" > next.config.mjs
+
       - name: Detect package manager
         id: detect-package-manager
         run: |

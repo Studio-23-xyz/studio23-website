@@ -4,7 +4,7 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 	},
-	basePath: "/studio23-website",
+	basePath: isGithubPages ? "/studio23-website" : "",
 };
 
 export default nextConfig;
