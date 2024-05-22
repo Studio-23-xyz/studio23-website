@@ -15,7 +15,7 @@ const SS2CastComponents = ({ items }) => {
         <div>
           {items.map((item, index) => (
             <div
-              key={index} 
+              key={index}
               className={`${selectedTab === index ? "" : "hidden"}`}
             >
               {item.content}
@@ -24,7 +24,7 @@ const SS2CastComponents = ({ items }) => {
         </div>
 
         {/* Tab Section */}
-        <div className="grid grid-rows-4 grid-flow-col md:flex md:flex-row md:justify-between items-center gap-x-2">
+        <div className="grid grid-cols-2 md:flex md:flex-row md:justify-between items-center gap-x-2">
           {items.map((item, index) => (
             <button
               ref={index === 0 ? firstBtnRef : null}

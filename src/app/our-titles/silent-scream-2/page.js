@@ -42,7 +42,7 @@ const Test = () => {
         <SS2CastSection />
 
         {/* Cast Section */}
-        <SS2Screenshots/>
+        <SS2Screenshots />
       </div>
     </div>
   );

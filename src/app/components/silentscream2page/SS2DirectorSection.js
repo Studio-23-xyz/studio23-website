@@ -5,7 +5,7 @@ const SS2DirectorSection = () => {
         {/* Laptop View */}
         <div
           className="md:flex flex-col gap-3 hidden md:w-[1320px] md:h-[432px] bg-ss2-banner-lm bg-full bg-no-repeat 
-          bg-center pt-14"
+          bg-center pt-16"
         >
           <h3
             className="text-[40px] font-bold text-silent2_button_text flex justify-center items-center
@@ -32,17 +32,17 @@ const SS2DirectorSection = () => {
         {/* Mobile View */}
         <div
           className="flex flex-col gap-2 md:hidden w-[290px] h-[617px] bg-ss2-banner-mm
-                bg-cover bg-center bg-no-repeat pt-12"
+                bg-cover bg-center bg-no-repeat pt-14"
         >
           <h3
-            className="text-[20px] font-bold text-silent2_button_text mx-7 mt-1
+            className="text-[20px] font-bold text-silent2_button_text mx-8 mt-1
              text-center leading-6"
           >
             WORDS FROM THE GAME DIRECTOR
           </h3>
           <p
             className="flex justify-start items-center text-[14px] font-bold text-silent2_button_text
-               text-center mx-10 leading-5"
+               text-center mx-11 leading-5"
           >
             Sed lectus consequat convallis faucibus etiam sit mauris hendrerit
             cursus. Cursus mattis eget placerat et diam. Mauris tortor risus
