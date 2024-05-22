@@ -1,36 +1,64 @@
-import React from "react";
+"use client";
+import SS2AboutSection from "@/app/components/silentscream2page/SS2AboutSection";
+import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSection";
+import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
+import SS2DirectorSection from "@/app/components/silentscream2page/SS2DirectorSection";
+import SS2ItchioSection from "@/app/components/silentscream2page/SS2ItchioSection";
+import SS2NoticeSection from "@/app/components/silentscream2page/SS2NoticeSection";
+import SS2PitchSection from "@/app/components/silentscream2page/SS2PitchSection";
+import SS2Screenshots from "@/app/components/silentscream2page/SS2Screenshots";
+import SS2TeamSection from "@/app/components/silentscream2page/SS2TeamSection";
 import Image from "next/image";
 
 const Test = () => {
-	return (
-		<div className="min-h-screen">
-			<div className="-z-10 w-full">
-				{/* Background Image */}
-				<Image
-					src="./assets/silent-scream-2-hero.png"
-					width={1440}
-					height={969}
-					alt="Silent Scream 2 Hero"
-					className="hidden md:flex w-full md:h-screen"
-				/>
-				<Image
-					src="./assets/silent-scream-2-hero-mb.png"
-					width={638}
-					height={969}
-					alt="Silent Scream 2 Hero"
-					className="md:hidden w-full bg-cover"
-				/>
-			</div>
-			<div className="w-full h-[50px] md:h-[100px] flex gap-6 md:gap-12 justify-center items-center">
-				<button className="bg-red-600 text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
-					BUY NOW
-				</button>
-				<button className="bg-red-600 text-[17px] md:text-[35px] text-silent2_button_text font-bold py-3 px-6">
-					TRAILER
-				</button>
-			</div>
-		</div>
-	);
+  return (
+    <div>
+      <div className="min-h-screen">
+        {/* Hero Banner Scetion */}
+
+        <div className="-z-10 w-full">
+          <Image
+            src="/assets/silent-scream-2-hero.png"
+            width={1440}
+            height={969}
+            alt="Silent Scream 2 Hero"
+            className="hidden md:flex w-full md:h-screen"
+          />
+          <Image
+            src="/assets/silent-scream-2-hero-mb.png"
+            width={638}
+            height={969}
+            alt="Silent Scream 2 Hero"
+            className="md:hidden w-full bg-cover"
+          />
+        </div>
+
+        {/* Button Section */}
+        <SS2ButtonSection />
+
+        {/* Pitch Section */}
+        <SS2PitchSection />
+
+        {/* Director Section */}
+        <SS2DirectorSection />
+
+        {/* Cast Section */}
+        <SS2CastSection />
+
+        {/* Cast Section */}
+        <SS2Screenshots />
+
+        {/* Notice Section */}
+        <SS2ItchioSection />
+
+        {/* Team Member Section */}
+        <SS2TeamSection />
+
+        {/* About Section */}
+        <SS2AboutSection />
+      </div>
+    </div>
+  );
 };
 
 export default Test;

@@ -1,7 +1,11 @@
 import React from "react";
 
 const FooterSS2 = () => {
-  return <div>Silent Scream 2 Footer</div>;
+  return (
+    <div>
+      <div className="w-full h-[50px]"></div>
+    </div>
+  );
 };
 
 export default FooterSS2;
