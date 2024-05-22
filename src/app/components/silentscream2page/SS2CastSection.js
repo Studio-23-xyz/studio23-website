@@ -58,7 +58,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             John, The Writer
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium text-center">
             John, once a literary sensation, soared to fame with his debut novel
             but crumbled under the pressure of expectations. Struggling with
             writer's block, he turned to alcohol, which led to missed deadlines,
@@ -101,7 +101,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             Alan, Retired Detective
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium text-center">
             Alan was once a respected and promising police sergeant known for
             his sharp instincts and commitment to justice. However, his career
             was derailed after he impulsively shot a young suspect during a
@@ -150,7 +150,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             Chad, Gluttony
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium  text-center">
             Chad's high school years were a golden era where he was the star
             quarterback, admired by peers and favored by teachers. He thrived on
             the cheers and admiration, basking in glory. However, after high
@@ -195,7 +195,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             Tiffany, Envy
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium text-center">
             Tiffany and Chad were high school sweethearts and the envy of their
             classmates, reigning as Prom Queen and King. Tiffany, with her
             stunning looks and charisma, was the head cheerleader, while Chad's
@@ -242,7 +242,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             Edger, Arcchaeologist
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium text-center">
             Edgar, an educated and unassuming man, has dedicated his life to
             archaeology, exploring remote corners of the world from Egypt's
             pyramids to the North Pole. With degrees in archaeology and
@@ -294,7 +294,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             Linda, Doctor
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium text-center">
             Linda's upbringing emphasized academic excellence, leading her to
             become a skilled surgeon at Harvard Medical School. Tragedy struck
             when her parents died, prompting her to shift to Emergency Room and
@@ -336,7 +336,7 @@ const items = [
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
             Marcus, Globe Trotter
           </h1>
-          <p className="text-[14px] md:text-[16px] font-bold text-center">
+          <p className="text-[14px] md:text-[16px] font-medium text-center">
             Marcus may seem like a charming globetrotter, but beneath his
             adventurous exterior lies a cunning conman with a history of
             fraudulent activities across multiple countries. Skilled in identity

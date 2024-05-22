@@ -2,9 +2,11 @@
 import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSection";
 import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
 import SS2DirectorSection from "@/app/components/silentscream2page/SS2DirectorSection";
+import SS2ItchioSection from "@/app/components/silentscream2page/SS2ItchioSection";
 import SS2NoticeSection from "@/app/components/silentscream2page/SS2NoticeSection";
 import SS2PitchSection from "@/app/components/silentscream2page/SS2PitchSection";
 import SS2Screenshots from "@/app/components/silentscream2page/SS2Screenshots";
+import SS2TeamSection from "@/app/components/silentscream2page/SS2TeamSection";
 import Image from "next/image";
 
 const Test = () => {
@@ -46,7 +48,10 @@ const Test = () => {
         <SS2Screenshots />
 
         {/* Notice Section */}
-        <SS2NoticeSection />
+        <SS2ItchioSection />
+
+        {/* Team Member Section */}
+        <SS2TeamSection />
       </div>
     </div>
   );

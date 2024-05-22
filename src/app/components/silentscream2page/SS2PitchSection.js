@@ -1,7 +1,7 @@
 const SS2PitchSection = () => {
   return (
     <div>
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center mt-5">
         <div
           className="w-[290px] md:w-[1320px] h-[300px] md:h-[288px] bg-ss2-banner-ms md:bg-ss2-banner-ls
            bg-no-repeat bg-center flex"
