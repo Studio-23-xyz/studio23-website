@@ -4,7 +4,6 @@ import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSectio
 import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
 import SS2DirectorSection from "@/app/components/silentscream2page/SS2DirectorSection";
 import SS2ItchioSection from "@/app/components/silentscream2page/SS2ItchioSection";
-import SS2NoticeSection from "@/app/components/silentscream2page/SS2NoticeSection";
 import SS2PitchSection from "@/app/components/silentscream2page/SS2PitchSection";
 import SS2Screenshots from "@/app/components/silentscream2page/SS2Screenshots";
 import SS2TeamSection from "@/app/components/silentscream2page/SS2TeamSection";
@@ -18,14 +17,14 @@ const Test = () => {
 
         <div className="-z-10 w-full">
           <Image
-            src="/assets/silent-scream-2-hero.png"
+            src="./assets/silent-scream-2-hero.png"
             width={1440}
             height={969}
             alt="Silent Scream 2 Hero"
             className="hidden md:flex w-full md:h-screen"
           />
           <Image
-            src="/assets/silent-scream-2-hero-mb.png"
+            src="./assets/silent-scream-2-hero-mb.png"
             width={638}
             height={969}
             alt="Silent Scream 2 Hero"

@@ -7,7 +7,7 @@ const SS2CastSection = () => {
       {/*Heading */}
       <div className="w-full flex flex-col justify-center items-center mt-12 mb-2 gap-6">
         <Image
-          src="/assets/ss2-icon1.png"
+          src="./assets/ss2-icon1.png"
           width={64}
           height={100}
           alt="Silent Scream 2 Icon"
@@ -32,7 +32,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/John.png"
+          src="./assets/ss2-characters/John.png"
           width={433}
           height={577}
           alt="John"
@@ -44,7 +44,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/John.png"
+            src="./assets/ss2-characters/John.png"
             width={433}
             height={577}
             alt="John"
@@ -75,7 +75,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/Alan.png"
+          src="./assets/ss2-characters/Alan.png"
           width={433}
           height={577}
           alt="Alan"
@@ -87,7 +87,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/Alan.png"
+            src="./assets/ss2-characters/Alan.png"
             width={433}
             height={577}
             alt="Alan"
@@ -124,7 +124,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/Chad.png"
+          src="./assets/ss2-characters/Chad.png"
           width={433}
           height={577}
           alt="Chad"
@@ -136,7 +136,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/Chad.png"
+            src="./assets/ss2-characters/Chad.png"
             width={433}
             height={577}
             alt="Chad"
@@ -169,7 +169,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/Tiffany.png"
+          src="./assets/ss2-characters/Tiffany.png"
           width={433}
           height={577}
           alt="Tiffany"
@@ -181,7 +181,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/Tiffany.png"
+            src="./assets/ss2-characters/Tiffany.png"
             width={433}
             height={577}
             alt="Tiffany"
@@ -216,7 +216,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/Edger.png"
+          src="./assets/ss2-characters/Edger.png"
           width={433}
           height={577}
           alt="Edger"
@@ -228,7 +228,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/Edger.png"
+            src="./assets/ss2-characters/Edger.png"
             width={433}
             height={577}
             alt="Edger"
@@ -268,7 +268,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/Linda.png"
+          src="./assets/ss2-characters/Linda.png"
           width={433}
           height={577}
           alt="Linda"
@@ -280,7 +280,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/Linda.png"
+            src="./assets/ss2-characters/Linda.png"
             width={433}
             height={577}
             alt="Linda"
@@ -310,7 +310,7 @@ const items = [
     title: (
       <div className="flex justify-center items-start">
         <Image
-          src="/assets/ss2-characters/Marcus.png"
+          src="./assets/ss2-characters/Marcus.png"
           width={433}
           height={577}
           alt="Marcus"
@@ -322,7 +322,7 @@ const items = [
       <div className="flex flex-col md:flex-row gap-4 mb-5">
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
-            src="/assets/ss2-characters/Marcus.png"
+            src="./assets/ss2-characters/Marcus.png"
             width={433}
             height={577}
             alt="Marcus"

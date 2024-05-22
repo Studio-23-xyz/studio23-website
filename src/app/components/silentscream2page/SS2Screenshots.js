@@ -22,7 +22,7 @@ const SS2Screenshots = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5 md:gap-y-10 justify-center">
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
             <Image
-              src="/assets/ss2-screenshots/SS2-SS-1.png"
+              src="./assets/ss2-screenshots/SS2-SS-1.png"
               width={1771}
               height={985}
               alt="Silent Scream 2 Screenshot 1"
@@ -31,7 +31,7 @@ const SS2Screenshots = () => {
           </div>
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
             <Image
-              src="/assets/ss2-screenshots/SS2-SS-1.png"
+              src="./assets/ss2-screenshots/SS2-SS-1.png"
               width={1771}
               height={985}
               alt="Silent Scream 2 Screenshot 1"
@@ -40,7 +40,7 @@ const SS2Screenshots = () => {
           </div>
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
             <Image
-              src="/assets/ss2-screenshots/SS2-SS-1.png"
+              src="./assets/ss2-screenshots/SS2-SS-1.png"
               width={1771}
               height={985}
               alt="Silent Scream 2 Screenshot 1"
@@ -49,7 +49,7 @@ const SS2Screenshots = () => {
           </div>
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
             <Image
-              src="/assets/ss2-screenshots/SS2-SS-1.png"
+              src="./assets/ss2-screenshots/SS2-SS-1.png"
               width={1771}
               height={985}
               alt="Silent Scream 2 Screenshot 1"
@@ -58,7 +58,7 @@ const SS2Screenshots = () => {
           </div>
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
             <Image
-              src="/assets/ss2-screenshots/SS2-SS-1.png"
+              src="./assets/ss2-screenshots/SS2-SS-1.png"
               width={1771}
               height={985}
               alt="Silent Scream 2 Screenshot 1"
@@ -67,7 +67,7 @@ const SS2Screenshots = () => {
           </div>
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
             <Image
-              src="/assets/ss2-screenshots/SS2-SS-1.png"
+              src="./assets/ss2-screenshots/SS2-SS-1.png"
               width={1771}
               height={985}
               alt="Silent Scream 2 Screenshot 1"

@@ -7,7 +7,7 @@ const SS2TeamSection = () => {
       {/*Heading */}
       <div className="w-full flex flex-col justify-center items-center mt-12 mb-2 gap-6">
         <Image
-          src="/assets/ss2-icon1.png"
+          src="./assets/ss2-icon1.png"
           width={64}
           height={100}
           alt="Silent Scream 2 Icon"

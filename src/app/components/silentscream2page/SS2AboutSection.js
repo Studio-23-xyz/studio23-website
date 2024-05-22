@@ -11,7 +11,7 @@ const SS2AboutSection = () => {
         >
           <div className="md:w-2/5 flex justify-center items-center">
             <Image
-              src="/assets/studio23-logo-black.png"
+              src="./assets/studio23-logo-black.png"
               width={196}
               height={154}
               alt="Studio 23 Logo"
