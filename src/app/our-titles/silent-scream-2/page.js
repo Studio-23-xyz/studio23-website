@@ -1,4 +1,5 @@
 "use client";
+import SS2AboutSection from "@/app/components/silentscream2page/SS2AboutSection";
 import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSection";
 import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
 import SS2DirectorSection from "@/app/components/silentscream2page/SS2DirectorSection";
@@ -52,6 +53,9 @@ const Test = () => {
 
         {/* Team Member Section */}
         <SS2TeamSection />
+
+        {/* About Section */}
+        <SS2AboutSection />
       </div>
     </div>
   );

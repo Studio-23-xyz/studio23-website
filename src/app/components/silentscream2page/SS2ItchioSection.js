@@ -6,10 +6,10 @@ const SS2ItchioSection = () => {
       <div>
         <div className="flex justify-center">
           <iframe
-            className="w-[300px] md:w-[552px] h-[167px]"
-            frameBorder="0"
-            src="https://itch.io/embed/2531671?bg_color=000000&amp;fg_color=ffffff&amp;link_color=FF1F00"
-            title="Silent Scream 2 Demo"
+            frameborder="0"
+            src="https://itch.io/embed/2531671?bg_color=001328&amp;fg_color=ffffff&amp;link_color=FF1F00&amp;border_color=333333"
+            width="552"
+            height="167"
           >
             <a href="https://studio-23.itch.io/silent-scream-2">
               Silent Scream 2 Demo by Studio-23
