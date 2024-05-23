@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Studio23logoBlack from "../../../../public/assets/studio23-logo-black.png";
 
 const SS2AboutSection = () => {
   return (
@@ -11,7 +12,7 @@ const SS2AboutSection = () => {
         >
           <div className="md:w-2/5 flex justify-center items-center">
             <Image
-              src="./assets/studio23-logo-black.png"
+              src={Studio23logoBlack}
               width={196}
               height={154}
               alt="Studio 23 Logo"

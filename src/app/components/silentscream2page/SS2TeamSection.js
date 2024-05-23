@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Quill from "../../../../public/assets/ss2-game-page/ss2-quill.png";
 
 const SS2TeamSection = () => {
   return (
@@ -7,7 +8,7 @@ const SS2TeamSection = () => {
       {/*Heading */}
       <div className="w-full flex flex-col justify-center items-center mt-12 mb-2 gap-6">
         <Image
-          src="./assets/ss2-icon1.png"
+          src={Quill}
           width={64}
           height={100}
           alt="Silent Scream 2 Icon"
