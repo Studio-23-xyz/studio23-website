@@ -1,13 +1,13 @@
 import Image from "next/image";
-import SS2CastComponents from "./SS2CastComponents";
+import Alan from "../../../../public/assets/ss2-game-page/ss2-characters/alan.png";
+import Chad from "../../../../public/assets/ss2-game-page/ss2-characters/chad.png";
+import Edger from "../../../../public/assets/ss2-game-page/ss2-characters/edgar.png";
+import John from "../../../../public/assets/ss2-game-page/ss2-characters/john.png";
+import Linda from "../../../../public/assets/ss2-game-page/ss2-characters/linda.png";
+import Marcus from "../../../../public/assets/ss2-game-page/ss2-characters/marcus.png";
+import Tiffany from "../../../../public/assets/ss2-game-page/ss2-characters/tiffany.png";
 import Quill from "../../../../public/assets/ss2-game-page/ss2-quill.png";
-import Alan from "../../../../public/assets/ss2-game-page/ss2-characters/Alan.png";
-import Chad from "../../../../public/assets/ss2-game-page/ss2-characters/Chad.png";
-import Edger from "../../../../public/assets/ss2-game-page/ss2-characters/Edger.png";
-import John from "../../../../public/assets/ss2-game-page/ss2-characters/John.png";
-import Linda from "../../../../public/assets/ss2-game-page/ss2-characters/Linda.png";
-import Marcus from "../../../../public/assets/ss2-game-page/ss2-characters/Marcus.png";
-import Tiffany from "../../../../public/assets/ss2-game-page/ss2-characters/Tiffany.png";
+import SS2CastComponents from "./SS2CastComponents";
 
 const SS2CastSection = () => {
   return (
@@ -41,8 +41,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={John}
-          width={433}
-          height={577}
+          width={350}
+          height={668}
           alt="John"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -53,8 +53,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={John}
-            width={433}
-            height={577}
+            width={350}
+            height={668}
             alt="John"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
@@ -84,8 +84,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={Alan}
-          width={433}
-          height={577}
+          width={393}
+          height={650}
           alt="Alan"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -96,8 +96,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={Alan}
-            width={433}
-            height={577}
+            width={393}
+            height={650}
             alt="Alan"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
@@ -133,8 +133,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={Chad}
-          width={433}
-          height={577}
+          width={363}
+          height={644}
           alt="Chad"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -145,8 +145,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={Chad}
-            width={433}
-            height={577}
+            width={363}
+            height={644}
             alt="Chad"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
@@ -178,8 +178,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={Tiffany}
-          width={433}
-          height={577}
+          width={304}
+          height={667}
           alt="Tiffany"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -190,8 +190,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={Tiffany}
-            width={433}
-            height={577}
+            width={304}
+            height={667}
             alt="Tiffany"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
@@ -225,8 +225,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={Edger}
-          width={433}
-          height={577}
+          width={373}
+          height={678}
           alt="Edger"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -237,8 +237,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={Edger}
-            width={433}
-            height={577}
+            width={373}
+            height={678}
             alt="Edger"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
@@ -277,8 +277,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={Linda}
-          width={433}
-          height={577}
+          width={296}
+          height={637}
           alt="Linda"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -289,8 +289,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={Linda}
-            width={433}
-            height={577}
+            width={296}
+            height={637}
             alt="Linda"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
@@ -319,8 +319,8 @@ const items = [
       <div className="flex justify-center items-start">
         <Image
           src={Marcus}
-          width={433}
-          height={577}
+          width={344}
+          height={648}
           alt="Marcus"
           className="w-[120px] md:w-[100px] h-[120px] md:h-[100px] object-cover object-top"
         />
@@ -331,8 +331,8 @@ const items = [
         <div className="w-full md:w-1/2 flex justify-center items-center">
           <Image
             src={Marcus}
-            width={433}
-            height={577}
+            width={344}
+            height={648}
             alt="Marcus"
             className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
           />
