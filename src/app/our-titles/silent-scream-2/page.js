@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import SS2AboutSection from "@/app/components/silentscream2page/SS2AboutSection";
 import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSection";
 import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
@@ -11,11 +12,14 @@ import Image from "next/image";
 import HeroBanner from "../../../../public/assets/ss2-game-page/silent-scream-2-hero.png";
 
 const Test = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="min-h-screen">
-        {/* Hero Banner Scetion */}
-
+        {/* Hero Banner Section */}
         <div className="-z-10 w-full">
           <Image
             src={HeroBanner}
@@ -38,10 +42,10 @@ const Test = () => {
         {/* Cast Section */}
         <SS2CastSection />
 
-        {/* Cast Section */}
+        {/* Screenshots Section */}
         <SS2Screenshots />
 
-        {/* Notice Section */}
+        {/* Itchio Section */}
         <SS2ItchioSection />
 
         {/* Team Member Section */}

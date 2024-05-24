@@ -37,12 +37,12 @@ const SS2TeamSection = () => {
               </h1>
               <p className="text-[20px] text-white">Zubair Islam</p>
               <p className="text-[20px] text-white">Dipok Sarker Dipu</p>
-              <p className="text-[20px] text-white">Tanimul Haque Khan</p>
               <p className="text-[20px] text-white">Fahim Faisal</p>
               <p className="text-[20px] text-white">Nurusshafi Evan</p>
               <p className="text-[20px] text-white">Md. Maruf Howlader</p>
               <p className="text-[20px] text-white">MD Rasheeq Ishraq Kamal</p>
               <p className="text-[20px] text-white">Shahadat Hossain Shamim</p>
+              <p className="text-[20px] text-white">Tanimul Haque Khan</p>
             </div>
           </div>
           <div className="">

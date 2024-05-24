@@ -19,6 +19,9 @@ const SS2Screenshots = () => {
           allowFullScreen
         ></iframe>
       </div>
+
+      {/* Screenshots */}
+
       <div className="w-full h-auto flex justify-center items-center mt-6 md:mt-12 mb-5">
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5 md:gap-y-10 justify-center">
           <div className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16">
