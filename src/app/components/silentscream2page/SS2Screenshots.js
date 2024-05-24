@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import SS2GameSSModal from "./SS2GameSSModal";
-import Screenshot1 from "../../../../public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
 import Screenshot2 from "../../../../public/assets/ss2-game-page/silent-scream-2-hero.png";
+import Screenshot1 from "../../../../public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
+import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 1" },
@@ -47,7 +47,7 @@ const SS2Screenshots = () => {
             {screenshots.map((screenshot, index) => (
               <div
                 key={index}
-                className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16"
+                className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16 transform transition-transform duration-300 hover:scale-105 hover:brightness-110"
                 onClick={() => openModal(screenshot)}
               >
                 <Image

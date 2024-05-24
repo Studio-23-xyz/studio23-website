@@ -27,7 +27,7 @@ const SS2TeamSection = () => {
             <p className="text-[24px] text-white">Tanimul Haque Khan</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-56">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-56">
             <div className="h-[80px] md:h-[150px] flex flex-col justify-start items-center">
              <h1 className="text-[26px] text-silent2_red font-bold">Art Director</h1>
              <p className="text-[22px] text-white">Inamul Tahsin</p>
@@ -38,7 +38,7 @@ const SS2TeamSection = () => {
             </div>
           </div>
 
-           <div className="grid grid-cols-1 md:grid-cols-4 gap-40">
+           <div className="grid grid-cols-1 md:grid-cols-4 md:gap-32">
             <div className="h-[80px] md:h-[180px] flex flex-col justify-start items-center">
               <h1 className="text-[22px] font-bold text-silent2_red">Music Director</h1>
               <p className="text-[20px] text-white">MD Rasheeq Ishraq Kamal</p>
@@ -61,7 +61,7 @@ const SS2TeamSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-40">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-32">
             <div className="h-[300px] md:h-[320px] flex flex-col justify-start items-center">
               <h1 className="text-[22px] font-bold text-silent2_red">
                 Game Programmers
