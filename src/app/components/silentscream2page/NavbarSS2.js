@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SilentScream2Logo from "../../../../public/assets/ss2-game-page/silent-scram-2-logo.svg";
@@ -16,7 +16,7 @@ const NavbarSS2 = () => {
         </Link>
         <a
           className="hidden md:flex text-[16px] md:text-[24px] font-medium hover:text-silent2_red"
-          href="#screanshots"
+          href="#screenshots"
         >
           Screenshot
         </a>

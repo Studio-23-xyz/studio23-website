@@ -11,7 +11,7 @@ import SS2TeamSection from "@/app/components/silentscream2page/SS2TeamSection";
 import Image from "next/image";
 import HeroBanner from "../../../../public/assets/ss2-game-page/silent-scream-2-hero.png";
 
-const Test = () => {
+const SS2GamePageHome = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,7 +43,9 @@ const Test = () => {
         <SS2CastSection />
 
         {/* Screenshots Section */}
-        <SS2Screenshots />
+        <div id="screenshots">
+          <SS2Screenshots />
+        </div>
 
         {/* Itchio Section */}
         <SS2ItchioSection />
@@ -58,4 +60,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default SS2GamePageHome;
