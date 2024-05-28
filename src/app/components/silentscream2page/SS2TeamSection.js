@@ -61,7 +61,7 @@ const SS2TeamSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-32">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-28">
             <div className="h-[300px] md:h-[320px] flex flex-col justify-start items-center">
               <h1 className="text-[22px] font-bold text-silent2_red">
                 Game Programmers
