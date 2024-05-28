@@ -56,7 +56,9 @@ const SS2Screenshots = () => {
             {screenshots.map((screenshot, index) => (
               <div
                 key={index}
-                className={`${backgroundClasses[index % backgroundClasses.length]} w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3
+                className={`${
+                  backgroundClasses[index % backgroundClasses.length]
+                } w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3
                  md:px-6 pt-5 md:pt-9 pb-7 md:pb-16 bg-cover
                   transform transition-transform duration-300 hover:scale-105 hover:brightness-110`}
                 onClick={() => openModal(screenshot)}

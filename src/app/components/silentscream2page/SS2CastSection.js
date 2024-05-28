@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import "swiper/css"; /* Import Swiper CSS */
+import { Swiper, SwiperSlide } from "swiper/react";
 import Alan from "../../../../public/assets/ss2-game-page/ss2-characters/alan.png";
 import Chad from "../../../../public/assets/ss2-game-page/ss2-characters/chad.png";
 import Edger from "../../../../public/assets/ss2-game-page/ss2-characters/edgar.png";
@@ -10,6 +13,18 @@ import Quill from "../../../../public/assets/ss2-game-page/ss2-quill.png";
 import SS2CastComponents from "./SS2CastComponents";
 
 const SS2CastSection = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
       {/*Heading */}
@@ -27,7 +42,17 @@ const SS2CastSection = () => {
       </div>
 
       <div>
-        <SS2CastComponents items={items} />
+        {isMobile ? (
+          <Swiper spaceBetween={30} pagination={{ clickable: true }}>
+            {items.map((item, index) => (
+              <SwiperSlide key={index}>
+                {item.content}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ) : (
+          <SS2CastComponents items={items} />
+        )}
       </div>
     </div>
   );
@@ -60,7 +85,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
          gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
@@ -103,7 +128,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
          gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
@@ -152,7 +177,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
          gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
@@ -197,7 +222,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
        gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
@@ -244,7 +269,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
          gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
@@ -296,7 +321,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
          gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">
@@ -338,7 +363,7 @@ const items = [
           />
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center items-center md:pr-10
+          className="w-full md:w-1/2 flex flex-col justify-center items-center px-4 md:pr-10 md:pl-0
          gap-3"
         >
           <h1 className="text-[18px] md:text-[32px] font-bold text-center">

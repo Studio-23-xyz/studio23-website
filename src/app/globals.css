@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "swiper/css"; /* Import Swiper CSS */
 
+/* Additional Swiper custom styles */
+.swiper-pagination-bullet {
+  background-color: #ff0000;
+}
+
+/* Additional custom styles */
 body {
   @apply bg-black text-white;
 }

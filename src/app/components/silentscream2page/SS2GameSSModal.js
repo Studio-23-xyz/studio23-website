@@ -15,7 +15,7 @@ const SS2GameSSModal = ({ isVisible, onClose, screenshot }) => {
           width={1771}
           height={985}
           alt={screenshot.alt}
-          className="w-[65%] h-[65%] 2xl:w-[75%] 2xl:h-[75%] object-center pb-12"
+          className="w-[70%] md:w-[70%] md:h-[70%] 2xl:w-[75%] 2xl:h-[75%] object-center pb-12"
         />
       </div>
     </div>
