@@ -1,12 +1,11 @@
 "use client";
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SilentScream2Logo from "../../../../public/assets/ss2-game-page/silent-scram-2-logo.svg";
 
 const NavbarSS2 = () => {
   return (
-    <div className="w-full absolute flex justify-center items-center gap-6 md:gap-14 mt-2 md:mt-6">
+    <div className="w-full absolute flex justify-center items-center gap-6 md:gap-14 mt-2 md:mt-6 z-30">
       <div className="flex gap-14">
         <Link
           className="text-[16px] md:text-[24px] font-medium hover:text-silent2_red"

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import ParallaxSection from "@/app/components/silentscream2page/ParallaxSection";
 import SS2AboutSection from "@/app/components/silentscream2page/SS2AboutSection";
 import SS2ButtonSection from "@/app/components/silentscream2page/SS2ButtonSection";
 import SS2CastSection from "@/app/components/silentscream2page/SS2CastSection";
@@ -8,10 +8,9 @@ import SS2ItchioSection from "@/app/components/silentscream2page/SS2ItchioSectio
 import SS2PitchSection from "@/app/components/silentscream2page/SS2PitchSection";
 import SS2Screenshots from "@/app/components/silentscream2page/SS2Screenshots";
 import SS2TeamSection from "@/app/components/silentscream2page/SS2TeamSection";
-import Image from "next/image";
-import HeroBanner from "../../../../public/assets/ss2-game-page/silent-scream-2-hero.png";
+import { useEffect } from "react";
 
-const SS2GamePageHome = () => {
+const Page = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,7 +19,9 @@ const SS2GamePageHome = () => {
     <div>
       <div className="min-h-screen">
         {/* Hero Banner Section */}
-        <div className="-z-10 w-full">
+        <ParallaxSection/>
+
+        {/* <div className="-z-10 w-full">
           <Image
             src={HeroBanner}
             width={1440}
@@ -28,7 +29,7 @@ const SS2GamePageHome = () => {
             alt="Silent Scream 2 Hero"
             className="w-full h-[450px] md:h-auto object-cover md:object-cover"
           />
-        </div>
+        </div> */}
 
         {/* Button Section */}
         <SS2ButtonSection />
@@ -60,4 +61,4 @@ const SS2GamePageHome = () => {
   );
 };
 
-export default SS2GamePageHome;
+export default Page;
