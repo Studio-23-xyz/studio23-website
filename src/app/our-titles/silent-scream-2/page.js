@@ -21,16 +21,6 @@ const Page = () => {
         {/* Hero Banner Section */}
         <ParallaxSection/>
 
-        {/* <div className="-z-10 w-full">
-          <Image
-            src={HeroBanner}
-            width={1440}
-            height={969}
-            alt="Silent Scream 2 Hero"
-            className="w-full h-[450px] md:h-auto object-cover md:object-cover"
-          />
-        </div> */}
-
         {/* Button Section */}
         <SS2ButtonSection />
 

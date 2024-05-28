@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const SS2GameSSModal = ({ isVisible, onClose, screenshot }) => {
@@ -6,16 +5,17 @@ const SS2GameSSModal = ({ isVisible, onClose, screenshot }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center"
+      className="fixed inset-0 bg-ss2-ss-full-bg bg-no-repeat bg-black bg-opacity-25 backdrop-blur-sm 
+      flex justify-center items-center bg-center bg-contain z-30"
       onClick={() => onClose()}
     >
-      <div className="bg-black w-[80%] h-[80%]">
+      <div className="flex items-center justify-center">
         <Image
           src={screenshot.src}
           width={1771}
           height={985}
           alt={screenshot.alt}
-          className="h-full object-cover"
+          className="w-[65%] h-[65%] 2xl:w-[75%] 2xl:h-[75%] object-center pb-12"
         />
       </div>
     </div>

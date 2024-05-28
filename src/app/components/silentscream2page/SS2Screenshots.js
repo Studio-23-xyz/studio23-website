@@ -22,6 +22,15 @@ const SS2Screenshots = () => {
     setShowModal(true);
   };
 
+  const backgroundClasses = [
+    "bg-ss2-ss-small-bg1",
+    "bg-ss2-ss-small-bg2",
+    "bg-ss2-ss-small-bg3",
+    "bg-ss2-ss-small-bg4",
+    "bg-ss2-ss-small-bg5",
+    "bg-ss2-ss-small-bg6",
+  ];
+
   return (
     <div>
       <div className="w-full flex flex-col justify-center items-center mt-2 mb-6">
@@ -47,7 +56,9 @@ const SS2Screenshots = () => {
             {screenshots.map((screenshot, index) => (
               <div
                 key={index}
-                className="bg-ss2-ss-bg w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16 transform transition-transform duration-300 hover:scale-105 hover:brightness-110"
+                className={`${backgroundClasses[index % backgroundClasses.length]} w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3
+                 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16 bg-cover
+                  transform transition-transform duration-300 hover:scale-105 hover:brightness-110`}
                 onClick={() => openModal(screenshot)}
               >
                 <Image

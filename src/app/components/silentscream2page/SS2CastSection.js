@@ -56,7 +56,7 @@ const items = [
             width={350}
             height={668}
             alt="John"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
@@ -99,7 +99,7 @@ const items = [
             width={393}
             height={650}
             alt="Alan"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
@@ -148,7 +148,7 @@ const items = [
             width={363}
             height={644}
             alt="Chad"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
@@ -193,7 +193,7 @@ const items = [
             width={304}
             height={667}
             alt="Tiffany"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
@@ -240,7 +240,7 @@ const items = [
             width={373}
             height={678}
             alt="Edger"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
@@ -292,7 +292,7 @@ const items = [
             width={296}
             height={637}
             alt="Linda"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
@@ -334,7 +334,7 @@ const items = [
             width={344}
             height={648}
             alt="Marcus"
-            className="w-[290px] md:w-[350px] h-[313px] md:h-[450px] object-cover object-top"
+            className="w-[200px] md:w-[350px] h-[216px] md:h-[450px] object-cover object-top"
           />
         </div>
         <div
