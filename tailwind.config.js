@@ -31,6 +31,8 @@ module.exports = {
         "ss2-banner-lm": "url('/assets/ss2-game-page/ss2-back-banner-lm.png')",
         "ss2-banner-ms": "url('/assets/ss2-game-page/ss2-back-banner-ms.png')",
         "ss2-banner-mm": "url('/assets/ss2-game-page/ss2-back-banner-mm.png')",
+        "titles-hero": "url('/assets/titles-page/titlespagehero.png')",
+        "ss1-banner-1" : "url('/assets/home-page/SilentScreamBGLarge.png')",
       },
     },
   },

@@ -17,28 +17,28 @@ const ParallaxSection = () => {
       className="w-full h-screen overflow-hidden relative grid place-items-center"
     >
       <motion.div
-        className="absolute inset-0 z-0 bg-cover bg-center"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url(/assets/ss2-game-page/ss2-hero-bg-layer1.png)",
           y: layer1Y,
         }}
       ></motion.div>
       <motion.div
-        className="absolute inset-0 z-10 bg-cover bg-center md:bg-contain"
+        className="absolute inset-0 z-10 bg-cover bg-center md:bg-contain bg-no-repeat"
         style={{
           backgroundImage: "url(/assets/ss2-game-page/ss2-hero-bg-layer2.png)",
           y: layer2Y,
         }}
       ></motion.div>
       <motion.div
-        className="absolute inset-0 z-20 bg-cover bg-center"
+        className="absolute inset-0 z-20 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url(/assets/ss2-game-page/ss2-hero-bg-layer3.png)",
           y: layer3Y,
         }}
       ></motion.div>
       <motion.div
-        className="absolute inset-0 z-30 bg-cover bg-center md:bg-contain"
+        className="absolute inset-0 z-30 bg-cover bg-center"
         style={{
           backgroundImage: "url(/assets/ss2-game-page/ss2-hero-bg-layer4.png)",
         }}
