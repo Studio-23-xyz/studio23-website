@@ -50,7 +50,7 @@ const Navbar = () => {
               width={500}
               height={200}
               alt="Logo"
-              className="w-[150px] md:w-[202px] pl-2 md:pl-0 pt-2 md:pt-0"
+              className="w-[150px] md:w-[150px] pl-2 md:pl-0 pt-2 md:pt-0"
             />
           </Link>
         </div>
