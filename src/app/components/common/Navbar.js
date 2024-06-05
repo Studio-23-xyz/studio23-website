@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
 import { ChevronDown, LucideMenu } from "lucide-react";
-import Studio23LogoWhite from "../../../../public/assets/studio23_logo_white.png";
+import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
 
 const Navbar = () => {
   const pathname = usePathname();

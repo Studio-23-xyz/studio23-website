@@ -1,13 +1,13 @@
 import React from "react";
 import GameCard from "./GameCard";
-import silentscream2logo from "../../../../public/assets/ss2-game-page/silent-scram-2-logo.svg";
-import silentscream2hero from "../../../../public/assets/ss2-game-page/silent-scream-2-hero.png";
-import silentscreamhero from "../../../../public/assets/home-page/SilentScreamBGLarge.png";
-import silentscreamlogo from "../../../../public/assets/home-page/silentscream_logo.png";
-import controloverridehero from "../../../../public/assets/home-page/control_override.png";
-import steamicon from "../../../../public/assets/titles-page/steam-icon.svg";
-import windowsicon from "../../../../public/assets/windows-icon.png";
-import xboxicon from "../../../../public/assets/xbox-icon.png";
+import silentscream2logo from "/public/assets/ss2-game-page/silent-scram-2-logo.svg";
+import silentscream2hero from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
+import silentscreamhero from "/public/assets/home-page/SilentScreamBGLarge.png";
+import silentscreamlogo from "/public/assets/home-page/silentscream_logo.png";
+import controloverridehero from "/public/assets/home-page/control_override.png";
+import steamicon from "/public/assets/titles-page/steam-icon.svg";
+import windowsicon from "/public/assets/windows-icon.png";
+import xboxicon from "/public/assets/xbox-icon.png";
 
 const Gamecardssection = () => {
   const games = [

@@ -2,14 +2,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import "swiper/css"; /* Import Swiper CSS */
 import { Swiper, SwiperSlide } from "swiper/react";
-import Alan from "../../../../public/assets/ss2-game-page/ss2-characters/alan.png";
-import Chad from "../../../../public/assets/ss2-game-page/ss2-characters/chad.png";
-import Edger from "../../../../public/assets/ss2-game-page/ss2-characters/edgar.png";
-import John from "../../../../public/assets/ss2-game-page/ss2-characters/john.png";
-import Linda from "../../../../public/assets/ss2-game-page/ss2-characters/linda.png";
-import Marcus from "../../../../public/assets/ss2-game-page/ss2-characters/marcus.png";
-import Tiffany from "../../../../public/assets/ss2-game-page/ss2-characters/tiffany.png";
-import Quill from "../../../../public/assets/ss2-game-page/ss2-quill.png";
+import Alan from "/public/assets/ss2-game-page/ss2-characters/alan.png";
+import Chad from "/public/assets/ss2-game-page/ss2-characters/chad.png";
+import Edger from "/public/assets/ss2-game-page/ss2-characters/edgar.png";
+import John from "/public/assets/ss2-game-page/ss2-characters/john.png";
+import Linda from "/public/assets/ss2-game-page/ss2-characters/linda.png";
+import Marcus from "/public/assets/ss2-game-page/ss2-characters/marcus.png";
+import Tiffany from "/public/assets/ss2-game-page/ss2-characters/tiffany.png";
+import Quill from "/public/assets/ss2-game-page/ss2-quill.png";
 import SS2CastComponents from "./SS2CastComponents";
 
 const SS2CastSection = () => {
@@ -45,9 +45,7 @@ const SS2CastSection = () => {
         {isMobile ? (
           <Swiper spaceBetween={30} pagination={{ clickable: true }}>
             {items.map((item, index) => (
-              <SwiperSlide key={index}>
-                {item.content}
-              </SwiperSlide>
+              <SwiperSlide key={index}>{item.content}</SwiperSlide>
             ))}
           </Swiper>
         ) : (

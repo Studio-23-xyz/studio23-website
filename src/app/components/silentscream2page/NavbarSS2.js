@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import SilentScream2Logo from "../../../../public/assets/ss2-game-page/silent-scram-2-logo.svg";
+import SilentScream2Logo from "/public/assets/ss2-game-page/silent-scram-2-logo.svg";
 
 const NavbarSS2 = () => {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import Screenshot2 from "../../../../public/assets/ss2-game-page/silent-scream-2-hero.png";
-import Screenshot1 from "../../../../public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
+import Screenshot2 from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
+import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [

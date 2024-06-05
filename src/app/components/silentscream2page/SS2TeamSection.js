@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Quill from "../../../../public/assets/ss2-game-page/ss2-quill.png";
+import Quill from "/public/assets/ss2-game-page/ss2-quill.png";
 
 const SS2TeamSection = () => {
   return (

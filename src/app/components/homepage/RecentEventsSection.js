@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import coverdevmeetup from "../../../../public/assets/home-page/dev-meetup-24.png";
-import covergamejam from "../../../../public/assets/home-page/game-jam-home.png";
-import covercalculatejam from "../../../../public/assets/home-page/calculate_jam.png";
-import coverhackjam from "../../../../public/assets/home-page/hack-jam.jpg";
-import covergoodbadjam from "../../../../public/assets/home-page/goodbad_jam.jpg";
+import coverdevmeetup from "/public/assets/home-page/dev-meetup-24.png";
+import covergamejam from "/public/assets/home-page/game-jam-home.png";
+import covercalculatejam from "/public/assets/home-page/calculate_jam.png";
+import coverhackjam from "/public/assets/home-page/hack-jam.jpg";
+import covergoodbadjam from "/public/assets/home-page/goodbad_jam.jpg";
 
 const RecentEventsSection = () => {
   return (

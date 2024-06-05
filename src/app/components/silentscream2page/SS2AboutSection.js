@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Studio23logoBlack from "../../../../public/assets/studio23-logo-black.png";
+import Studio23logoBlack from "/public/assets/studio23-logo-black.png";
 
 const SS2AboutSection = () => {
   return (

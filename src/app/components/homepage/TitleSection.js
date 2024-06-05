@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import covercontroloverride from "../../../../public/assets/home-page/control_override.png";
-import coverwestwoodmanor from "../../../../public/assets/home-page/westwood-home.png";
-import coverhighnoon from "../../../../public/assets/home-page/highnoon-home.png";
+import covercontroloverride from "/public/assets/home-page/control_override.png";
+import coverwestwoodmanor from "/public/assets/home-page/westwood-home.png";
+import coverhighnoon from "/public/assets/home-page/highnoon-home.png";
 
 const TitleSection = () => {
   return (

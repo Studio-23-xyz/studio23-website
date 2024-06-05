@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import wanttopublish from "../../../../public/assets/home-page/wanttopublish.png";
+import wanttopublish from "/public/assets/home-page/wanttopublish.png";
 
 const PublishSection = () => {
   return (
