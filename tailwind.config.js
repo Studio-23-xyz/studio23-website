@@ -19,20 +19,42 @@ module.exports = {
         silent2_button_text: "#260202",
       },
       backgroundImage: {
-        "ss2-button-bg": "url('/assets/ss2-game-page/ss2-button1.png')",
-        "ss2-ss-full-bg": "url('/assets/ss2-game-page/ss2-ss-full-bg.png')",
-        "ss2-ss-small-bg1": "url('/assets/ss2-game-page/ss2-ss-small-bg1.png')",
-        "ss2-ss-small-bg2": "url('/assets/ss2-game-page/ss2-ss-small-bg2.png')",
-        "ss2-ss-small-bg3": "url('/assets/ss2-game-page/ss2-ss-small-bg3.png')",
-        "ss2-ss-small-bg4": "url('/assets/ss2-game-page/ss2-ss-small-bg4.png')",
-        "ss2-ss-small-bg5": "url('/assets/ss2-game-page/ss2-ss-small-bg5.png')",
-        "ss2-ss-small-bg6": "url('/assets/ss2-game-page/ss2-ss-small-bg6.png')",
-        "ss2-banner-ls": "url('/assets/ss2-game-page/ss2-back-banner-ls.png')",
-        "ss2-banner-lm": "url('/assets/ss2-game-page/ss2-back-banner-lm.png')",
-        "ss2-banner-ms": "url('/assets/ss2-game-page/ss2-back-banner-ms.png')",
-        "ss2-banner-mm": "url('/assets/ss2-game-page/ss2-back-banner-mm.png')",
-        "titles-hero": "url('/assets/titles-page/titlespagehero.png')",
-        "ss1-banner-1" : "url('/assets/home-page/SilentScreamBGLarge.png')",
+        "ss2-button-bg":
+          "url('../../public/assets/ss2-game-page/ss2-button1.png')",
+        "ss2-ss-full-bg":
+          "url('../../public/assets/ss2-game-page/ss2-ss-full-bg.png')",
+        "ss2-ss-small-bg1":
+          "url('../../public/assets/ss2-game-page/ss2-ss-small-bg1.png')",
+        "ss2-ss-small-bg2":
+          "url('../../public/assets/ss2-game-page/ss2-ss-small-bg2.png')",
+        "ss2-ss-small-bg3":
+          "url('../../public/assets/ss2-game-page/ss2-ss-small-bg3.png')",
+        "ss2-ss-small-bg4":
+          "url('../../public/assets/ss2-game-page/ss2-ss-small-bg4.png')",
+        "ss2-ss-small-bg5":
+          "url('../../public/assets/ss2-game-page/ss2-ss-small-bg5.png')",
+        "ss2-ss-small-bg6":
+          "url('../../public/assets/ss2-game-page/ss2-ss-small-bg6.png')",
+        "ss2-banner-ls":
+          "url('../../public/assets/ss2-game-page/ss2-back-banner-ls.png')",
+        "ss2-banner-lm":
+          "url('../../public/assets/ss2-game-page/ss2-back-banner-lm.png')",
+        "ss2-banner-ms":
+          "url('../../public/assets/ss2-game-page/ss2-back-banner-ms.png')",
+        "ss2-banner-mm":
+          "url('../../public/assets/ss2-game-page/ss2-back-banner-mm.png')",
+        "titles-hero":
+          "url('../../public/assets/titles-page/titlespagehero.png')",
+        "ss1-banner-1":
+          "url('../../public/assets/home-page/SilentScreamBGLarge.png')",
+        "ss2-parallax-1":
+          "url('../../public/assets/ss2-game-page/ss2-hero-bg-layer1.png')",
+        "ss2-parallax-2":
+          "url('../../public/assets/ss2-game-page/ss2-hero-bg-layer2.png')",
+        "ss2-parallax-3":
+          "url('../../public/assets/ss2-game-page/ss2-hero-bg-layer3.png')",
+        "ss2-parallax-4":
+          "url('../../public/assets/ss2-game-page/ss2-hero-bg-layer4.png')",
       },
     },
   },
