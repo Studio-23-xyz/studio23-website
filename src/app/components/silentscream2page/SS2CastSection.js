@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import "swiper/css"; /* Import Swiper CSS */
+import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Alan from "/public/assets/ss2-game-page/ss2-characters/Alan.png";
 import Chad from "/public/assets/ss2-game-page/ss2-characters/Chad.png";

@@ -22,25 +22,25 @@ const SS2TeamSection = () => {
 
       <div className="flex flex-col gap-5 md:gap-0 md:flex-row justify-center items-center mt-5 md:mt-16 mx-4 md:mx-20">
         <div>
-          <div className="h-[80px] md:h-[150px] flex flex-col justify-start items-center">
+          <div className="h-[100px] md:h-[150px] flex flex-col justify-start items-center">
             <h1 h1 className="text-[32px] font-bold text-silent2_red">
               Game Director
             </h1>
             <p className="text-[24px] text-white">Tanimul Haque Khan</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-30">
-            <div className="h-[80px] md:h-[150px] flex flex-col justify-start items-center">
-              <h1 className="text-[26px] text-silent2_red font-bold">
-                Art Director
-              </h1>
-              <p className="text-[22px] text-white">Inamul Tahsin</p>
-            </div>
-            <div className="h-[80px] md:h-[150px] flex flex-col justify-start items-center">
-              <h1 className="text-[26px] font-bold text-silent2_red">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-20">
+            <div className="h-[80px] md:h-[150px] flex flex-col md:col-start-2 justify-start items-center">
+              <h1 className="text-[22px] font-bold text-silent2_red">
                 Project Manager
               </h1>
-              <p className="text-[22px] text-white">Shahadat Hossain Shamim</p>
+              <p className="text-[20px] text-white">Shahadat Hossain Shamim</p>
+            </div>
+            <div className="h-[80px] md:h-[150px] flex flex-col md:col-start-3 justify-start items-center">
+              <h1 className="text-[22px] text-silent2_red font-bold">
+                Art Director
+              </h1>
+              <p className="text-[20px] text-white">Inamul Tahsin</p>
             </div>
           </div>
 
@@ -65,13 +65,14 @@ const SS2TeamSection = () => {
               <p className="text-[20px] text-white">Nurusshafi Evan</p>
               <p className="text-[20px] text-white">Md. Maruf Howlader</p>
             </div>
-            <div className="h-[150px] md:h-[180px] flex flex-col justify-start items-center">
+            <div className="h-[170px] md:h-[180px] flex flex-col justify-start items-center">
               <h1 className="text-[22px] font-bold text-silent2_red">
                 Art Team
               </h1>
               <p className="text-[20px] text-white">Sanim Ahmed Niloy</p>
               <p className="text-[20px] text-white">Iftekhar Alan Khan</p>
               <p className="text-[20px] text-white">Shushanto Chowdhury</p>
+              <p className="text-[20px] text-white">Adnan Farid</p>
             </div>
           </div>
 

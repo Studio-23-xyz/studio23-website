@@ -19,6 +19,14 @@ module.exports = {
         silent2_button_text: "#260202",
       },
       backgroundImage: {
+        "titles-hero":
+          "url('../../public/assets/home-page/control_override.png')",
+        "home-titles-co":
+          "url('../../public/assets/titles-page/titlespagehero.png')",
+        "home-titles-wm":
+          "url('../../public/assets/home-page/westwood-home.png')",
+        "home-titles-hn":
+          "url('../../public/assets/home-page/highnoon-home.png')",
         "ss2-button-bg":
           "url('../../public/assets/ss2-game-page/ss2-button1.png')",
         "ss2-ss-full-bg":
@@ -43,8 +51,6 @@ module.exports = {
           "url('../../public/assets/ss2-game-page/ss2-back-banner-ms.png')",
         "ss2-banner-mm":
           "url('../../public/assets/ss2-game-page/ss2-back-banner-mm.png')",
-        "titles-hero":
-          "url('../../public/assets/titles-page/titlespagehero.png')",
         "ss1-banner-1":
           "url('../../public/assets/home-page/SilentScreamBGLarge.png')",
         "ss2-parallax-1":

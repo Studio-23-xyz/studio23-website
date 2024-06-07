@@ -35,7 +35,7 @@ const ParallaxSection = () => {
         }}
       ></motion.div>
       <motion.div
-        className="absolute inset-0 bg-ss2-parallax-4 z-30 bg-cover bg-center"
+        className="absolute inset-0 bg-ss2-parallax-4 z-30 bg-cover md:bg-cover bg-center"
         style={{}}
       ></motion.div>
     </div>
