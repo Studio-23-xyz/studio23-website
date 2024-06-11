@@ -15,7 +15,7 @@ const Gamecardssection = () => {
       title: "Silent Scream 2",
       subtitle: "Psychological-Puzzle-Horror",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Silent Scream 2, a spine-chilling third-person adventure puzzle horror game developed by Studio 23, plunges players into the depths of terror within an abandoned asylum, where they must navigate through intricate puzzles, uncover dark mysteries, and confront malevolent entities to survive.",
       imageSrc: silentscream2hero.src,
       logoSrc: silentscream2logo,
       link: "/our-titles/silent-scream-2",
@@ -24,7 +24,7 @@ const Gamecardssection = () => {
       title: "Silent Scream",
       subtitle: "Action, Horror-Adventure",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Silent Scream is a stealth cooking game set in a creepy restaurant where you must serve customers while secretly feeding some of them to an alien entity in your basement.",
       imageSrc: silentscreamhero.src,
       logoSrc: silentscreamlogo,
       link: "/our-titles/silent-scream",
@@ -37,7 +37,7 @@ const Gamecardssection = () => {
       title: "Control Override",
       subtitle: "Arcade, Puzzle",
       description:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Control:Override is a puzzle game where you must share control between the environment and yourself. Defy Physics. Solve puzzles . Terminate the rogue AI. And perhaps confront the truth about why it went rogue.",
       imageSrc: controloverridehero.src,
       link: "/our-titles/control-override",
       availableOn: [

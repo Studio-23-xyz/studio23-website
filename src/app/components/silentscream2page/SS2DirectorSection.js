@@ -14,17 +14,18 @@ const SS2DirectorSection = () => {
           </h3>
           <p
             className="text-[14px] md:text-[20px] font-bold text-silent2_button_text text-center
-           mx-11 md:mx-14 leading-5 md:leading-10 flex justify-center items-center"
+           mx-11 md:mx-14 leading-5 md:leading-10 flex flex-col gap-4 justify-center items-center"
           >
-            Sed lectus consequat convallis faucibus etiam sit mauris hendrerit
-            cursus. Cursus mattis eget placerat et diam. Mauris tortor risus
-            dolor porta aliquam id vestibulum. Magna ipsum erat est augue.
-            Malesuada etiam sit amet sem orci cursus lorem tempus. Et et est et
-            et vitae enim. Nulla dignissim tortor adipiscing cursus egestas nisl
-            egestas. Rhoncus pellentesque enim amet massa pretium massa ut
-            mauris sit. Sit quis volutpat enim dignissim erat eu risus
-            porttitor. Praesent sapien eget velit nulla commodo. Ullamcorper
-            sagittis nunc Ullamcorper sagittis nunc.Ullamcorper sagittis nunc..
+            As the Game Director, I am dedicated to revolutionizing the game
+            development landscape in Bangladesh, step by step. Silent Scream 2
+            represents a major leap in this journey, showcasing our commitment
+            to excellence and innovation. We've poured our hearts into creating
+            this game, and I sincerely hope you find as much joy in playing it
+            as we did in bringing it to life. Your support and enjoyment are
+            what drive us to keep pushing the boundaries.
+            <a className="text-[16px] md:text-[22px] font-black">
+              Tanimul Haque Khan
+            </a>
           </p>
         </div>
       </div>

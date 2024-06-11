@@ -9,13 +9,13 @@ import covergoodbadjam from "/public/assets/home-page/goodbad_jam.jpg";
 const RecentEventsSection = () => {
   return (
     <div className="mb-8 md:mb-16">
-      <div className="flex flex-col gap-3 items-center w-full h-[67px] mb-4 md:mb-16">
+      <div className="flex flex-col gap-3 items-center w-full h-[67px] mb-10 md:mb-16">
         <h1 className="text-[16px] md:text-[30px] font-bold">
           Our Recent Community Events
         </h1>
-        <p className="text-[10px] md:text-[14px] font-normal text-center">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+        <p className="text-[12px] md:text-[14px] font-normal text-center">
+          Check out the highlights from our latest community events, where
+          gamers and developers connect and share their passion!
         </p>
       </div>
       {/* Grid Section */}

@@ -1,13 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import covercontroloverride from "/public/assets/home-page/control_override.png";
-import coverwestwoodmanor from "/public/assets/home-page/westwood-home.png";
-import coverhighnoon from "/public/assets/home-page/highnoon-home.png";
 
 const TitleSection = () => {
   return (
-    <div className="pb-4 md:pb-4">
+    <div className="pb-6 md:pb-12">
       {/* Title & Button Section */}
       <div className="flex justify-between items-center pb-4 md:pb-14">
         <div>
@@ -31,7 +28,7 @@ const TitleSection = () => {
       <div className="flex flex-col md:flex-row gap-4">
         <div className="md:w-1/2 flex flex-col gap-3">
           <div
-            className="bg-titles-hero bg-cover bg-center rounded-2xl h-[139px] md:h-[277px] pb-2 md:pb-3 pr-2 md:pr-3
+            className="bg-home-titles-controloverride bg-cover bg-center rounded-2xl h-[139px] md:h-[277px] pb-2 md:pb-3 pr-2 md:pr-3
             flex justify-end items-end gap-3"
           >
             <button
@@ -102,7 +99,7 @@ const TitleSection = () => {
         <div className="flex gap-4 md:w-1/2">
           <div className="flex flex-col gap-2 w-1/2">
             <div
-              className="bg-home-titles-wm bg-cover bg-center rounded-2xl h-[139px] md:h-[277px] pb-2 md:pb-3 pr-2 md:pr-3
+              className="bg-home-titles-westwood bg-cover bg-center rounded-2xl h-[139px] md:h-[277px] pb-2 md:pb-3 pr-2 md:pr-3
             flex justify-end items-end gap-3"
             >
               <button
@@ -133,7 +130,7 @@ const TitleSection = () => {
           </div>
           <div className="flex flex-col gap-2 w-1/2">
             <div
-              className="bg-home-titles-hn bg-cover bg-center rounded-2xl h-[139px] md:h-[277px] pb-2 md:pb-3 pr-2 md:pr-3
+              className="bg-home-titles-highnoon bg-cover bg-center rounded-2xl h-[139px] md:h-[277px] pb-2 md:pb-3 pr-2 md:pr-3
               flex justify-end items-end gap-3"
             >
               <button

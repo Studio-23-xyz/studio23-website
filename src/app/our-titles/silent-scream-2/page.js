@@ -19,7 +19,7 @@ const Page = () => {
     <div>
       <div className="min-h-screen">
         {/* Hero Banner Section */}
-        <ParallaxSection/>
+        <ParallaxSection />
 
         {/* Button Section */}
         <SS2ButtonSection />

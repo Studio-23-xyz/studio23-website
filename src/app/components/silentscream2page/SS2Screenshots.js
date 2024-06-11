@@ -1,16 +1,20 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import Screenshot2 from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
-import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
+import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-1.png";
+import Screenshot2 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-2.png";
+import Screenshot3 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-3.png";
+import Screenshot4 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-4.png";
+import Screenshot5 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-5.png";
+import Screenshot6 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-6.png";
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 1" },
   { src: Screenshot2, alt: "Silent Scream 2 Screenshot 2" },
-  { src: Screenshot1, alt: "Silent Scream 2 Screenshot 3" },
-  { src: Screenshot1, alt: "Silent Scream 2 Screenshot 4" },
-  { src: Screenshot1, alt: "Silent Scream 2 Screenshot 5" },
-  { src: Screenshot1, alt: "Silent Scream 2 Screenshot 6" },
+  { src: Screenshot3, alt: "Silent Scream 2 Screenshot 3" },
+  { src: Screenshot4, alt: "Silent Scream 2 Screenshot 4" },
+  { src: Screenshot5, alt: "Silent Scream 2 Screenshot 5" },
+  { src: Screenshot6, alt: "Silent Scream 2 Screenshot 6" },
 ];
 
 const SS2Screenshots = () => {
@@ -58,8 +62,7 @@ const SS2Screenshots = () => {
                 key={index}
                 className={`${
                   backgroundClasses[index % backgroundClasses.length]
-                } w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3
-                 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16 bg-cover
+                } w-[133px] md:w-[368px] h-[182px] md:h-[504px] px-3 md:px-6 pt-5 md:pt-9 pb-7 md:pb-16 bg-cover 
                   transform transition-transform duration-300 hover:scale-105 hover:brightness-110`}
                 onClick={() => openModal(screenshot)}
               >

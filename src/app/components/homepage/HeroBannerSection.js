@@ -38,8 +38,9 @@ const HeroBannerSection = () => {
             className="w-[185px] h-[89px] md:w-[574px] md:h-[276px]"
           />
           <p className="text-[10px] md:text-[16px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard.
+            Silent Scream is a stealth cooking game set in a creepy restaurant
+            where you must serve customers while secretly feeding some of them
+            to an alien entity in your basement.
           </p>
           {/* Store Button */}
           <div className="flex gap-3 md:gap-5">

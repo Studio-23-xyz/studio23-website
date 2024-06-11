@@ -20,12 +20,12 @@ module.exports = {
       },
       backgroundImage: {
         "titles-hero":
-          "url('../../public/assets/home-page/control_override.png')",
-        "home-titles-co":
           "url('../../public/assets/titles-page/titlespagehero.png')",
-        "home-titles-wm":
+        "home-titles-controloverride":
+          "url('../../public/assets/home-page/control_override.png')",
+        "home-titles-westwood":
           "url('../../public/assets/home-page/westwood-home.png')",
-        "home-titles-hn":
+        "home-titles-highnoon":
           "url('../../public/assets/home-page/highnoon-home.png')",
         "ss2-button-bg":
           "url('../../public/assets/ss2-game-page/ss2-button1.png')",

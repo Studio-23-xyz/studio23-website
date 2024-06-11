@@ -28,12 +28,11 @@ const SS2AboutSection = () => {
               className="text-[14px] md:text-[20px] font-bold text-silent2_button_text text-center
            mx-11 md:mx-14 leading-5 md:leading-10 flex justify-center items-center"
             >
-              Sed lectus consequat convallis faucibus etiam sit mauris hendrerit
-              cursus. Cursus mattis eget placerat et diam. Mauris tortor risus
-              dolor porta aliquam id vestibulum. Magna ipsum erat est augue.
-              Malesuada etiam sit amet sem orci cursus lorem tempus. Et et est
-              et et vitae enim. Nulla dignissim tortor adipiscing cursus egestas
-              nisl egestas.
+              Studio 23 is the dedicated in-house game studio of BrainStation
+              23. We are passionate gamers and developers committed to creating
+              high-quality, enjoyable games. As creative partner, we collaborate
+              with studios worldwide, offering guidance and support while
+              preserving our unique and independent spirit.
             </p>
           </div>
         </div>

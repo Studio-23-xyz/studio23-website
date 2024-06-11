@@ -24,12 +24,13 @@ const Footer = () => {
             </div>
             <div>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                Studio 23 is the dedicated in-house game studio of BrainStation
+                23. We are passionate gamers and developers committed to
+                creating high-quality, enjoyable games.
               </p>
             </div>
             <div>
-              <p>@Lorem</p>
+              <p></p>
             </div>
           </div>
           <div className="w-1/4 flex flex-col items-center justify-center">
@@ -61,10 +62,12 @@ const Footer = () => {
                 <p className="font-semibold text-[17px]">Contact Us</p>
               </div>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+                8th Floor, 2 Bir Uttam AK Khandakar Road, Mohakhali C/A,
+                Dhaka-1212, Bangladesh
               </p>
-              <h3>+88 01200000000</h3>
+              <p className="md:text-[15px] 2xl:text-[16px]">
+                studio23contact@brainstation-23.com
+              </p>
             </div>
           </div>
           <div className="w-1/4 flex flex-row gap-4 justify-end items-end pb-12">
@@ -128,8 +131,9 @@ const Footer = () => {
         </div>
         <div>
           <p className="text-[16px]">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Studio 23 is the dedicated in-house game studio of BrainStation 23.
+            We are passionate gamers and developers committed to creating
+            high-quality, enjoyable games.
           </p>
         </div>
         <div className="flex flex-row">
@@ -159,10 +163,12 @@ const Footer = () => {
               <p className="font-semibold text-[17px]">Contact Us</p>
             </div>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              8th Floor, 2 Bir Uttam AK Khandakar Road, Mohakhali C/A,
+              Dhaka-1212, Bangladesh
             </p>
-            <h3>+88 01200000000</h3>
+            <p className="text-[14px]">
+              studio23contact@<br></br>brainstation-23.com
+            </p>
           </div>
         </div>
         <div className="flex gap-5 mb-3">
