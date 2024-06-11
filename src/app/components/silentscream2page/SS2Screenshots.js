@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-2-old.png";
+import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-01.png";
+import Screenshot2 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-02.png";
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 1" },
-  { src: Screenshot1, alt: "Silent Scream 2 Screenshot 2" },
+  { src: Screenshot2, alt: "Silent Scream 2 Screenshot 2" },
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 3" },
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 4" },
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 5" },
