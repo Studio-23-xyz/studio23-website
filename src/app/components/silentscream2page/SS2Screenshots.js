@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-2.png";
+import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-2-old.png";
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
