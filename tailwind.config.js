@@ -43,6 +43,8 @@ module.exports = {
           "url('../../public/assets/ss2-game-page/ss2-ss-small-bg5.png')",
         "ss2-ss-small-bg6":
           "url('../../public/assets/ss2-game-page/ss2-ss-small-bg6.png')",
+        "ss2-quill-bg":
+          "url('../../public/assets/ss2-game-page/ss2-quill-large.svg')",
         "ss2-banner-ls":
           "url('../../public/assets/ss2-game-page/ss2-back-banner-ls.png')",
         "ss2-banner-lm":

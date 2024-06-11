@@ -26,7 +26,7 @@ const SS2AboutSection = () => {
             </h1>
             <p
               className="text-[14px] md:text-[20px] font-bold text-silent2_button_text text-center
-           mx-11 md:mx-14 leading-5 md:leading-10 flex justify-center items-center"
+              mx-11 md:mx-14 leading-5 md:leading-10 flex justify-center items-center"
             >
               Studio 23 is the dedicated in-house game studio of BrainStation
               23. We are passionate gamers and developers committed to creating

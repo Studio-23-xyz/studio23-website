@@ -33,19 +33,23 @@ const Page = () => {
         {/* Cast Section */}
         <SS2CastSection />
 
-        {/* Screenshots Section */}
-        <div id="screenshots">
-          <SS2Screenshots />
+        <div className="bg-ss2-quill-bg bg-center md:bg-right">
+          <div className="bg-black bg-opacity-80">
+            {/* Screenshot Section */}
+            <div id="screenshots">
+              <SS2Screenshots />
+            </div>
+
+            {/* Itchio Section */}
+            <SS2ItchioSection />
+
+            {/* Team Member Section */}
+            <SS2TeamSection />
+
+            {/* About Section */}
+            <SS2AboutSection />
+          </div>
         </div>
-
-        {/* Itchio Section */}
-        <SS2ItchioSection />
-
-        {/* Team Member Section */}
-        <SS2TeamSection />
-
-        {/* About Section */}
-        <SS2AboutSection />
       </div>
     </div>
   );
