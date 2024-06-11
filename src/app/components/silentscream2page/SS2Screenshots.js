@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
-import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-1.png";
-import Screenshot2 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-2.png";
-import Screenshot3 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-3.png";
-import Screenshot4 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-4.png";
-import Screenshot5 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-5.png";
-import Screenshot6 from "/public/assets/ss2-game-page/ss2-screenshots/ss2-ss-6.png";
+import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
+import Screenshot2 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-2.png";
+import Screenshot3 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-3.png";
+import Screenshot4 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-4.png";
+import Screenshot5 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-5.png";
+import Screenshot6 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-6.png";
+
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
