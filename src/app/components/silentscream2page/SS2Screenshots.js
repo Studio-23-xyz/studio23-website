@@ -6,7 +6,6 @@ import Screenshot3 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-3.p
 import Screenshot4 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-4.png";
 import Screenshot5 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-5.png";
 import Screenshot6 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-6.png";
-
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
