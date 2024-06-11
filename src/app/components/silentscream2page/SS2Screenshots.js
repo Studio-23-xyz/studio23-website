@@ -1,21 +1,17 @@
 import Image from "next/image";
 import { Fragment, useState } from "react";
+import Screenshot2 from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
 import Screenshot1 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-1.png";
-import Screenshot2 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-2.png";
-import Screenshot3 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-3.png";
-import Screenshot4 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-4.png";
-import Screenshot5 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-5.png";
-import Screenshot6 from "/public/assets/ss2-game-page/ss2-screenshots/SS2-SS-6.png";
 
 import SS2GameSSModal from "./SS2GameSSModal";
 
 const screenshots = [
   { src: Screenshot1, alt: "Silent Scream 2 Screenshot 1" },
   { src: Screenshot2, alt: "Silent Scream 2 Screenshot 2" },
-  { src: Screenshot3, alt: "Silent Scream 2 Screenshot 3" },
-  { src: Screenshot4, alt: "Silent Scream 2 Screenshot 4" },
-  { src: Screenshot5, alt: "Silent Scream 2 Screenshot 5" },
-  { src: Screenshot6, alt: "Silent Scream 2 Screenshot 6" },
+  { src: Screenshot2, alt: "Silent Scream 2 Screenshot 3" },
+  { src: Screenshot2, alt: "Silent Scream 2 Screenshot 4" },
+  { src: Screenshot2, alt: "Silent Scream 2 Screenshot 5" },
+  { src: Screenshot2, alt: "Silent Scream 2 Screenshot 6" },
 ];
 
 const SS2Screenshots = () => {
