@@ -4,7 +4,7 @@ import Studio23logoBlack from "/public/assets/studio23-logo-black.png";
 
 const SS2AboutSection = () => {
   return (
-    <div>
+    <div className="pb-10">
       <div className="w-full flex justify-center items-center mt-6">
         <div
           className="flex flex-col md:flex-row justify-center items-center w-[290px] md:w-[1320px] h-[617px] md:h-[432px]

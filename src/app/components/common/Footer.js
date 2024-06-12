@@ -6,7 +6,7 @@ import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
 
 const Footer = () => {
   return (
-    <div className="w-full md:h-[376px] bg-footer_black flex md:flex-col md:pt-10">
+    <div className="w-full md:h-[376px] flex md:flex-col md:pt-10">
       {/* Laptop View */}
       <div className="hidden md:flex flex-col">
         <div className="flex md:px-32">

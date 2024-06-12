@@ -10,7 +10,6 @@ export default function SilentScream2Layout({ children }) {
       <body className={inria.className}>
         <NavbarSS2 />
         {children}
-        <FooterSS2 />
       </body>
     </html>
   );

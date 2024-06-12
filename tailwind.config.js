@@ -17,6 +17,8 @@ module.exports = {
         footer_black: "#070707",
         silent2_red: "#FF1F00",
         silent2_button_text: "#260202",
+        main_gradient_Color1: "#002E3E",
+        main_gradient_Color2: "#000000",
       },
       backgroundImage: {
         "titles-hero":

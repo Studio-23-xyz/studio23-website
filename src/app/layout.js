@@ -17,9 +17,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/assets/studio_23_logo.svg" sizes="any" />
       </head>
       <body className={poppins.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="bg-gradient-to-t from-main_gradient_Color1 md:from-20% from-50% via-main_gradient_Color2 to-black">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

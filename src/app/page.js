@@ -11,6 +11,7 @@ export default function Home() {
       <HeroBannerSection />
 
       {/* Main Body*/}
+
       <div className="mt-12 md:mt-16 mx-6 md:mx-32">
         {/* Titles Section*/}
         <TitleSection />
