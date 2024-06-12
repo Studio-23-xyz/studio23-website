@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center md:mx-32 mt-5">
         {/* Laptop View */}
 
-        <div className=" hidden md:flex">
+        <div className="hidden md:flex">
           <Link href="/">
             <Image
               src={Studio23LogoWhite}
@@ -91,15 +91,37 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <Link href="/about-us">
-                <li
-                  className={classNames(
-                    "hover:font-bold transition-all flex gap-2",
-                    pathname === "/about-us" ? "font-bold" : ""
-                  )}
-                >
-                  About Us <ChevronDown />
+              <Link href="" className="group transition-all">
+                <li className="hover:font-bold transition-all flex gap-2">
+                  About Us{" "}
+                  <ChevronDown className="group-hover:rotate-180 transition-all" />
                 </li>
+                {/* Drop Down */}
+                <div
+                  className="absolute hidden w-auto flex-col rounded-lg bg-transparent transition-all 
+                             group-hover:flex pb-5"
+                >
+                  <div
+                    className={
+                      header
+                        ? "flex flex-col gap-3 bg-black rounded-lg px-5 py-5"
+                        : "flex flex-col gap-3 bg-transparent rounded-lg px-5 py-5"
+                    }
+                  >
+                    <Link
+                      href="/our-team"
+                      className="flex cursor-pointer items-center hover:font-bold"
+                    >
+                      <li>Our Team</li>
+                    </Link>
+                    <Link
+                      href="/careers"
+                      className="flex cursor-pointer items-center hover:font-bold"
+                    >
+                      <li>Careers</li>
+                    </Link>
+                  </div>
+                </div>
               </Link>
 
               <Link href="/community">
