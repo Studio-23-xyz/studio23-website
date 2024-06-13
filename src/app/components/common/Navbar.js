@@ -91,7 +91,7 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <Link href="" className="group transition-all">
+              <Link href="/our-team" className="group transition-all">
                 <li className="hover:font-bold transition-all flex gap-2">
                   About Us{" "}
                   <ChevronDown className="group-hover:rotate-180 transition-all" />
@@ -105,7 +105,7 @@ const Navbar = () => {
                     className={
                       header
                         ? "flex flex-col gap-3 bg-black rounded-lg px-5 py-5"
-                        : "flex flex-col gap-3 bg-transparent rounded-lg px-5 py-5"
+                        : "flex flex-col gap-3 bg-black bg-opacity-40 rounded-lg px-5 py-5"
                     }
                   >
                     <Link

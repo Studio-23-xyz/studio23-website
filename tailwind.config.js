@@ -65,6 +65,8 @@ module.exports = {
           "url('../../public/assets/ss2-game-page/ss2-hero-bg-layer3.png')",
         "ss2-parallax-4":
           "url('../../public/assets/ss2-game-page/ss2-hero-bg-layer4.png')",
+        "ourteam-hero":
+          "url('../../public/assets/our-team-page/hero_our_team.png')",
       },
     },
   },

@@ -8,7 +8,7 @@ import covergoodbadjam from "/public/assets/home-page/goodbad_jam.jpg";
 
 const RecentEventsSection = () => {
   return (
-    <div className="mb-8 md:mb-16">
+    <div className="mb-8 md:mb-16 mt-5">
       <div className="flex flex-col gap-3 items-center w-full h-[67px] mb-10 md:mb-16">
         <h1 className="text-[16px] md:text-[30px] font-bold">
           Our Recent Community Events
@@ -18,6 +18,7 @@ const RecentEventsSection = () => {
           gamers and developers connect and share their passion!
         </p>
       </div>
+
       {/* Grid Section */}
       <div className="flex flex-col md:flex-row gap-4">
         <div className="md:w-2/3 flex flex-col gap-4">
