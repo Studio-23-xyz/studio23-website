@@ -80,17 +80,6 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <Link href="/publishing-with-us">
-                <li
-                  className={classNames(
-                    "hover:font-bold transition-all",
-                    pathname === "/publishing-with-us" ? "font-bold" : ""
-                  )}
-                >
-                  Publish with Us
-                </li>
-              </Link>
-
               <Link href="/our-team" className="group transition-all">
                 <li className="hover:font-bold transition-all flex gap-2">
                   About Us{" "}
@@ -197,27 +186,25 @@ const Navbar = () => {
                         </li>
                       </Link>
 
-                      <Link href="/publishing-with-us">
-                        <li
-                          className={classNames(
-                            "hover:font-bold transition-all",
-                            pathname === "/publishing-with-us"
-                              ? "font-bold"
-                              : ""
-                          )}
-                        >
-                          Publish with Us
-                        </li>
-                      </Link>
-
-                      <Link href="/about-us">
+                      <Link href="/our-team">
                         <li
                           className={classNames(
                             "hover:font-bold flex gap-2 transition-all",
-                            pathname === "/about-us" ? "font-bold" : ""
+                            pathname === "/our-team" ? "font-bold" : ""
                           )}
                         >
-                          About Us <ChevronDown />
+                          Our Team
+                        </li>
+                      </Link>
+
+                      <Link href="/careers">
+                        <li
+                          className={classNames(
+                            "hover:font-bold flex gap-2 transition-all",
+                            pathname === "/careers" ? "font-bold" : ""
+                          )}
+                        >
+                          Careers
                         </li>
                       </Link>
 
