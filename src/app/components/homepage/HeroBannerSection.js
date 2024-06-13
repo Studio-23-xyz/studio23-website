@@ -45,8 +45,8 @@ const HeroBannerSection = () => {
           {/* Store Button */}
           <div className="flex gap-3 md:gap-5">
             <button
-              className="text-start w-[70px] md:w-[120px] h-[25px] md:h-[50px] bg-studio_blue font-bold text-[8px] md:text-[16px] text-black 
-                       flex items-center gap-2 rounded-3xl hover:bg-white hover:cursor-pointer justify-center"
+              className="text-start w-[70px] md:w-[120px] h-[25px] md:h-[50px] bg-white font-bold text-[8px] md:text-[16px] text-black 
+                       flex items-center gap-2 rounded-3xl hover:bg-studio_blue hover:cursor-pointer justify-center"
               onClick={() => {
                 window.open(
                   "https://store.steampowered.com/app/1955750/SILENT_SCREAM/",
@@ -64,8 +64,8 @@ const HeroBannerSection = () => {
               />
             </button>
             <button
-              className="text-start w-[80px] md:w-[140px] h-[25px] md:h-[50px] bg-studio_blue font-bold text-[8px] md:text-[16px] text-black 
-              flex justify-center items-center gap-2 rounded-3xl hover:bg-white hover:cursor-pointer"
+              className="text-start w-[80px] md:w-[140px] h-[25px] md:h-[50px] bg-white font-bold text-[8px] md:text-[16px] text-black 
+              flex justify-center items-center gap-2 rounded-3xl hover:bg-studio_blue hover:cursor-pointer"
               onClick={() => {
                 window.open(
                   "ms-windows-store://pdp/?productid=9PDJZK7HLHSD",

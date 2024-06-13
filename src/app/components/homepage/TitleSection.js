@@ -15,8 +15,8 @@ const TitleSection = () => {
         <div className="z-10">
           <Link href="/our-titles">
             <button
-              className="w-[80px] h-[25px] md:w-[160px] md:h-[50px] rounded-md md:rounded-lg bg-studio_blue text-[10px] md:text-[20px]
-             text-black font-extrabold hover:bg-white hover:text-studio_blue"
+              className="w-[80px] h-[25px] md:w-[160px] md:h-[50px] rounded-md md:rounded-lg bg-white text-[10px] md:text-[20px]
+             text-black font-extrabold hover:bg-studio_blue"
             >
               See All
             </button>
