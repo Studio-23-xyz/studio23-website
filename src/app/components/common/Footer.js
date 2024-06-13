@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-1/4 flex flex-col items-center justify-center">
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 2xl:gap-8">
               <div>
                 <p className="font-semibold text-[17px]">Contact Us</p>
               </div>

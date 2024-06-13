@@ -27,7 +27,7 @@ const Gamecardssection = () => {
         "Silent Scream is a stealth cooking game set in a creepy restaurant where you must serve customers while secretly feeding some of them to an alien entity in your basement.",
       imageSrc: silentscreamhero.src,
       logoSrc: silentscreamlogo,
-      link: "/our-titles/silent-scream",
+      link: "https://studio-23.xyz/silent-scream/",
       availableOn: [
         { src: steamicon, alt: "Steam" },
         { src: windowsicon, alt: "Windows" },
@@ -39,7 +39,7 @@ const Gamecardssection = () => {
       description:
         "Control:Override is a puzzle game where you must share control between the environment and yourself. Defy Physics. Solve puzzles . Terminate the rogue AI. And perhaps confront the truth about why it went rogue.",
       imageSrc: controloverridehero.src,
-      link: "/our-titles/control-override",
+      link: "https://studio-23.xyz/controloverride/",
       availableOn: [
         { src: steamicon, alt: "Steam" },
         { src: windowsicon, alt: "Windows" },
