@@ -8,9 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        rubik: ["Rubik", "sans-serif"],
-      },
       colors: {
         slate_gray: "#1b222c",
         fiery_black: "#12151c",
