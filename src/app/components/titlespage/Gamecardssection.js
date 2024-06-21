@@ -1,6 +1,6 @@
 import React from "react";
 import GameCard from "./GameCard";
-import silentscream2logo from "/public/assets/ss2-game-page/silent-scram-2-logo.svg";
+import silentscream2logo from "../../../../public/assets/ss2-game-page/SS2_logo_white.png";
 import silentscream2hero from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
 import silentscreamhero from "/public/assets/home-page/SilentScreamBGLarge.png";
 import silentscreamlogo from "/public/assets/home-page/silentscream_logo.png";

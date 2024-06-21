@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import SilentScream2Logo from "/public/assets/ss2-game-page/silent-scram-2-logo.svg";
+import SilentScream2Logo from "../../../../public/assets/ss2-game-page/silent-scram-2-logo.svg";
 
 const NavbarSS2 = () => {
   return (
@@ -22,13 +21,7 @@ const NavbarSS2 = () => {
       </div>
       <div>
         <Link href="/our-titles/silent-scream-2">
-          <Image
-            src={SilentScream2Logo}
-            width={500}
-            height={200}
-            alt="Logo"
-            className="w-[86px] md:w-[113px] pl-2 md:pl-0 pt-2 md:pt-0"
-          />
+          <SilentScream2Logo className="w-[86px] md:w-[113px] pl-2 md:pl-0 pt-2 md:pt-0" />
         </Link>
       </div>
       <div className="flex gap-14">
