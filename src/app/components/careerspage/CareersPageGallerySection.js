@@ -2,10 +2,12 @@ import React from "react";
 import Image from "next/image";
 import PlayingVR from "../../../../public/assets/careers-page/playingvr.jpg";
 import Studio23Team from "../../../../public/assets/careers-page/teamstudio23.jpg";
+import WorkingVR from "../../../../public/assets/careers-page/workingwithvr.jpg";
+import PlayingArcade from "../../../../public/assets/careers-page/playingArcade.jpg";
 
 const CareersPageGallerySection = () => {
   return (
-    <div className="mb-8 md:mb-16 mt-5 md:px-14 px-4">
+    <div className="mb-8 md:mb-16 mt-5 md:mt-8 md:px-14 px-4">
       <div className="flex flex-col gap-3 items-center w-full mb-10 md:mb-20">
         <h1 className="text-[16px] md:text-[30px] font-bold">
           We do what we love!
@@ -48,7 +50,7 @@ const CareersPageGallerySection = () => {
           <div className="flex gap-4">
             <div className="w-1/2 md:w-2/5">
               <Image
-                src={""}
+                src={WorkingVR}
                 width={720}
                 height={960}
                 alt="VR Playing 2"
@@ -68,11 +70,11 @@ const CareersPageGallerySection = () => {
         </div>
         <div className="md:w-1/3">
           <Image
-            src={""}
+            src={PlayingArcade}
             width={1000}
             height={1000}
             alt="Arcade Playing"
-            className="h-full 2xl:h-[460px] rounded-2xl object-cover"
+            className="h-full md:h-[460px] rounded-2xl object-cover"
           />
         </div>
       </div>
