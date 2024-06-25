@@ -69,6 +69,8 @@ module.exports = {
           "url('../../public/assets/our-team-page/hero_our_team.png')",
         "careers-hero":
           "url('../../public/assets/careers-page/hero_careers.jpg')",
+        "community-hero":
+          "url('../../public/assets/community-page/hero_community.png')",
       },
     },
   },

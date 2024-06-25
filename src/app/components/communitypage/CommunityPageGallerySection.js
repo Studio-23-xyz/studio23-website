@@ -5,7 +5,7 @@ import Studio23Team from "../../../../public/assets/careers-page/teamstudio23.jp
 import WorkingVR from "../../../../public/assets/careers-page/workingwithvr.jpg";
 import PlayingArcade from "../../../../public/assets/careers-page/playingArcade.jpg";
 
-const CareersPageGallerySection = () => {
+const CommunityPageGallerySection = () => {
   return (
     <div className="mb-8 md:mb-16 mt-5 md:mt-8 md:px-14 px-4">
       <div className="flex flex-col gap-3 items-center w-full mb-10 md:mb-20">
@@ -82,4 +82,4 @@ const CareersPageGallerySection = () => {
   );
 };
 
-export default CareersPageGallerySection;
+export default CommunityPageGallerySection;
