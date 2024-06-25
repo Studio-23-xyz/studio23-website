@@ -58,8 +58,8 @@ const CareersPageJoinUsSection = () => {
           </ul>
           <div className="mt-5 flex justify-end">
             <button
-              className="w-full md:w-[248px] h-auto md:h-[50px] bg-white text-black text-[12px] md:text-[16px] font-black rounded py-2 px-4 
-                         hover:bg-studio_blue transition duration-200 "
+              className="w-full md:w-[248px] h-auto md:h-[50px] bg-white text-black text-[12px] md:text-[16px] font-black rounded-xl py-2 px-4 
+                         hover:bg-studio_blue transition duration-200"
             >
               Submit Your Resume!
             </button>

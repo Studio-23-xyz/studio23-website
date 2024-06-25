@@ -10,28 +10,54 @@ const CareersPageOpeningSection = () => {
           </h1>
         </div>
 
-        <div>
-          <table className="w-full">
-            <tr className="h-auto border-b-2">
-              <th>Game Developer Trainee</th>
-              <th>On Site</th>
-              <th>Dhaka, Bangladesh</th>
-              <th>Game Development</th>
-              <th>Full Time</th>
-              <th>
-                <button>Submit Resume</button>
-              </th>
-            </tr>
-            <tr className="h-auto border-b-2">
-              <th>3D Animator Trainee</th>
-              <th>On Site</th>
-              <th>Dhaka, Bangladesh</th>
-              <th>Game Development</th>
-              <th>Full Time</th>
-              <th>
-                <button>Submit Resume</button>
-              </th>
-            </tr>
+        <div className="w-full overflow-x-auto">
+          <table className="w-full min-w-[320px] md:min-w-[800px]">
+            <tbody>
+              <tr className="border-b-2 border-studio_blue flex flex-col md:flex-row md:table-row">
+                <th className="text-[24px] font-bold py-5">
+                  Game Developer Trainee
+                </th>
+                <th className="text-[12px] md:text-[16px] font-bold py-2 md:py-5">
+                  On Site
+                </th>
+                <th className="text-[12px] md:text-[16px] font-thin py-2 md:py-5">
+                  Dhaka, Bangladesh
+                </th>
+                <th className="text-[12px] md:text-[16px] font-thin py-2 md:py-5">
+                  Game Development
+                </th>
+                <th className="text-[12px] md:text-[16px] font-thin py-2 md:py-5">
+                  Full Time
+                </th>
+                <th className="py-2 md:py-5">
+                  <button className="bg-white text-black text-[12px] md:text-[16px] px-5 py-2 hover:bg-studio_blue transition duration-200 rounded-xl">
+                    Submit Resume
+                  </button>
+                </th>
+              </tr>
+              <tr className="border-b-2 border-studio_blue flex flex-col md:flex-row md:table-row">
+                <th className="text-[24px] font-bold py-5">
+                  3D Animator Trainee
+                </th>
+                <th className="text-[12px] md:text-[16px] font-bold py-2 md:py-5">
+                  On Site
+                </th>
+                <th className="text-[12px] md:text-[16px] font-thin py-2 md:py-5">
+                  Dhaka, Bangladesh
+                </th>
+                <th className="text-[12px] md:text-[16px] font-thin py-2 md:py-5">
+                  Game Development
+                </th>
+                <th className="text-[12px] md:text-[16px] font-thin py-2 md:py-5">
+                  Full Time
+                </th>
+                <th className="py-2 md:py-5">
+                  <button className="bg-white text-black text-[12px] md:text-[16px] px-5 py-2 hover:bg-studio_blue transition duration-200 rounded-xl">
+                    Submit Resume
+                  </button>
+                </th>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
