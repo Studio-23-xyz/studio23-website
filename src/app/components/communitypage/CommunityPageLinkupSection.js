@@ -1,4 +1,5 @@
 import React from "react";
+import InviteForm from "./InviteForm";
 
 const CommunityPageLinkupSection = () => {
   return (
@@ -16,7 +17,9 @@ const CommunityPageLinkupSection = () => {
           </a>
         </div>
 
-        <div>Github Section</div>
+        <div>
+          <InviteForm />
+        </div>
       </div>
     </div>
   );
