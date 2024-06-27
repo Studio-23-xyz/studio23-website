@@ -24,11 +24,7 @@ const RecentEventsSection = () => {
         <div className="md:w-2/3 flex flex-col gap-4">
           <div className="flex gap-4">
             <div className="w-1/2 md:w-3/5">
-              <a
-                href="http://localhost:3000/community"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/community" target="_blank" rel="noopener noreferrer">
                 <Image
                   src={coverdevmeetup}
                   width={1395}
@@ -39,11 +35,7 @@ const RecentEventsSection = () => {
               </a>
             </div>
             <div className="w-1/2 md:w-2/5">
-              <a
-                href="http://localhost:3000/community"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/community" target="_blank" rel="noopener noreferrer">
                 <Image
                   src={covergamejam}
                   width={1342}
@@ -71,11 +63,7 @@ const RecentEventsSection = () => {
               </a>
             </div>
             <div className="w-1/2 md:w-3/5">
-              <a
-                href="http://localhost:3000/community"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/community" target="_blank" rel="noopener noreferrer">
                 <Image
                   src={coverhackjam}
                   width={1920}

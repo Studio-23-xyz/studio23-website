@@ -68,7 +68,7 @@ const OurTeamMemberSection = () => {
               </div>
               <div className="flex justify-center">
                 <p className="text-[14px] md:text-[15px] text-black font-medium">
-                  Studio Directior
+                  Studio Director
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@ const OurTeamMemberSection = () => {
                 </div>
                 <div className="flex justify-center gap-2">
                   <p className="text-[14px] md:text-[15px] text-black font-medium">
-                    Art Directior
+                    Art Director
                   </p>
                   <span className="border-r-4 border-studio_blue"></span>
                   <p className="text-[14px] md:text-[15px] text-black font-medium">

@@ -5,7 +5,7 @@ import silentscream2hero from "/public/assets/ss2-game-page/silent-scream-2-hero
 import silentscreamhero from "/public/assets/home-page/SilentScreamBGLarge.png";
 import silentscreamlogo from "/public/assets/home-page/silentscream_logo.png";
 import controloverridehero from "/public/assets/home-page/control_override.png";
-import steamicon from "/public/assets/titles-page/steam-icon.svg";
+import steamicon from "/public/assets/steam-icon.png";
 import windowsicon from "/public/assets/windows-icon.png";
 import xboxicon from "/public/assets/xbox-icon.png";
 

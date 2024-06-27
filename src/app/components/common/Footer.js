@@ -66,7 +66,7 @@ const Footer = () => {
                 Dhaka-1212, Bangladesh
               </p>
               <p className="md:text-[15px] 2xl:text-[16px]">
-                studio23contact@brainstation-23.com
+                contact@studio-23.xyz
               </p>
             </div>
           </div>

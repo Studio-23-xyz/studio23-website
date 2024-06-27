@@ -36,7 +36,7 @@ const TitleSection = () => {
               gap-2 hover:bg-studio_blue text-[8px] md:text-[16px] font-medium text-black"
               onClick={() => {
                 window.open(
-                  "https://store.steampowered.com/app/1406090/ControlOverride/",
+                  "https://www.xbox.com/en-US/games/store/controloverride/9n73w1728bg8",
                   "_blank"
                 );
               }}
@@ -74,7 +74,7 @@ const TitleSection = () => {
               gap-2 hover:bg-studio_blue text-[8px] md:text-[16px] font-medium text-black"
               onClick={() => {
                 window.open(
-                  "ms-windows-store://pdp/?productid=9N73W1728BG8",
+                  "https://store.steampowered.com/app/1406090/ControlOverride/",
                   "_blank"
                 );
               }}

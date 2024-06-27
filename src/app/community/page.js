@@ -5,7 +5,7 @@ import CommunityPageLinkupSection from "../components/communitypage/CommunityPag
 
 const page = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen">
       {/* Hero Banner */}
       <CommunityPageHeroSection />
 
