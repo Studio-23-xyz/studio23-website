@@ -1,21 +1,21 @@
 "use client";
 import Image from "next/image";
-import LinkedinIcon from "../../../../public/assets/our-team-page/icons/linkedin_icon.svg";
-import GithubIcon from "../../../../public/assets/our-team-page/icons/github_icon.svg";
-import BehanceIcon from "../../../../public/assets/our-team-page/icons/behance_icon.svg";
-import ArtstationIcon from "../../../../public/assets/our-team-page/icons/artstation_icon.svg";
-import tanimImage from "../../../../public/assets/our-team-page/tanim.png";
-import inamulImage from "../../../../public/assets/our-team-page/inamul.png";
-import shamimImage from "../../../../public/assets/our-team-page/shamim.png";
+import dipokImage from "../../../../public/assets/our-team-page/dipok.png";
+import eptyImage from "../../../../public/assets/our-team-page/epty.png";
 import evanImage from "../../../../public/assets/our-team-page/evan.png";
 import fahimImage from "../../../../public/assets/our-team-page/fahim.png";
-import eptyImage from "../../../../public/assets/our-team-page/epty.png";
-import dipokImage from "../../../../public/assets/our-team-page/dipok.png";
-import rasheeqImage from "../../../../public/assets/our-team-page/rasheeq_initial.png";
 import ferdousImage from "../../../../public/assets/our-team-page/ferdous.png";
-import shusantoImage from "../../../../public/assets/our-team-page/shusanto.png";
-import niloyImage from "../../../../public/assets/our-team-page/niloy.png";
+import ArtstationIcon from "../../../../public/assets/our-team-page/icons/artstation_icon.svg";
+import BehanceIcon from "../../../../public/assets/our-team-page/icons/behance_icon.svg";
+import GithubIcon from "../../../../public/assets/our-team-page/icons/github_icon.svg";
+import LinkedinIcon from "../../../../public/assets/our-team-page/icons/linkedin_icon.svg";
 import iftekharImage from "../../../../public/assets/our-team-page/ifthekhar.png";
+import inamulImage from "../../../../public/assets/our-team-page/inamul.png";
+import niloyImage from "../../../../public/assets/our-team-page/niloy.png";
+import rasheeqImage from "../../../../public/assets/our-team-page/rasheeq_initial.png";
+import shamimImage from "../../../../public/assets/our-team-page/shamim.png";
+import shusantoImage from "../../../../public/assets/our-team-page/shusanto.png";
+import tanimImage from "../../../../public/assets/our-team-page/tanim.png";
 
 const OurTeamMemberSection = () => {
   return (
@@ -171,7 +171,7 @@ const OurTeamMemberSection = () => {
                   </p>
                   <span className="border-r-4 border-studio_blue"></span>
                   <p className="text-[14px] md:text-[15px] text-black font-medium">
-                    Game Programmer
+                    Gameplay Programmer
                   </p>
                 </div>
               </div>
