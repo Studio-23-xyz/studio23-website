@@ -2,6 +2,7 @@
 import TitleSection from "./components/homepage/TitleSection";
 import RecentEventsSection from "./components/homepage/RecentEventsSection";
 import HeroBannerSection from "./components/homepage/HeroBannerSection";
+import Newslatter from "./components/common/Newslatter";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
         {/* Recent Event Section*/}
         <RecentEventsSection />
+
+        {/* Newssletter Section */}
+        <Newslatter />
       </div>
     </div>
   );
