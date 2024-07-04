@@ -9,15 +9,16 @@ const page = () => {
     <div className="min-h-screen">
       {/* Hero Banner */}
       <CareersPageHeroSection />
+      <div className="2xl:mx-60">
+        {/* Gallery Section */}
+        <CareersPageGallerySection />
 
-      {/* Gallery Section */}
-      <CareersPageGallerySection />
+        {/* Why Join Us Section */}
+        <CareersPageJoinUsSection />
 
-      {/* Why Join Us Section */}
-      <CareersPageJoinUsSection />
-
-      {/* Openings Section */}
-      <CareersPageOpeningSection />
+        {/* Openings Section */}
+        <CareersPageOpeningSection />
+      </div>
     </div>
   );
 };

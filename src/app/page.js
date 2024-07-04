@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* Main Body*/}
 
-      <div className="mt-12 md:mt-16 mx-6 md:mx-32">
+      <div className="mt-12 md:mt-16 mx-6 md:mx-32 2xl:mx-60">
         {/* Titles Section*/}
         <TitleSection />
 

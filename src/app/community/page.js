@@ -8,12 +8,13 @@ const page = () => {
     <div className="min-h-screen">
       {/* Hero Banner */}
       <CommunityPageHeroSection />
+      <div className="2xl:mx-60">
+        {/* Gallery Section */}
+        <CommunityPageGallerySection />
 
-      {/* Gallery Section */}
-      <CommunityPageGallerySection />
-
-      {/* Link Up Section */}
-      <CommunityPageLinkupSection />
+        {/* Link Up Section */}
+        <CommunityPageLinkupSection />
+      </div>
     </div>
   );
 };

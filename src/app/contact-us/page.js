@@ -7,11 +7,12 @@ const page = () => {
     <div className="min-h-screen">
       {/* Hero Banner Section */}
       <ContactHeroSection />
-      {/* From Section */}
-      <ContactForm/>
-      {/* Address Section */}
-      <ContactAddressSection />
-      
+      <div className="2xl:mx-60">
+        {/* From Section */}
+        <ContactForm />
+        {/* Address Section */}
+        <ContactAddressSection />
+      </div>
     </div>
   );
 };
