@@ -18,7 +18,7 @@ const Gamecardssection = () => {
         "Silent Scream 2, a spine-chilling third-person adventure puzzle horror game developed by Studio 23, plunges players into the depths of terror within an abandoned asylum, where they must navigate through intricate puzzles, uncover dark mysteries, and confront malevolent entities to survive.",
       imageSrc: silentscream2hero.src,
       logoSrc: silentscream2logo,
-      link: "/our-titles/silent-scream-2",
+      link: "https://silentscream2.studio-23.xyz/",
     },
     {
       title: "Silent Scream",
@@ -39,7 +39,7 @@ const Gamecardssection = () => {
       description:
         "Control:Override is a puzzle game where you must share control between the environment and yourself. Defy Physics. Solve puzzles . Terminate the rogue AI. And perhaps confront the truth about why it went rogue.",
       imageSrc: controloverridehero.src,
-      link: "https://studio-23.xyz/controloverride/",
+      link: "https://controloverride.studio-23.xyz/",
       availableOn: [
         { src: steamicon, alt: "Steam" },
         { src: windowsicon, alt: "Windows" },
