@@ -1,8 +1,8 @@
-// src/app/components/communitypage/InviteForm.js
-
 "use client";
 import React, { useState } from "react";
 import { Octokit } from "@octokit/rest";
+import GitHubLogo from "../../../../public/assets/community-page/git_round1.png";
+
 const InviteForm = () => {
   const [githubUsername, setGithubUsername] = useState("");
   const [message, setMessage] = useState("");
@@ -36,18 +36,9 @@ const InviteForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6 text-center text-black">
-        Invite to GitHub Organization
-      </h2>
+    <div className="w-full max-w-md mx-auto mt-10 p-6">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label
-            htmlFor="githubUsername"
-            className="block text-sm font-medium text-gray-700"
-          >
-            GitHub Username
-          </label>
           <input
             type="text"
             id="githubUsername"
@@ -58,11 +49,13 @@ const InviteForm = () => {
             className="mt-1 block w-full p-2 border text-black border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50"
           />
         </div>
+
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200"
+          className="w-full bg-studio_blue text-black text-[16px] font-bold px-6 py-3 rounded-lg shadow-md hover:bg-white transition duration-300
+            flex gap-3 items-center justify-center"
         >
-          Send Invite
+          Join Github
         </button>
       </form>
       {message && <p className="mt-4 text-center">{message}</p>}

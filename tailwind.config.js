@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         slate_gray: "#1b222c",
         fiery_black: "#12151c",
+        mordern_black: "#151515",
         crimson_red: "#661b1c",
         brick_red: "#531516",
         studio_blue: "#0097CB",
