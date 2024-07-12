@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
-import { ChevronDown, LucideMenu } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react"; // Ensure 'Menu' icon is correctly imported from lucide-react
 import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [showMenu, setShowmenu] = useState(false);
-  const [header, setHader] = useState(false);
+  const [header, setHeader] = useState(false);
 
   const handleToggleMenu = () => {
     setShowmenu(!showMenu);
@@ -18,9 +18,9 @@ const Navbar = () => {
 
   const scrollHeader = () => {
     if (window.scrollY >= 20) {
-      setHader(true);
+      setHeader(true);
     } else {
-      setHader(false);
+      setHeader(false);
     }
   };
 
@@ -28,7 +28,7 @@ const Navbar = () => {
     window.addEventListener("scroll", scrollHeader);
 
     return () => {
-      window.addEventListener("scroll", scrollHeader);
+      window.removeEventListener("scroll", scrollHeader); // Properly remove event listener
     };
   }, []);
 
@@ -42,7 +42,6 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center md:mx-32 mt-5">
         {/* Laptop View */}
-
         <div className="hidden md:flex">
           <Link href="/">
             <Image
@@ -141,11 +140,10 @@ const Navbar = () => {
         </div>
 
         {/* Mobile View */}
-
         <div className="md:hidden w-full mx-5 flex items-center justify-between">
           <span onClick={handleToggleMenu}>
             <div className="flex justify-between items-center">
-              <LucideMenu className="w-[25px] h-[25px] stroke-studio_blue hover:stroke-white" />
+              <Menu className="w-[25px] h-[25px] stroke-studio_blue hover:stroke-white" />
             </div>
 
             {showMenu && (
@@ -153,11 +151,10 @@ const Navbar = () => {
                 <div>
                   <Link href="/">
                     <Image
-                      src="./assets/studio23_logo_white.png"
+                      src={Studio23LogoWhite}
                       width={150}
                       height={200}
                       alt="Logo"
-                      className=""
                     />
                   </Link>
                 </div>
@@ -241,7 +238,7 @@ const Navbar = () => {
           <div>
             <Link href="/">
               <Image
-                src="./assets/studio23_logo_white.png"
+                src={Studio23LogoWhite}
                 width={150}
                 height={200}
                 alt="Logo"
