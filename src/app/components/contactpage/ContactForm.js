@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import { useFormStatus } from "react-dom";
-import emailsender from "@/lib/emailsender";
+import { emailsender } from "@/lib/emailsender";
 
 const initValues = {
   name: "",

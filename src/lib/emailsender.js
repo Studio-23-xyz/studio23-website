@@ -1,12 +1,11 @@
 "use server";
 import { ServerClient } from "postmark";
 
-const emailsender = async (formdata) => {
+export const emailsender = async (formdata) => {
   console.log(formdata);
   const name = formdata.get("name");
   const email = formdata.get("email");
   const message = formdata.get("message");
-  const values = { name, email, message };
   const newErrors = {};
   var client = new ServerClient("d6c84294-ac69-406d-a66b-f7ff80b7d88e");
 
@@ -31,4 +30,3 @@ const emailsender = async (formdata) => {
     MessageStream: "outbound",
   });
 };
-export default emailsender;
