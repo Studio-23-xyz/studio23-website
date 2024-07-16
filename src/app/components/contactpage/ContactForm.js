@@ -1,5 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useFormStatus } from "react-dom";
+import emailsender from "@/lib/emailsender";
 
 const initValues = {
   name: "",
@@ -12,6 +14,8 @@ const initState = { values: initValues, errors: {} };
 const ContactForm = () => {
   const [state, setState] = useState(initState);
   const { values, errors } = state;
+  const { pending } = useFormStatus();
+  const formRef = useRef(null); // Create a ref for the form
 
   const handleChange = ({ target }) =>
     setState((prev) => ({
@@ -26,19 +30,16 @@ const ContactForm = () => {
       },
     }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, message } = values;
-    const newErrors = {};
-
-    if (!name) newErrors.name = "Name is required";
-    if (!email) newErrors.email = "Email is required";
-    if (!message) newErrors.message = "Message is required";
-
-    if (Object.keys(newErrors).length > 0) {
-      setState((prev) => ({ ...prev, errors: newErrors }));
-    } else {
-      // Handle form submission (e.g., send email)
+    try {
+      const formData = new FormData(formRef.current);
+      await emailsender(formData); // Assuming emailsender is an async function that takes FormData
+      setState(initState); // Reset form values to initial state
+      formRef.current.reset(); // Manually reset the form fields
+    } catch (error) {
+      console.error("Form submission error:", error);
+      // Handle the error (e.g., display a message to the user)
     }
   };
 
@@ -46,7 +47,9 @@ const ContactForm = () => {
     <div className="w-full h-auto mx-auto flex flex-col gap-3">
       <h1 className="text-[20px] md:text-[30px] font-bold">Contact Us</h1>
       <form
+        ref={formRef}
         className="w-full flex flex-col justify-center gap-4 mt-3"
+        method="POST" // Add method attribute if needed
         onSubmit={handleSubmit}
       >
         <div>
@@ -58,7 +61,7 @@ const ContactForm = () => {
             placeholder="Your Name"
             required
             className={`bg-transparent border border-studio_blue ${
-              errors.email ? "border-red-500" : "border-black"
+              errors.name ? "border-red-500" : "border-black"
             } text-white text-[16px] rounded-xl focus:ring-white focus:border-white block w-full p-2.5`}
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
@@ -97,7 +100,7 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
-          disabled={!values.name || !values.email || !values.message}
+          disabled={!values.name || !values.email || !values.message || pending}
           className={`w-full py-2 px-4 mt-4 rounded-md transition duration-200 ${
             !values.name || !values.email || !values.message
               ? "bg-gray-400 cursor-not-allowed"

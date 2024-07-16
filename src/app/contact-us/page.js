@@ -12,6 +12,7 @@ const page = () => {
       <div className="mt-12 md:mt-16 mx-6 md:mx-16 2xl:mx-60">
         {/* From Section */}
         <ContactFormSection />
+
         {/* Address Section */}
         <ContactAddressSection />
       </div>
