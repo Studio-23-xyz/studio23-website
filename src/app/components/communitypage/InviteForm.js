@@ -44,6 +44,7 @@ const InviteForm = () => {
             type="text"
             id="githubUsername"
             name="githubUsername"
+            placeholder="GitHub Username"
             value={githubUsername}
             onChange={(e) => setGithubUsername(e.target.value)}
             required

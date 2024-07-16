@@ -43,12 +43,13 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-[90%] h-auto mx-auto mt-14 flex justify-center">
-      <form className="w-full md:w-[30%] xl:w-[20%] flex flex-col justify-center gap-4" onSubmit={handleSubmit}>
+    <div className="w-full h-auto mx-auto flex flex-col gap-3">
+      <h1 className="text-[20px] md:text-[30px] font-bold">Contact Us</h1>
+      <form
+        className="w-full flex flex-col justify-center gap-4 mt-3"
+        onSubmit={handleSubmit}
+      >
         <div>
-          <label className="block mb-2 text-[16px] font-bold text-white">
-            Your Name
-          </label>
           <input
             value={values.name}
             onChange={handleChange}
@@ -56,24 +57,21 @@ const ContactForm = () => {
             name="name"
             placeholder="Your Name"
             required
-            className={`bg-fiery_black border ${
-              errors.name ? "border-red-500" : "border-black"
+            className={`bg-transparent border border-studio_blue ${
+              errors.email ? "border-red-500" : "border-black"
             } text-white text-[16px] rounded-xl focus:ring-white focus:border-white block w-full p-2.5`}
           />
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
         </div>
         <div>
-          <label className="block mb-2 text-[16px] font-bold text-white">
-            Your Email
-          </label>
           <input
             value={values.email}
             onChange={handleChange}
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Email ID"
             required
-            className={`bg-fiery_black border ${
+            className={`bg-transparent border border-studio_blue ${
               errors.email ? "border-red-500" : "border-black"
             } text-white text-[16px] rounded-xl focus:ring-white focus:border-white block w-full p-2.5`}
           />
@@ -82,16 +80,14 @@ const ContactForm = () => {
           )}
         </div>
         <div>
-          <label className="block mb-2 text-[16px] font-bold text-white">
-            Your Message
-          </label>
           <textarea
             value={values.message}
             onChange={handleChange}
             name="message"
-            placeholder="Your Message"
+            placeholder="Message"
             required
-            className={`bg-fiery_black border ${
+            rows="8"
+            className={`bg-transparent border border-studio_blue ${
               errors.message ? "border-red-500" : "border-black"
             } text-white text-[16px] rounded-xl focus:ring-white focus:border-white block w-full p-2.5`}
           />
@@ -105,7 +101,7 @@ const ContactForm = () => {
           className={`w-full py-2 px-4 mt-4 rounded-md transition duration-200 ${
             !values.name || !values.email || !values.message
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-white text-black hover:bg-studio_blue"
+              : "bg-studio_blue text-black font-bold hover:bg-white"
           }`}
         >
           Send

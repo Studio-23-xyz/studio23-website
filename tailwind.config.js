@@ -72,6 +72,8 @@ module.exports = {
           "url('../../public/assets/careers-page/hero_careers.jpg')",
         "community-hero":
           "url('../../public/assets/community-page/hero_community.png')",
+        "contact-hero":
+          "url('../../public/assets/contact-page/hero_contact.jpg')",
       },
     },
   },

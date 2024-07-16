@@ -196,6 +196,7 @@ const Navbar = () => {
                         </li>
                       </Link>
 
+                      {/*  
                       <Link href="/careers">
                         <li
                           className={classNames(
@@ -206,7 +207,7 @@ const Navbar = () => {
                           Careers
                         </li>
                       </Link>
-
+                           */}
                       <Link href="/community">
                         <li
                           className={classNames(

@@ -1,5 +1,6 @@
 import ContactAddressSection from "../components/contactpage/ContactAddressSection";
-import ContactForm from "../components/contactpage/ContactForm";
+import ContactFormSection from "../components/contactpage/ContactFormSection";
+
 import ContactHeroSection from "../components/contactpage/ContactHeroSection";
 
 const page = () => {
@@ -7,9 +8,10 @@ const page = () => {
     <div className="min-h-screen">
       {/* Hero Banner Section */}
       <ContactHeroSection />
-      <div className="2xl:mx-60">
+
+      <div className="mt-12 md:mt-16 mx-6 md:mx-16 2xl:mx-60">
         {/* From Section */}
-        <ContactForm />
+        <ContactFormSection />
         {/* Address Section */}
         <ContactAddressSection />
       </div>
