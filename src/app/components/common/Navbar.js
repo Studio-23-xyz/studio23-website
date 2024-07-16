@@ -102,12 +102,14 @@ const Navbar = () => {
                     >
                       <li>Our Team</li>
                     </Link>
+                    {/*  
                     <Link
                       href="/careers"
                       className="flex cursor-pointer items-center hover:font-bold"
                     >
                       <li>Careers</li>
                     </Link>
+                    */}
                   </div>
                 </div>
               </Link>
