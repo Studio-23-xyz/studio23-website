@@ -1,7 +1,8 @@
 "use client";
 import { useState, useRef } from "react";
 import { useFormStatus } from "react-dom";
-import { emailsender } from "@/app/lib/emailsender";
+import { ServerClient } from "postmark";
+import { Octokit } from "@octokit/rest";
 
 const initValues = {
   name: "",
@@ -15,7 +16,6 @@ const ContactForm = () => {
   const [state, setState] = useState(initState);
   const { values, errors } = state;
   const { pending } = useFormStatus();
-  const formRef = useRef(null); // Create a ref for the form
 
   const handleChange = ({ target }) =>
     setState((prev) => ({
@@ -33,8 +33,26 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const formData = new FormData(formRef.current);
-      await emailsender(formData); // Assuming emailsender is an async function that takes FormData
+      const clientId = process.env.NEXT_PUBLIC_EMAIL_CLIENT_ID;
+      console.log(clientId);
+      var client = new ServerClient(clientId);
+
+      // Send email using EmailJS
+      client.sendEmail({
+        From: "shahadat.shamim@brainstation-23.com",
+        To: "studio23contact@brainstation-23.com",
+        Subject: "Message From Studio-23 Website",
+        HtmlBody: `<strong>My name is: ${state.name}</strong> 
+                    <br/> 
+                    <strong>Email: ${state.email}</strong> 
+                    <br/>
+                    <strong>Message: ${state.message}</strong> 
+                    
+                    <br/>
+                    `,
+        TextBody: "Hello from Studio-23!",
+        MessageStream: "outbound",
+      });
       setState(initState); // Reset form values to initial state
       formRef.current.reset(); // Manually reset the form fields
     } catch (error) {
@@ -47,9 +65,7 @@ const ContactForm = () => {
     <div className="w-full h-auto mx-auto flex flex-col gap-3">
       <h1 className="text-[20px] md:text-[30px] font-bold">Contact Us</h1>
       <form
-        ref={formRef}
         className="w-full flex flex-col justify-center gap-4 mt-3"
-        method="POST" // Add method attribute if needed
         onSubmit={handleSubmit}
       >
         <div>
