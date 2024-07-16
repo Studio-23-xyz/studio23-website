@@ -12,7 +12,7 @@ const InviteForm = () => {
     e.preventDefault();
     try {
       const octokit = new Octokit({
-        auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
+        auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN, // a very secrate code
       });
 
       const orgName = "Game-Developer-Community-Bangladesh"; // Replace with your organization name
