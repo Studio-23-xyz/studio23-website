@@ -8,19 +8,16 @@ import PlayingArcade from "../../../../public/assets/careers-page/playingArcade.
 const CommunityPageGallerySection = () => {
   return (
     <div className="mb-8 md:mb-16 mt-5 md:mt-8 md:px-14 px-4">
-      <div className="flex flex-col gap-3 items-center w-full mb-10 md:mb-20">
-        <h1 className="text-[16px] md:text-[30px] font-bold">
-          We do what we love!
-        </h1>
+      <div className="flex flex-col gap-3 items-center w-full mb-10 md:mb-10">
+        <h1 className="text-[16px] md:text-[30px] font-bold">Event Gallery</h1>
         <p className="text-[12px] md:text-[14px] font-normal text-center">
-          Studio 23 is comprised of creative and innovative individuals who are
-          passionate about the games we develop and the developers we partner
-          with. Our team-driven environment brings together talented developers
-          from around the world to discover, share, and create together.
-          <br></br> While we’re dedicated to making great games, we also take
-          time to enjoy events, celebrate game launches, and mark special
-          occasions throughout the year. Join us and be part of a community that
-          values both hard work and having fun.
+          Welcome to our Event Gallery, where we celebrate the memorable moments
+          that bring our community together. Here, you can explore a collection
+          of images showcasing our recent events, game launches, and community
+          gatherings. From behind-the-scenes glimpses to epic celebrations, our
+          gallery captures the essence of what makes Studio 23 special. Dive in
+          and relive the excitement, creativity, and camaraderie that define our
+          community.
         </p>
       </div>
 

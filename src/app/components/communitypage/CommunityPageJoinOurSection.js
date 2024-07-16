@@ -23,7 +23,7 @@ const CommunityPageJoinOurSection = () => {
         </p>
       </div>
       <div className="w-full flex flex-col md:flex-row gap-5">
-        <div className="bg-mordern_black w-full md:w-1/2 px-5 py-5 flex flex-col md:flex-row gap-2">
+        <div className="bg-mordern_black w-full md:w-1/2 px-5 py-5 flex flex-col md:flex-row gap-2 rounded-xl">
           <div className="w-full md:w-2/5 flex justify-center">
             <Image
               src={GdcbdLogo}
@@ -33,7 +33,7 @@ const CommunityPageJoinOurSection = () => {
               className="w-[105px] md:w-[210px] h-[105px] md:h-[210px] rounded-2xl object-cover object-center"
             />
           </div>
-          <div className="w-full md:w-3/5 flex flex-col gap-4 justify-between">
+          <div className="w-full md:w-3/5 flex flex-col gap-8">
             <p className="text-[16px] font-medium leading-8">
               Join our vibrant Discord community! Share your gaming experiences,
               participate in exclusive events, and stay updated with the latest
@@ -61,7 +61,7 @@ const CommunityPageJoinOurSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-mordern_black w-full md:w-1/2 px-5 py-5 flex flex-col md:flex-row gap-2">
+        <div className="bg-mordern_black w-full md:w-1/2 px-5 py-5 flex flex-col md:flex-row gap-2 rounded-xl">
           <div className="w-full md:w-2/5 flex justify-center">
             <Image
               src={Studio23Logo}
@@ -75,7 +75,7 @@ const CommunityPageJoinOurSection = () => {
             <p className="text-[16px] font-medium leading-8">
               Join our GitHub organization & collaborate with other developers.
             </p>
-            <div className="">
+            <div>
               <InviteForm />
             </div>
           </div>

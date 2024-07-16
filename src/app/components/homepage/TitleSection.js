@@ -12,7 +12,7 @@ const TitleSection = () => {
             Some of our other titles
           </h1>
         </div>
-        <div className="z-10">
+        <div>
           <Link href="/our-titles">
             <button
               className="w-[80px] h-[25px] md:w-[160px] md:h-[50px] rounded-md md:rounded-lg bg-white text-[10px] md:text-[20px]

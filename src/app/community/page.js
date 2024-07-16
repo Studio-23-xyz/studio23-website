@@ -1,7 +1,6 @@
 import React from "react";
 import CommunityPageHeroSection from "../components/communitypage/CommunityPageHeroSection";
 import CommunityPageGallerySection from "../components/communitypage/CommunityPageGallerySection";
-import CommunityPageLinkupSection from "../components/communitypage/CommunityPageLinkupSection";
 import CommunityPageJoinOurSection from "../components/communitypage/CommunityPageJoinOurSection";
 
 const page = () => {

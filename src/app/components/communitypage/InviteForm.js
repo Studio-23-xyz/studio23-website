@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { Octokit } from "@octokit/rest";
 import GitHubLogo from "../../../../public/assets/community-page/git_round1.png";
@@ -36,7 +37,7 @@ const InviteForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto mt-10 p-6">
+    <div className="w-full">
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <input
@@ -46,7 +47,7 @@ const InviteForm = () => {
             value={githubUsername}
             onChange={(e) => setGithubUsername(e.target.value)}
             required
-            className="mt-1 block w-full p-2 border text-black border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50"
+            className="mt-1 block w-full p-2 border bg-mordern_black text-white border-studio_blue rounded-md shadow-sm focus:ring focus:ring-opacity-50"
           />
         </div>
 
@@ -55,6 +56,7 @@ const InviteForm = () => {
           className="w-full bg-studio_blue text-black text-[16px] font-bold px-6 py-3 rounded-lg shadow-md hover:bg-white transition duration-300
             flex gap-3 items-center justify-center"
         >
+          <Image src={GitHubLogo} width={20} height={20} alt="GitHub Logo" />
           Join Github
         </button>
       </form>
