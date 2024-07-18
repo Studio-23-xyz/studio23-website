@@ -1,6 +1,10 @@
 const ContactAddressSection = () => {
   return (
-    <div className="w-full h-auto mx-auto mt-14 mb-14 flex flex-col md:flex-row justify-center gap-5">
+    <div className="w-full h-auto mx-auto mt-14 mb-14">
+      <div className="flex justify-center">
+        <h1 className="text-[22px] md:text-[30px] font-bold text-center">Our Location</h1>
+      </div>
+    <div className="w-full h-auto mx-auto mt-5 mb-14 flex flex-col md:flex-row justify-center gap-5">
       <div className="w-full md:w-1/2 flex flex-col gap-5 px-10 md:px-20">
         <h1 className="text-[22px] md:text-[30px] font-bold text-center">
           HQ: Brain Station 23 PLC
@@ -20,6 +24,8 @@ const ContactAddressSection = () => {
         </p>
       </div>
     </div>
+    </div>
+
   );
 };
 

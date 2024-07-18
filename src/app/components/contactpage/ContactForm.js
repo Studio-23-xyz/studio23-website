@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useRef } from "react";
-import { ServerClient } from "postmark";
 import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 
 const initValues = {
   name: "",
@@ -47,23 +46,6 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // const clientId = process.env.NEXT_PUBLIC_EMAIL_CLIENT_ID; // Ensure this is correctly defined in your environment variables
-      // const client = new ServerClient(clientId);
-
-      // await client.sendEmail({
-      //   From: "shahadat.shamim@brainstation-23.com",
-      //   To: "studio23contact@brainstation-23.com",
-      //   Subject: "Message From Studio-23 Website",
-      //   HtmlBody: `<strong>My name is: ${state.values.name}</strong>
-      //               <br/>
-      //               <strong>Email: ${state.values.email}</strong>
-      //               <br/>
-      //               <strong>Message: ${state.values.message}</strong>
-      //               <br/>
-      //               `,
-      //   TextBody: "Hello from Studio-23!",
-      //   MessageStream: "outbound",
-      // });
       var templateParams = {
         name: state.values.name,
         email: state.values.email,
