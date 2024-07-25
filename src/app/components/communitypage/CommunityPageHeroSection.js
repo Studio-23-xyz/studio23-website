@@ -2,7 +2,7 @@ const CommunityPageHeroSection = () => {
   return (
     <div>
       <div className="bg-community-hero bg-no-repeat bg-center bg-cover -z-10 w-full h-[469px] md:h-[680px]">
-        <div className="w-full h-full flex flex-col justify-center md:pt-20 bg-black bg-opacity-50 md:px-14 px-4">
+        <div className="w-full h-full flex flex-col justify-center md:pt-20 md:px-14 px-4">
           <h1 className="text-[32px] md:text-[72px] font-bold">Community</h1>
           <h1 className="text-[32px] md:text-[72px] font-bold">Corner</h1>
           <p className="text-[14px] md:text-[20px] font-medium pt-5">
