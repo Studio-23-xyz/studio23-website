@@ -27,7 +27,7 @@ const Gamecardssection = () => {
         "Silent Scream is a stealth cooking game set in a creepy restaurant where you must serve customers while secretly feeding some of them to an alien entity in your basement.",
       imageSrc: silentscreamhero.src,
       logoSrc: silentscreamlogo,
-      link: "https://studio-23.xyz/silent-scream/",
+      link: "https://store.steampowered.com/app/1955750/SILENT_SCREAM/",
       availableOn: [
         { src: steamicon, alt: "Steam" },
         { src: windowsicon, alt: "Windows" },
