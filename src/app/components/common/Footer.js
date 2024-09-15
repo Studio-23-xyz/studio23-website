@@ -1,7 +1,6 @@
-import React from "react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
 
 const Footer = () => {
@@ -47,7 +46,7 @@ const Footer = () => {
                 <Link href="/our-titles">
                   <span className="">Titles</span>
                 </Link>
-                <Link href="/careers">
+                <Link href="/">
                   <span className="">Careers</span>
                 </Link>
                 <Link href="/contact-us">

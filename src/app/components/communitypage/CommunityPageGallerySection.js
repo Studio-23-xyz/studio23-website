@@ -1,9 +1,9 @@
-import React from "react";
 import Image from "next/image";
-import PlayingVR from "../../../../public/assets/careers-page/playingvr.jpg";
-import Studio23Team from "../../../../public/assets/careers-page/teamstudio23.jpg";
-import WorkingVR from "../../../../public/assets/careers-page/workingwithvr.jpg";
-import PlayingArcade from "../../../../public/assets/careers-page/playingArcade.jpg";
+import Image1 from "../../../../public/assets/community-page/community_gallery1.jpg";
+import Image3 from "../../../../public/assets/community-page/community_gallery2.jpg";
+import Image2 from "../../../../public/assets/community-page/community_gallery3.jpg";
+import Image4 from "../../../../public/assets/community-page/community_gallery4.jpg";
+import Image5 from "../../../../public/assets/community-page/community_gallery5.jpg";
 
 const CommunityPageGallerySection = () => {
   return (
@@ -27,7 +27,7 @@ const CommunityPageGallerySection = () => {
           <div className="flex gap-4">
             <div className="w-1/2 md:w-3/5">
               <Image
-                src={PlayingVR}
+                src={Image1}
                 width={3065}
                 height={1286}
                 alt="VR Playing 1"
@@ -36,7 +36,7 @@ const CommunityPageGallerySection = () => {
             </div>
             <div className="w-1/2 md:w-2/5">
               <Image
-                src={Studio23Team}
+                src={Image2}
                 width={3628}
                 height={2365}
                 alt="Studio 23 Team"
@@ -47,7 +47,7 @@ const CommunityPageGallerySection = () => {
           <div className="flex gap-4">
             <div className="w-1/2 md:w-2/5">
               <Image
-                src={WorkingVR}
+                src={Image3}
                 width={720}
                 height={960}
                 alt="VR Playing 2"
@@ -56,7 +56,7 @@ const CommunityPageGallerySection = () => {
             </div>
             <div className="w-1/2 md:w-3/5">
               <Image
-                src={PlayingVR}
+                src={Image5}
                 width={1920}
                 height={1005}
                 alt="Playing"
@@ -67,7 +67,7 @@ const CommunityPageGallerySection = () => {
         </div>
         <div className="md:w-1/3">
           <Image
-            src={PlayingArcade}
+            src={Image4}
             width={1000}
             height={1000}
             alt="Arcade Playing"
