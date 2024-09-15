@@ -1,10 +1,9 @@
-import React from "react";
-import GameCard from "./GameCard";
 import silentscream2logo from "../../../../public/assets/ss2-game-page/SS2_logo_white.png";
-import silentscream2hero from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
+import GameCard from "./GameCard";
 import silentscreamhero from "/public/assets/home-page/SilentScreamBGLarge.png";
-import silentscreamlogo from "/public/assets/home-page/silentscream_logo.png";
 import controloverridehero from "/public/assets/home-page/control_override.png";
+import silentscreamlogo from "/public/assets/home-page/silentscream_logo.png";
+import silentscream2hero from "/public/assets/ss2-game-page/silent-scream-2-hero.png";
 import steamicon from "/public/assets/steam-icon.png";
 import windowsicon from "/public/assets/windows-icon.png";
 import xboxicon from "/public/assets/xbox-icon.png";
@@ -27,7 +26,7 @@ const Gamecardssection = () => {
         "Silent Scream is a stealth cooking game set in a creepy restaurant where you must serve customers while secretly feeding some of them to an alien entity in your basement.",
       imageSrc: silentscreamhero.src,
       logoSrc: silentscreamlogo,
-      link: "https://store.steampowered.com/app/1955750/SILENT_SCREAM/",
+      link: "https://silentscream.studio-23.xyz/",
       availableOn: [
         { src: steamicon, alt: "Steam" },
         { src: windowsicon, alt: "Windows" },
