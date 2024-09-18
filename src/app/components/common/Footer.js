@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
@@ -86,6 +86,15 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+              </a>
+            </div>
+            <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              <a
+                href="https://www.youtube.com/@studio-2371"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Youtube className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
             </div>
             <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
@@ -189,6 +198,15 @@ const Footer = () => {
               <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
             </a>
           </div>
+          <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              <a
+                href="https://www.youtube.com/@studio-2371"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Youtube className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+              </a>
+            </div>
           <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
             <a
               href="https://twitter.com/Studio23xyz"
