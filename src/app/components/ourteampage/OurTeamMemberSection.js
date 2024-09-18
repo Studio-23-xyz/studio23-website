@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import dipokImage from "../../../../public/assets/our-team-page/dipok.png";
+import enanImage from "../../../../public/assets/our-team-page/Enan.jpg";
 import eptyImage from "../../../../public/assets/our-team-page/epty.png";
 import evanImage from "../../../../public/assets/our-team-page/evan.png";
 import fahimImage from "../../../../public/assets/our-team-page/fahim.png";
@@ -177,6 +178,51 @@ const OurTeamMemberSection = () => {
               </div>
             </div>
           </div>
+          {/* Mahmoda Ferdous */}
+          <div className="w-[300px] md:w-[356px] h-[227px] md:h-[280px]">
+              <div className="flex justify-center">
+                <Image
+                  src={ferdousImage}
+                  width={400}
+                  height={400}
+                  alt="Mahmoda Ferdous"
+                  className="w-[118px] md:w-[144px] h-[118px] md:h-[144px] rounded-full shadow-xl"
+                />
+              </div>
+              <div
+                className="bg-white w-[300px] md:w-[356px] h-[142px] md:h-[174px] -mt-9 md:-mt-10 
+                          flex flex-col justify-end gap-2 md:gap-3 pb-2 md:pb-3 rounded-3xl"
+              >
+                <div className="flex justify-center gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/mahmoda-ferdous/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <LinkedinIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
+                  </a>
+                  <a
+                    href="https://mahmodaferdous.artstation.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="AirStation"
+                  >
+                    <ArtstationIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
+                  </a>
+                </div>
+                <div className="flex justify-center">
+                  <h1 className="text-[18px] md:text-[24px] text-black font-bold flex justify-center">
+                    Mahmoda Ferdous
+                  </h1>
+                </div>
+                <div className="flex justify-center gap-2">
+                  <p className="text-[14px] md:text-[15px] text-black font-medium">
+                    Lead Artist
+                  </p>
+                </div>
+              </div>
+            </div>
         </div>
         <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
           {/* Nurusshafi Evan */}
@@ -281,53 +327,7 @@ const OurTeamMemberSection = () => {
               </div>
             </div>
           </div>
-          {/* Zubair Islam */}
-          <div className="flex justify-center">
-            <div className="w-[300px] md:w-[356px] h-[227px] md:h-[280px]">
-              <div className="flex justify-center">
-                <Image
-                  src={eptyImage}
-                  width={400}
-                  height={400}
-                  alt="Zubair Islam"
-                  className="w-[118px] md:w-[144px] h-[118px] md:h-[144px] rounded-full shadow-xl"
-                />
-              </div>
-              <div
-                className="bg-white w-[300px] md:w-[356px] h-[142px] md:h-[174px] -mt-9 md:-mt-10 
-                          flex flex-col justify-end gap-2 md:gap-3 pb-2 md:pb-3 rounded-3xl"
-              >
-                <div className="flex justify-center gap-3">
-                  <a
-                    href="https://www.linkedin.com/in/zubepty/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                  >
-                    <LinkedinIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
-                  </a>
-                  <a
-                    href="https://github.com/zubEpty"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                  >
-                    <GithubIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
-                  </a>
-                </div>
-                <div className="flex justify-center">
-                  <h1 className="text-[18px] md:text-[24px] text-black font-bold flex justify-center">
-                    Zubair Islam
-                  </h1>
-                </div>
-                <div className="flex justify-center gap-2">
-                  <p className="text-[14px] md:text-[15px] text-black font-medium">
-                    Gameplay Programmer
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
         <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
           {/* Dipok Sarker Dipu */}
@@ -428,17 +428,15 @@ const OurTeamMemberSection = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
-          {/* Mahmoda Ferdous */}
+          {/* Zubair Islam */}
           <div className="flex justify-center">
             <div className="w-[300px] md:w-[356px] h-[227px] md:h-[280px]">
               <div className="flex justify-center">
                 <Image
-                  src={ferdousImage}
+                  src={eptyImage}
                   width={400}
                   height={400}
-                  alt="Mahmoda Ferdous"
+                  alt="Zubair Islam"
                   className="w-[118px] md:w-[144px] h-[118px] md:h-[144px] rounded-full shadow-xl"
                 />
               </div>
@@ -448,7 +446,7 @@ const OurTeamMemberSection = () => {
               >
                 <div className="flex justify-center gap-3">
                   <a
-                    href="https://www.linkedin.com/in/mahmoda-ferdous/"
+                    href="https://www.linkedin.com/in/zubepty/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
@@ -456,31 +454,29 @@ const OurTeamMemberSection = () => {
                     <LinkedinIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
                   </a>
                   <a
-                    href="https://mahmodaferdous.artstation.com/"
+                    href="https://github.com/zubEpty"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="AirStation"
+                    aria-label="GitHub"
                   >
-                    <ArtstationIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
+                    <GithubIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
                   </a>
                 </div>
                 <div className="flex justify-center">
                   <h1 className="text-[18px] md:text-[24px] text-black font-bold flex justify-center">
-                    Mahmoda Ferdous
+                    Zubair Islam
                   </h1>
                 </div>
                 <div className="flex justify-center gap-2">
                   <p className="text-[14px] md:text-[15px] text-black font-medium">
-                    Character Artist
-                  </p>
-                  <span className="border-r-4 border-studio_blue"></span>
-                  <p className="text-[14px] md:text-[15px] text-black font-medium">
-                    Environment Artist
+                    Gameplay Programmer
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
           {/* Shushanto Chowdhury */}
           <div className="flex justify-center">
             <div className="w-[300px] md:w-[356px] h-[227px] md:h-[280px]">
@@ -579,6 +575,7 @@ const OurTeamMemberSection = () => {
               </div>
             </div>
           </div>
+          
         </div>
         <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
           {/* Iftekhar Alam Khan */}
@@ -623,6 +620,53 @@ const OurTeamMemberSection = () => {
                 <div className="flex justify-center gap-2">
                   <p className="text-[14px] md:text-[15px] text-black font-medium">
                     Environment Artist
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Enan Abdullah Khan */}
+          <div className="flex justify-center">
+            <div className="w-[300px] md:w-[356px] h-[227px] md:h-[280px]">
+              <div className="flex justify-center">
+                <Image
+                  src={enanImage}
+                  width={400}
+                  height={400}
+                  alt="Iftekhar Alam Khan"
+                  className="w-[118px] md:w-[144px] h-[118px] md:h-[144px] rounded-full shadow-xl"
+                />
+              </div>
+              <div
+                className="bg-white w-[300px] md:w-[356px] h-[142px] md:h-[174px] -mt-9 md:-mt-10 
+                          flex flex-col justify-end gap-2 md:gap-3 pb-2 md:pb-3 rounded-3xl"
+              >
+                <div className="flex justify-center gap-3">
+                  <a
+                    href="https://www.linkedin.com/in/enan-abdullah-khan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <LinkedinIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
+                  </a>
+                  <a
+                    href="https://www.artstation.com/enan_abdullah_khan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="AirStation"
+                  >
+                    <ArtstationIcon className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] text-studio_blue hover:text-black hover:scale-125 transition-transform" />
+                  </a>
+                </div>
+                <div className="flex justify-center">
+                  <h1 className="text-[18px] md:text-[24px] text-black font-bold flex justify-center">
+                     Enan Abdullah Khan
+                  </h1>
+                </div>
+                <div className="flex justify-center gap-2">
+                  <p className="text-[14px] md:text-[15px] text-black font-medium">
+                     Animator
                   </p>
                 </div>
               </div>
