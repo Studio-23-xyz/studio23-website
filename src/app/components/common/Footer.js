@@ -1,26 +1,28 @@
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ArtStationIcon from "/public/assets/artstation-icon.png";
 import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
 
 const Footer = () => {
   return (
-    <div className="w-full md:h-[376px] flex md:flex-col md:pt-10">
-      {/* Laptop View */}
-      <div className="hidden md:flex flex-col">
-        <div className="flex md:px-32">
-          <div className="w-1/4 flex flex-col gap-10">
-            <div>
-              <Link href="/">
-                <Image
-                  src={Studio23LogoWhite}
-                  width={500}
-                  height={200}
-                  alt="Logo"
-                  className="w-[150px] md:w-[165px] pl-2 md:pl-0 pt-2 md:pt-0"
-                />
-              </Link>
-            </div>
+    <div className="w-full md:h-[350px] flex md:flex-col md:pt-10">
+      {/* ----------------Laptop View---------------- */}
+      <div>
+        <div className="hidden md:flex flex-col">
+          <div className="flex md:px-32">
+            <div className="w-1/4 flex flex-col gap-10">
+              <div>
+                <Link href="/">
+                  <Image
+                    src={Studio23LogoWhite}
+                    width={500}
+                    height={200}
+                    alt="Logo"
+                    className="w-[150px] md:w-[165px] pl-2 md:pl-0 pt-2 md:pt-0"
+                  />
+                </Link>
+              </div>
             <div>
               <p>
                 Studio 23 is the dedicated in-house game studio of BrainStation
@@ -28,35 +30,33 @@ const Footer = () => {
                 creating high-quality, enjoyable games.
               </p>
             </div>
-            <div>
-              <p></p>
+
             </div>
-          </div>
-          <div className="w-1/4 flex flex-col items-center justify-center">
-            <div className="flex flex-col gap-4">
-              <div>
-                <Link href="/about-us">
-                  <span className="font-semibold">About Us</span>
-                </Link>
-              </div>
-              <div className="flex flex-col gap-2">
-                <Link href="/our-team">
-                  <span className="">Our Team</span>
-                </Link>
-                <Link href="/our-titles">
-                  <span className="">Titles</span>
-                </Link>
-                <Link href="/">
-                  <span className="">Careers</span>
-                </Link>
-                <Link href="/contact-us">
-                  <span className="">Contact Us</span>
-                </Link>
+            <div className="w-1/4 flex flex-col items-center justify-center">
+              <div className="flex flex-col gap-4">
+                <div>
+                  <Link href="/our-team">
+                    <span className="font-semibold">About Us</span>
+                  </Link>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <Link href="/our-team">
+                    <span className="">Our Team</span>
+                  </Link>
+                  <Link href="/our-titles">
+                    <span className="">Titles</span>
+                  </Link>
+                  <Link href="/careers">
+                    <span className="">Careers</span>
+                  </Link>
+                  <Link href="/contact-us">
+                    <span className="">Contact Us</span>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="w-1/4 flex flex-col items-center justify-center">
-            <div className="flex flex-col gap-5 2xl:gap-8">
+            <div className="w-1/4 flex flex-col items-center justify-center">
+             <div className="flex flex-col gap-5 2xl:gap-8">
               <div>
                 <p className="font-semibold text-[17px]">Contact Us</p>
               </div>
@@ -68,18 +68,20 @@ const Footer = () => {
                 contact@studio-23.xyz
               </p>
             </div>
-          </div>
-          <div className="w-1/4 flex flex-row gap-4 justify-end items-end pb-12">
-            <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
-              <a
-                href="https://www.facebook.com/Studio23.BS23"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
-              </a>
             </div>
-            <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+            <div className="w-1/4 flex flex-row gap-4 justify-end items-end pb-3 2xl:pb-1">
+              {/* FaceBook*/}
+              <div className="bg-white w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+                <a
+                  href="https://www.facebook.com/Studio23.BS23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                <Facebook className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
+                </a>
+              </div>
+              {/* InstraGram*/}
+              <div className="bg-white w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
               <a
                 href="https://www.instagram.com/studio23xyz/?hl=en"
                 target="_blank"
@@ -87,8 +89,9 @@ const Footer = () => {
               >
                 <Instagram className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
-            </div>
-            <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              </div>
+              {/* Youtube*/}
+              <div className="bg-white w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
               <a
                 href="https://www.youtube.com/@studio-2371"
                 target="_blank"
@@ -96,8 +99,9 @@ const Footer = () => {
               >
                 <Youtube className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
-            </div>
-            <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              </div>
+              {/* Twitter*/}
+              <div className="bg-white w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
               <a
                 href="https://twitter.com/Studio23xyz"
                 target="_blank"
@@ -105,8 +109,9 @@ const Footer = () => {
               >
                 <Twitter className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
-            </div>
-            <div className="bg-white  w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              </div>
+              {/* LinkedIN*/}
+              <div className="bg-white w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
               <a
                 href="https://www.linkedin.com/company/studio-23-bs/"
                 target="_blank"
@@ -114,17 +119,35 @@ const Footer = () => {
               >
                 <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
               </a>
-            </div>
+              </div>
+              {/* Art Station */}
+              <div className="bg-white w-[30px] h-[30px] 2xl:w-[35px] 2xl:h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              <a
+                href="https://studio23official.artstation.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                src={ArtStationIcon}
+                width={20}
+                height={20}
+                alt="ArtStation Logo"
+                className="w-[20px] h-[20px]"
+            />
+              </a>
+              </div>
+          </div>
           </div>
         </div>
+        <div className="hidden md:flex border-t-2 mt-8  justify-center">
+            <p className="text-[14px] mt-8">
+                Copyright ® Studio23 2024 All rights Rcerved
+            </p>
+        </div>
       </div>
-      <div className="hidden md:flex border-t-2 mt-8  justify-center">
-        <p className="text-[14px] mt-8">
-          Copyright ® Studio23 2024 All rights Rcerved
-        </p>
-      </div>
+     
 
-      {/* Mobile View */}
+      {/* ----------------Mobile View----------------- */}
       <div className="md:hidden flex flex-col gap-5 mx-4 my-4">
         <div>
           <Link href="/">
@@ -147,7 +170,7 @@ const Footer = () => {
         <div className="flex flex-row">
           <div className="w-1/2 flex flex-col gap-4">
             <div>
-              <Link href="/about-us">
+              <Link href="/our-team">
                 <span className="font-semibold text-[17px]">About Us</span>
               </Link>
             </div>
@@ -161,8 +184,9 @@ const Footer = () => {
               <Link href="/careers">
                 <span className="">Careers</span>
               </Link>
-
-              <p className="">Contact Us</p>
+              <Link href="/contact-us">
+                <span className="">Contact Us</span>
+              </Link>
             </div>
           </div>
 
@@ -225,7 +249,23 @@ const Footer = () => {
               <Linkedin className="stroke-black w-[20px] h-[20px] hover:stroke-white" />
             </a>
           </div>
+          <div className="bg-white w-[35px] h-[35px] rounded-full flex justify-center items-center hover:bg-studio_blue">
+              <a
+                href="https://studio23official.artstation.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                src={ArtStationIcon}
+                width={20}
+                height={20}
+                alt="ArtStation Logo"
+                className="w-[20px] h-[20px]"
+            />
+              </a>
+          </div>
         </div>
+
 
         <div className="border-t-2">
           <div className="mt-4 flex justify-center">
