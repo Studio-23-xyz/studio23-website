@@ -20,6 +20,7 @@ module.exports = {
         silent2_button_text: "#260202",
         main_gradient_Color1: "#002E3E",
         main_gradient_Color2: "#000000",
+        button_presskit_color: '#EE1D52',
       },
       backgroundImage: {
         "titles-hero":

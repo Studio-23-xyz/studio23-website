@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import classNames from "classnames";
+import { ChevronDown, Menu } from "lucide-react"; // Ensure 'Menu' icon is correctly imported from lucide-react
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import classNames from "classnames";
-import { ChevronDown, Menu } from "lucide-react"; // Ensure 'Menu' icon is correctly imported from lucide-react
+import { useEffect, useState } from "react";
 import Studio23LogoWhite from "/public/assets/studio23_logo_white.png";
 
 const Navbar = () => {
@@ -79,6 +79,14 @@ const Navbar = () => {
                 </li>
               </Link>
 
+              <Link href="https://impress.games/press-kit/studio-23/silent-scream-2">
+                <li
+                  className="bg-button_presskit_color px-3 py-2 rounded-md hover:font-bold transition-all "
+                >
+                  Press Kit
+                </li>
+              </Link>
+
               <Link href="/our-team" className="group transition-all">
                 <li className="hover:font-bold transition-all flex gap-2">
                   About Us{" "}
@@ -102,14 +110,14 @@ const Navbar = () => {
                     >
                       <li>Our Team</li>
                     </Link>
-                    {/*  
+
                     <Link
                       href="/careers"
                       className="flex cursor-pointer items-center hover:font-bold"
                     >
                       <li>Careers</li>
                     </Link>
-                    */}
+
                   </div>
                 </div>
               </Link>
@@ -196,7 +204,7 @@ const Navbar = () => {
                         </li>
                       </Link>
 
-                      {/*  
+
                       <Link href="/careers">
                         <li
                           className={classNames(
@@ -207,7 +215,7 @@ const Navbar = () => {
                           Careers
                         </li>
                       </Link>
-                           */}
+                 
                       <Link href="/community">
                         <li
                           className={classNames(
@@ -229,6 +237,13 @@ const Navbar = () => {
                           )}
                         >
                           Contact Us
+                        </div>
+                      </Link>
+
+                      <Link href="https://impress.games/press-kit/studio-23/silent-scream-2">
+                        <div className="w-[60%] flex justify-center bg-button_presskit_color px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold"
+                        >
+                          Press Kit
                         </div>
                       </Link>
                     </ul>
