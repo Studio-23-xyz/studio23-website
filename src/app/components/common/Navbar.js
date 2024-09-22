@@ -79,7 +79,7 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <Link href="https://impress.games/press-kit/studio-23/silent-scream-2">
+              <Link href="https://impress.games/press-kit/studio-23">
                 <li
                   className="bg-button_presskit_color px-3 py-2 rounded-md hover:font-bold transition-all "
                 >
@@ -240,7 +240,7 @@ const Navbar = () => {
                         </div>
                       </Link>
 
-                      <Link href="https://impress.games/press-kit/studio-23/silent-scream-2">
+                      <Link href="https://impress.games/press-kit/studio-23">
                         <div className="w-[60%] flex justify-center bg-button_presskit_color px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold"
                         >
                           Press Kit
