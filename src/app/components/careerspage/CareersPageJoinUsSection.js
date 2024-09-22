@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import teambs23 from "../../../../public/assets/careers-page/bsteam.jpg";
 
@@ -57,12 +56,18 @@ const CareersPageJoinUsSection = () => {
             </li>
           </ul>
           <div className="mt-5 flex justify-end">
+          <a
+                    href="https://form.jotform.com/242653986637068"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
             <button
               className="w-full md:w-[248px] h-auto md:h-[50px] bg-white text-black text-[12px] md:text-[16px] font-black rounded-xl py-2 px-4 
                          hover:bg-studio_blue transition duration-200"
-            >
+              >
               Submit Your Resume!
             </button>
+            </a>
           </div>
         </div>
       </div>
