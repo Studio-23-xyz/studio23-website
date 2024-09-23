@@ -14,7 +14,7 @@ const CareersPageJoinUsSection = () => {
             className="md:w-full h-[233px] md:h-[507px] rounded-3xl object-cover object-center"
           />
         </div>
-        <div className="md:w-1/2 flex flex-col md:gap-3 md:pl-8">
+        <div className="md:w-1/2 flex flex-col justify-center md:gap-3 md:pl-8">
           <h2 className="text-[16px] md:text-[30px] font-bold mb-4">
             Why Join Us?
           </h2>
@@ -55,20 +55,6 @@ const CareersPageJoinUsSection = () => {
               </p>
             </li>
           </ul>
-          <div className="mt-5 flex justify-end">
-          <a
-                    href="https://form.jotform.com/242653986637068"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-            <button
-              className="w-full md:w-[248px] h-auto md:h-[50px] bg-white text-black text-[12px] md:text-[16px] font-black rounded-xl py-2 px-4 
-                         hover:bg-studio_blue transition duration-200"
-              >
-              Submit Your Resume!
-            </button>
-            </a>
-          </div>
         </div>
       </div>
     </div>

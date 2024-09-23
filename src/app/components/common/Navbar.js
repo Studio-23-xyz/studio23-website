@@ -79,14 +79,6 @@ const Navbar = () => {
                 </li>
               </Link>
 
-              <Link href="https://impress.games/press-kit/studio-23">
-                <li
-                  className="bg-button_presskit_color px-3 py-2 rounded-md hover:font-bold transition-all "
-                >
-                  Press Kit
-                </li>
-              </Link>
-
               <Link href="/our-team" className="group transition-all">
                 <li className="hover:font-bold transition-all flex gap-2">
                   About Us{" "}
@@ -118,6 +110,11 @@ const Navbar = () => {
                       <li>Careers</li>
                     </Link>
 
+                    <Link href="https://impress.games/press-kit/studio-23">
+                      <li className="hover:font-bold transition-all text-button_presskit_color">
+                        Press Kit
+                      </li>
+                    </Link>
                   </div>
                 </div>
               </Link>
@@ -204,7 +201,6 @@ const Navbar = () => {
                         </li>
                       </Link>
 
-
                       <Link href="/careers">
                         <li
                           className={classNames(
@@ -215,7 +211,7 @@ const Navbar = () => {
                           Careers
                         </li>
                       </Link>
-                 
+
                       <Link href="/community">
                         <li
                           className={classNames(
@@ -225,6 +221,12 @@ const Navbar = () => {
                         >
                           Community
                         </li>
+                      </Link>
+
+                      <Link href="https://impress.games/press-kit/studio-23">
+                        <div className="w-[60%] flex justify-center bg-button_presskit_color px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold">
+                          Press Kit
+                        </div>
                       </Link>
 
                       <Link href="/contact-us">
@@ -237,13 +239,6 @@ const Navbar = () => {
                           )}
                         >
                           Contact Us
-                        </div>
-                      </Link>
-
-                      <Link href="https://impress.games/press-kit/studio-23">
-                        <div className="w-[60%] flex justify-center bg-button_presskit_color px-4 py-2 rounded-md hover:bg-white hover:text-black hover:font-bold"
-                        >
-                          Press Kit
                         </div>
                       </Link>
                     </ul>
