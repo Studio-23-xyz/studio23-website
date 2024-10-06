@@ -27,16 +27,42 @@ const Modal = ({ isOpen, onClose, jobDetails }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
       <div className="bg-white rounded-lg p-8 max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-4">{jobDetails.title}</h2>
-        <p className="mb-2">Work: {jobDetails.work}</p>
-        <p className="mb-2">Location: {jobDetails.location}</p>
-        <p className="mb-2">Category: {jobDetails.category}</p>
-        <p className="mb-4">Type: {jobDetails.type}</p>
+        <h1 className="text-2xl font-bold mb-4">{jobDetails.title}</h1>
+        <h3 className="mb-2">Job Location: {jobDetails.location}</h3>
+        <h3 className="mb-2">Salary: {jobDetails.salary}/month</h3>
+        <p className="mb-4">Job Description: {jobDetails.description}</p>
+        
+        <h3 className="mb-2 font-bold">Key Responsibilities:</h3>
+        <ul className="list-disc pl-5 mb-4">
+          {jobDetails.responsibilities.map((responsibility, index) => (
+            <li key={index}>{responsibility}</li>
+          ))}
+        </ul>
+
+        <h3 className="mb-2 font-bold">Requirements:</h3>
+        <ul className="list-disc pl-5 mb-4">
+          {jobDetails.requirements.map((requirement, index) => (
+            <li key={index}>{requirement}</li>
+          ))}
+        </ul>
+
+        <h3 className="mb-2 font-bold">Preferred Qualifications:</h3>
+        <ul className="list-disc pl-5 mb-4">
+          {jobDetails.qualifications.map((qualification, index) => (
+            <li key={index}>{qualification}</li>
+          ))}
+        </ul>
+
         <button
-          className="bg-red-500 text-white px-4 py-2 rounded"
+          className="bg-red-500 text-white px-4 py-2 rounded mr-4"
           onClick={onClose}
         >
           Close
+        </button>
+        <button
+          className="bg-green-500 text-white px-4 py-2 rounded"
+        >
+          Apply Now
         </button>
       </div>
     </div>
@@ -46,6 +72,7 @@ const Modal = ({ isOpen, onClose, jobDetails }) => {
 const CareersPageOpeningSection = () => {
   const [activeModal, setActiveModal] = useState(null); // State to manage active modal
 
+  // Updated jobOpenings with additional fields
   const jobOpenings = [
     {
       title: 'Game Developer Trainee',
@@ -53,6 +80,21 @@ const CareersPageOpeningSection = () => {
       location: 'Dhaka, Bangladesh',
       category: 'Game Development',
       type: 'Full Time',
+      salary: '20,000',
+      description: 'This is a training position for game developers who are eager to learn and grow.',
+      responsibilities: [
+        'Collaborate with the development team.',
+        'Assist in the creation of game systems.',
+        'Support debugging and testing efforts.',
+      ],
+      requirements: [
+        'Basic knowledge of game development tools.',
+        'Good communication skills.',
+      ],
+      qualifications: [
+        'Bachelor’s degree in Computer Science or related field.',
+        'Prior experience in Unity or Unreal Engine is a plus.',
+      ],
     },
     {
       title: '3D Artist Trainee',
@@ -60,6 +102,21 @@ const CareersPageOpeningSection = () => {
       location: 'Dhaka, Bangladesh',
       category: 'Game Development',
       type: 'Full Time',
+      salary: '18,000',
+      description: 'Join us as a 3D artist trainee and bring your creative skills to life.',
+      responsibilities: [
+        'Work with the art team to create 3D models.',
+        'Assist with texturing and animation tasks.',
+        'Ensure models meet quality and design standards.',
+      ],
+      requirements: [
+        'Knowledge of 3D modeling software like Blender or Maya.',
+        'Understanding of textures and lighting.',
+      ],
+      qualifications: [
+        'Degree or certification in 3D art or related field.',
+        'Portfolio of previous 3D work.',
+      ],
     },
     {
       title: '3D Animator Trainee',
@@ -67,6 +124,21 @@ const CareersPageOpeningSection = () => {
       location: 'Dhaka, Bangladesh',
       category: 'Game Development',
       type: 'Full Time',
+      salary: '18,000',
+      description: 'As a 3D Animator Trainee, you will learn and contribute to our animation projects.',
+      responsibilities: [
+        'Create animations for characters and environments.',
+        'Work closely with the animation lead.',
+        'Ensure animations are smooth and realistic.',
+      ],
+      requirements: [
+        'Basic knowledge of animation principles.',
+        'Familiarity with animation software like Blender or Maya.',
+      ],
+      qualifications: [
+        'Bachelor’s degree in Animation or related field.',
+        'Experience with rigging and animating is a plus.',
+      ],
     },
   ];
 
