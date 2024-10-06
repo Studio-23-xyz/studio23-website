@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 // JobRow Component: Reusable component for job listings
 const JobRow = ({ title, work, location, category, type, onSeeDetails }) => (
@@ -20,50 +20,78 @@ const JobRow = ({ title, work, location, category, type, onSeeDetails }) => (
   </tr>
 );
 
-// Modal Component: Reusable modal for displaying job details
+// Modal Component: Reusable modal for displaying job details with scroll and click-outside close functionality
 const Modal = ({ isOpen, onClose, jobDetails }) => {
+  const modalRef = useRef(); // To track the modal element
+
+  // Function to close modal when clicking outside
+  const handleOutsideClick = (e) => {
+    if (modalRef.current && !modalRef.current.contains(e.target)) {
+      onClose();
+    }
+  };
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white rounded-lg p-8 max-w-md w-full">
-        <h1 className="text-2xl font-bold mb-4">{jobDetails.title}</h1>
-        <h3 className="mb-2">Job Location: {jobDetails.location}</h3>
-        <h3 className="mb-2">Salary: {jobDetails.salary}/month</h3>
-        <p className="mb-4">Job Description: {jobDetails.description}</p>
-        
-        <h3 className="mb-2 font-bold">Key Responsibilities:</h3>
-        <ul className="list-disc pl-5 mb-4">
-          {jobDetails.responsibilities.map((responsibility, index) => (
-            <li key={index}>{responsibility}</li>
-          ))}
-        </ul>
-
-        <h3 className="mb-2 font-bold">Requirements:</h3>
-        <ul className="list-disc pl-5 mb-4">
-          {jobDetails.requirements.map((requirement, index) => (
-            <li key={index}>{requirement}</li>
-          ))}
-        </ul>
-
-        <h3 className="mb-2 font-bold">Preferred Qualifications:</h3>
-        <ul className="list-disc pl-5 mb-4">
-          {jobDetails.qualifications.map((qualification, index) => (
-            <li key={index}>{qualification}</li>
-          ))}
-        </ul>
-
-        <button
-          className="bg-red-500 text-white px-4 py-2 rounded mr-4"
+    <div
+      className="fixed inset-0 bg-modal_blue bg-opacity-70 flex items-center justify-center"
+      onClick={handleOutsideClick} // Listen for outside clicks
+    >
+      <div
+        ref={modalRef}
+        className="bg-mordern_black rounded-lg p-8 w-[90%] 2xl:w-[60%] max-h-[80vh] overflow-y-auto" // Scrollable modal
+      >
+        <div className="flex justify-between">
+        <h1 className="text-3xl font-bold mb-4">{jobDetails.title}</h1>
+          <button
+          className="bg-red-500 text-white px-4 rounded"
           onClick={onClose}
-        >
-          Close
+          >
+           Close
         </button>
+        </div>
+        
+        
+
+        <h3 className="text-xl font-semibold mb-2">Job Location:</h3>
+        <p className=" mb-4">{jobDetails.location}</p>
+
+        <h3 className="text-xl font-semibold mb-2">Salary:</h3>
+        <p className=" mb-4">{jobDetails.salary}</p>
+
+        <h3 className="text-xl font-semibold mb-2">Job Description:</h3>
+        <p className=" mb-4">{jobDetails.description}</p>
+
+        <h3 className="font-bold mb-2">Key Responsibilities:</h3>
+
+        <ul className="list-disc pl-5 mb-4">
+          {jobDetails.responsibilities.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+        <h3 className="font-bold mb-2">Requirements:</h3>
+        <ul className="list-disc pl-5 mb-4">
+          {jobDetails.requirements.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+
+        <h3 className="font-bold mb-2">Preferred Qualifications:</h3>
+        <ul className="list-disc pl-5 mb-4">
+          {jobDetails.qualifications.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+
         <button
-          className="bg-green-500 text-white px-4 py-2 rounded"
-        >
-          Apply Now
-        </button>
+  className="bg-studio_blue text-white font-semibold px-4 py-2 rounded
+  hover:bg-white hover:text-black"
+  onClick={() => window.open(jobDetails.applyLink, '_blank')} // Open the job's specific apply link in a new tab
+>
+  Apply Now
+</button>
+        
       </div>
     </div>
   );
@@ -72,73 +100,40 @@ const Modal = ({ isOpen, onClose, jobDetails }) => {
 const CareersPageOpeningSection = () => {
   const [activeModal, setActiveModal] = useState(null); // State to manage active modal
 
-  // Updated jobOpenings with additional fields
   const jobOpenings = [
     {
       title: 'Game Developer Trainee',
-      work: 'On Site',
-      location: 'Dhaka, Bangladesh',
-      category: 'Game Development',
-      type: 'Full Time',
-      salary: '20,000',
-      description: 'This is a training position for game developers who are eager to learn and grow.',
-      responsibilities: [
-        'Collaborate with the development team.',
-        'Assist in the creation of game systems.',
-        'Support debugging and testing efforts.',
+      location: 'Mirpur DOHS, Dhaka, Bangladesh',
+      salary: 'BDT 10,000 / Month',
+      description: 'Studio 23 is looking for a passionate and experienced Senior Game Developer to join our growing team. In this role, you will work closely with designers, artists, and other developers to build innovative and immersive gaming experiences. You’ll take charge of leading development cycles, writing efficient code, and mentoring junior developers to deliver high-quality games. As a part of the team, you’ll contribute to creating our next major release, Silent Scream 2, and future projects.',
+      responsibilities: ['Lead the development of complex game systems from concept to release', 'Collaborate with cross-functional teams to achieve seamless gameplay integration', 'Optimize performance and memory usage across platforms (PC/Console)',
+        'Mentor and provide technical guidance to junior team members','Write clean, maintainable, and efficient code',
       ],
-      requirements: [
-        'Basic knowledge of game development tools.',
-        'Good communication skills.',
+      requirements: ['Lead the development of complex game systems from concept to release', 'Collaborate with cross-functional teams to achieve seamless gameplay integration', 'Optimize performance and memory usage across platforms (PC/Console)',
+        'Mentor and provide technical guidance to junior team members','Write clean, maintainable, and efficient code',
       ],
-      qualifications: [
-        'Bachelor’s degree in Computer Science or related field.',
-        'Prior experience in Unity or Unreal Engine is a plus.',
+      qualifications: ['Lead the development of complex game systems from concept to release', 'Collaborate with cross-functional teams to achieve seamless gameplay integration', 'Optimize performance and memory usage across platforms (PC/Console)',
+        'Mentor and provide technical guidance to junior team members','Write clean, maintainable, and efficient code',
       ],
+      applyLink: 'https://form.jotform.com/242655786742065',
     },
     {
       title: '3D Artist Trainee',
-      work: 'On Site',
       location: 'Dhaka, Bangladesh',
-      category: 'Game Development',
-      type: 'Full Time',
-      salary: '18,000',
-      description: 'Join us as a 3D artist trainee and bring your creative skills to life.',
-      responsibilities: [
-        'Work with the art team to create 3D models.',
-        'Assist with texturing and animation tasks.',
-        'Ensure models meet quality and design standards.',
-      ],
-      requirements: [
-        'Knowledge of 3D modeling software like Blender or Maya.',
-        'Understanding of textures and lighting.',
-      ],
-      qualifications: [
-        'Degree or certification in 3D art or related field.',
-        'Portfolio of previous 3D work.',
-      ],
+      salary: 'BDT 20,000',
+      description: 'We need a creative 3D Artist Trainee to work on modeling and texturing.',
+      responsibilities: ['Creating 3D assets', 'Working with the art team', 'Optimizing models'],
+      requirements: 'Experience with 3D modeling software like Blender or Maya.',
+      qualifications: 'A strong portfolio of 3D work is preferred.',
     },
     {
       title: '3D Animator Trainee',
-      work: 'On Site',
       location: 'Dhaka, Bangladesh',
-      category: 'Game Development',
-      type: 'Full Time',
-      salary: '18,000',
-      description: 'As a 3D Animator Trainee, you will learn and contribute to our animation projects.',
-      responsibilities: [
-        'Create animations for characters and environments.',
-        'Work closely with the animation lead.',
-        'Ensure animations are smooth and realistic.',
-      ],
-      requirements: [
-        'Basic knowledge of animation principles.',
-        'Familiarity with animation software like Blender or Maya.',
-      ],
-      qualifications: [
-        'Bachelor’s degree in Animation or related field.',
-        'Experience with rigging and animating is a plus.',
-      ],
+      salary: 'BDT 22,000',
+      description: 'Join us as a 3D Animator Trainee to create dynamic character animations.',
+      responsibilities: ['Animating characters and objects', 'Collaborating with game developers', 'Rigging models'],
+      requirements: 'Experience with animation software like Maya or 3ds Max.',
+      qualifications: 'A background in animation is preferred.',
     },
   ];
 
@@ -161,10 +156,10 @@ const CareersPageOpeningSection = () => {
                 <JobRow
                   key={index}
                   title={job.title}
-                  work={job.work}
+                  work="On Site"
                   location={job.location}
-                  category={job.category}
-                  type={job.type}
+                  category="Game Development"
+                  type="Full Time"
                   onSeeDetails={() => setActiveModal(index)} // Open modal for the clicked job
                 />
               ))}

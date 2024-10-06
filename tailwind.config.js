@@ -21,6 +21,7 @@ module.exports = {
         main_gradient_Color1: "#002E3E",
         main_gradient_Color2: "#000000",
         button_presskit_color: '#EE1D52',
+        modal_blue: '#002E3E',
       },
       backgroundImage: {
         "titles-hero":
