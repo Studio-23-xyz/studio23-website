@@ -1,5 +1,7 @@
 "use client";
+import { X } from "lucide-react";
 import { useRef, useState } from 'react';
+
 
 // JobRow Component: Reusable component for job listings
 const JobRow = ({ title, work, location, category, type, onSeeDetails }) => (
@@ -43,41 +45,34 @@ const Modal = ({ isOpen, onClose, jobDetails }) => {
         className="bg-mordern_black rounded-lg p-8 w-[90%] 2xl:w-[60%] max-h-[80vh] overflow-y-auto" // Scrollable modal
       >
         <div className="flex justify-between">
-        <h1 className="text-3xl font-bold mb-4">{jobDetails.title}</h1>
-          <button
-          className="bg-red-500 text-white px-4 rounded"
-          onClick={onClose}
-          >
-           Close
-        </button>
+        <h1 className="text-xl md:text-3xl font-bold mb-4">{jobDetails.title}</h1>
+        <X className="text-red-500 hover:text-white" onClick={onClose}/>
         </div>
         
-        
+        <h3 className="text-lg md:text-xl font-semibold mb-2">Job Location:</h3>
+        <p className="mb-4">{jobDetails.location}</p>
 
-        <h3 className="text-xl font-semibold mb-2">Job Location:</h3>
-        <p className=" mb-4">{jobDetails.location}</p>
+        <h3 className="text-lg md:text-xl font-semibold mb-2">Salary:</h3>
+        <p className="mb-4">{jobDetails.salary}</p>
 
-        <h3 className="text-xl font-semibold mb-2">Salary:</h3>
-        <p className=" mb-4">{jobDetails.salary}</p>
+        <h3 className="text-lg md:text-xl font-semibold mb-2">Job Description:</h3>
+        <p className="mb-4">{jobDetails.description}</p>
 
-        <h3 className="text-xl font-semibold mb-2">Job Description:</h3>
-        <p className=" mb-4">{jobDetails.description}</p>
-
-        <h3 className="font-bold mb-2">Key Responsibilities:</h3>
-
+        <h3 className="text-lg md:text-xl font-bold mb-2">Key Responsibilities:</h3>
         <ul className="list-disc pl-5 mb-4">
           {jobDetails.responsibilities.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
-        <h3 className="font-bold mb-2">Requirements:</h3>
+
+        <h3 className="text-lg md:text-xl font-bold mb-2">Requirements:</h3>
         <ul className="list-disc pl-5 mb-4">
           {jobDetails.requirements.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
 
-        <h3 className="font-bold mb-2">Preferred Qualifications:</h3>
+        <h3 className="text-lg md:text-xl font-bold mb-2">Preferred Qualifications:</h3>
         <ul className="list-disc pl-5 mb-4">
           {jobDetails.qualifications.map((item, index) => (
             <li key={index}>{item}</li>
@@ -85,12 +80,11 @@ const Modal = ({ isOpen, onClose, jobDetails }) => {
         </ul>
 
         <button
-  className="bg-studio_blue text-white font-semibold px-4 py-2 rounded
-  hover:bg-white hover:text-black"
-  onClick={() => window.open(jobDetails.applyLink, '_blank')} // Open the job's specific apply link in a new tab
->
-  Apply Now
-</button>
+          className="bg-studio_blue text-white font-semibold px-4 py-2 rounded hover:bg-white hover:text-black"
+          onClick={() => window.open(jobDetails.applyLink, '_blank')}
+        >
+          Apply Now
+        </button>
         
       </div>
     </div>
@@ -116,24 +110,6 @@ const CareersPageOpeningSection = () => {
         'Mentor and provide technical guidance to junior team members','Write clean, maintainable, and efficient code',
       ],
       applyLink: 'https://form.jotform.com/242655786742065',
-    },
-    {
-      title: '3D Artist Trainee',
-      location: 'Dhaka, Bangladesh',
-      salary: 'BDT 20,000',
-      description: 'We need a creative 3D Artist Trainee to work on modeling and texturing.',
-      responsibilities: ['Creating 3D assets', 'Working with the art team', 'Optimizing models'],
-      requirements: 'Experience with 3D modeling software like Blender or Maya.',
-      qualifications: 'A strong portfolio of 3D work is preferred.',
-    },
-    {
-      title: '3D Animator Trainee',
-      location: 'Dhaka, Bangladesh',
-      salary: 'BDT 22,000',
-      description: 'Join us as a 3D Animator Trainee to create dynamic character animations.',
-      responsibilities: ['Animating characters and objects', 'Collaborating with game developers', 'Rigging models'],
-      requirements: 'Experience with animation software like Maya or 3ds Max.',
-      qualifications: 'A background in animation is preferred.',
     },
   ];
 
