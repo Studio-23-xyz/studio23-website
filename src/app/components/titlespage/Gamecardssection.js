@@ -14,7 +14,7 @@ const Gamecardssection = () => {
       title: "Silent Scream 2",
       subtitle: "Psychological-Puzzle-Horror",
       description:
-        "Silent Scream 2, a spine-chilling third-person adventure puzzle horror game developed by Studio 23, plunges players into the depths of terror within an abandoned asylum, where they must navigate through intricate puzzles, uncover dark mysteries, and confront malevolent entities to survive.",
+        "Silent Scream 2, a spine-chilling third-person adventure puzzle horror game developed by Studio 23, plunges players into the depths of terror within an age old castle, where they must navigate through intricate puzzles, uncover dark mysteries, and confront malevolent entities to survive.",
       imageSrc: silentscream2hero.src,
       logoSrc: silentscream2logo,
       link: "https://silentscream2.studio-23.xyz/",
