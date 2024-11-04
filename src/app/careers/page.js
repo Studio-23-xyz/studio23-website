@@ -1,8 +1,6 @@
-import React from "react";
-import CareersPageHeroSection from "../components/careerspage/CareersPageHeroSection";
 import CareersPageGallerySection from "../components/careerspage/CareersPageGallerySection";
+import CareersPageHeroSection from "../components/careerspage/CareersPageHeroSection";
 import CareersPageJoinUsSection from "../components/careerspage/CareersPageJoinUsSection";
-import CareersPageOpeningSection from "../components/careerspage/CareersPageOpeningSection";
 
 const page = () => {
   return (
@@ -17,7 +15,8 @@ const page = () => {
         <CareersPageJoinUsSection />
 
         {/* Openings Section */}
-        <CareersPageOpeningSection />
+        {/* <CareersPageOpeningSection /> */}
+        
       </div>
     </div>
   );
