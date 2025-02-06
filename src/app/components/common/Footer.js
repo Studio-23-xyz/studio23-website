@@ -141,7 +141,7 @@ const Footer = () => {
         </div>
         <div className="hidden md:flex border-t-2 mt-8  justify-center">
             <p className="text-[14px] mt-8">
-                Copyright ® Studio23 2024 All rights Rcerved
+                Copyright ® Studio23 2025 All rights Reserved
             </p>
         </div>
       </div>
@@ -270,7 +270,7 @@ const Footer = () => {
         <div className="border-t-2">
           <div className="mt-4 flex justify-center">
             <p className=" text-[13px]">
-              Copyright ® Studio23 2024 All rights Rcerved
+              Copyright ® Studio23 2025 All rights Reserved
             </p>
           </div>
         </div>
